@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T22:18:33.815817",
+  "last_updated": "2026-02-20T22:23:34.255585",
   "reports": [
     {
       "asset": "MGC",
@@ -200,6 +200,31 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "MYM",
+      "asset_name": "Micro Dow Jones",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T22:23:34.255543",
+      "filename": "archive/MYM_heatmap_20210101-20260220.html",
+      "latest_filename": "MYM_heatmap_latest.html",
+      "description": "14:30-15:00 CC=38.2 | 16:30-17:00 CC=12.2 | 10:30-11:00 CC=1.0 | 21:00-21:30 CC=7.2",
+      "trades": 43,
+      "win_rate": 65.11627906976744,
+      "profit_factor": 4.71,
+      "pnl_pts": 702.0,
+      "pnl_usd": 595.36,
+      "score": 93.93,
+      "plateau_score": 103.8,
+      "total_runs": 57780,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
