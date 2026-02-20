@@ -37,8 +37,8 @@
     "win_rate": 59.09090909090909,
     "profit_factor": 4.09,
     "max_drawdown_usd": 704.88,
-    "score": 49.67,
-    "plateau_score": 58.27,
+    "score": 84.26,
+    "plateau_score": 92.76,
     "ranking_method": "plateau (Gaussian neighbor stability)"
   },
   "top5": [
@@ -54,41 +54,25 @@
       "pnl_pts": 6.76,
       "pnl_usd": 6827.8,
       "trades": 22,
-      "score": 49.67,
-      "plateau_score": 58.27
+      "score": 84.26,
+      "plateau_score": 92.76
     },
     {
       "rank": 2,
       "windows": [
-        "17:00-17:30",
         "02:30-03:00",
         "09:00-09:30",
         "16:30-17:00"
       ],
-      "cc_per_window": "0.152|0.187|0.057|0.172",
-      "pnl_pts": 6.72,
-      "pnl_usd": 6735.32,
-      "trades": 23,
-      "score": 49.01,
-      "plateau_score": 58.27
+      "cc_per_window": "0.187|0.062|0.177",
+      "pnl_pts": 3.4,
+      "pnl_usd": 3902.76,
+      "trades": 18,
+      "score": 84.14,
+      "plateau_score": 92.04
     },
     {
       "rank": 3,
-      "windows": [
-        "17:00-17:30",
-        "02:30-03:00",
-        "09:00-09:30",
-        "16:30-17:00"
-      ],
-      "cc_per_window": "0.152|0.187|0.017|0.172",
-      "pnl_pts": 7.32,
-      "pnl_usd": 7152.92,
-      "trades": 29,
-      "score": 47.85,
-      "plateau_score": 57.85
-    },
-    {
-      "rank": 4,
       "windows": [
         "17:00-17:30",
         "02:30-03:00",
@@ -99,8 +83,21 @@
       "pnl_pts": 6.32,
       "pnl_usd": 5927.88,
       "trades": 26,
-      "score": 43.98,
-      "plateau_score": 57.79
+      "score": 78.93,
+      "plateau_score": 91.93
+    },
+    {
+      "rank": 4,
+      "windows": [
+        "02:30-03:00",
+        "16:30-17:00"
+      ],
+      "cc_per_window": "0.187|0.177",
+      "pnl_pts": 3.17,
+      "pnl_usd": 3455.16,
+      "trades": 13,
+      "score": 82.92,
+      "plateau_score": 91.59
     },
     {
       "rank": 5,
@@ -114,20 +111,20 @@
       "pnl_pts": 6.03,
       "pnl_usd": 5636.64,
       "trades": 27,
-      "score": 41.89,
-      "plateau_score": 57.48
+      "score": 77.06,
+      "plateau_score": 91.45
     }
   ],
-  "generated": "2026-02-20T22:57:54.002056",
+  "generated": "2026-02-20T23:22:38.375140",
   "data_file": "C:\\VisualStudios\\Trading_ViewBot\\data\\historical\\glbx-mdp3-20210101-20260220-SI.ohlcv-1m.csv",
   "data_start": "20260101",
   "data_end": "20260219",
   "search_proof": {
-    "total_runs": 61480,
+    "total_runs": 61486,
     "phase1_runs": 5612,
     "phase2_runs": 55825,
-    "phase3_runs": 43,
-    "unique_configs_evaluated": 5414,
+    "phase3_runs": 49,
+    "unique_configs_evaluated": 6011,
     "windows_scanned": 46,
     "windows_combined": 45,
     "verdict": "EXHAUSTIVE within search space \u2014 all neighbors validated"
