@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T23:45:24.116169",
+  "last_updated": "2026-02-20T23:47:56.720416",
   "reports": [
     {
       "asset": "MGC",
@@ -500,6 +500,31 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "MET",
+      "asset_name": "Micro Ether Futures",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T23:47:56.720368",
+      "filename": "archive/MET_heatmap_20210101-20260220.html",
+      "latest_filename": "MET_heatmap_latest.html",
+      "description": "15:30-16:00 CC=0.2 | 04:30-05:00 CC=0.2 | 21:00-21:30 CC=2.8 | 20:30-21:00 CC=3.0",
+      "trades": 40,
+      "win_rate": 50.0,
+      "profit_factor": 7.35,
+      "pnl_pts": 496.5,
+      "pnl_usd": 0.1,
+      "score": 49.3,
+      "plateau_score": 59.34,
+      "total_runs": 57731,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 99.8,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
