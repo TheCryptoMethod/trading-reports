@@ -12,6 +12,10 @@
   "config": {
     "windows": [
       {
+        "window": "17:00-17:30",
+        "cc_min_pts": 6.6
+      },
+      {
         "window": "21:00-21:30",
         "cc_min_pts": 1.6
       },
@@ -20,60 +24,26 @@
         "cc_min_pts": 4.6
       },
       {
-        "window": "13:30-14:00",
+        "window": "11:30-12:00",
         "cc_min_pts": 6.3
-      },
-      {
-        "window": "20:30-21:00",
-        "cc_min_pts": 10.1
       }
     ],
-    "description": "21:00-21:30 CC=1.6 | 16:00-16:30 CC=4.6 | 13:30-14:00 CC=6.3 | 20:30-21:00 CC=10.1"
+    "description": "17:00-17:30 CC=6.6 | 21:00-21:30 CC=1.6 | 16:00-16:30 CC=4.6 | 11:30-12:00 CC=6.3"
   },
   "backtest": {
-    "total_pnl_pts": 400.25,
-    "total_pnl_usd": 1504.28,
+    "total_pnl_pts": 430.5,
+    "total_pnl_usd": 1625.28,
     "trades": 39,
     "win_rate": 64.1025641025641,
-    "profit_factor": 4.0,
-    "max_drawdown_usd": 140.92,
-    "score": 92.3,
-    "plateau_score": 102.08,
+    "profit_factor": 4.57,
+    "max_drawdown_usd": 172.36,
+    "score": 92.21,
+    "plateau_score": 101.98,
     "ranking_method": "plateau (Gaussian neighbor stability)"
   },
   "top5": [
     {
       "rank": 1,
-      "windows": [
-        "21:00-21:30",
-        "16:00-16:30",
-        "13:30-14:00",
-        "20:30-21:00"
-      ],
-      "cc_per_window": "1.6|4.6|6.3|10.1",
-      "pnl_pts": 400.25,
-      "pnl_usd": 1504.28,
-      "trades": 39,
-      "score": 92.3,
-      "plateau_score": 102.08
-    },
-    {
-      "rank": 2,
-      "windows": [
-        "21:00-21:30",
-        "16:00-16:30",
-        "13:30-14:00",
-        "20:30-21:00"
-      ],
-      "cc_per_window": "1.8|4.8|6.3|9.6",
-      "pnl_pts": 401.25,
-      "pnl_usd": 1513.24,
-      "trades": 37,
-      "score": 91.92,
-      "plateau_score": 102.07
-    },
-    {
-      "rank": 3,
       "windows": [
         "17:00-17:30",
         "21:00-21:30",
@@ -88,7 +58,7 @@
       "plateau_score": 101.98
     },
     {
-      "rank": 4,
+      "rank": 2,
       "windows": [
         "17:00-17:30",
         "21:00-21:30",
@@ -103,7 +73,7 @@
       "plateau_score": 101.96
     },
     {
-      "rank": 5,
+      "rank": 3,
       "windows": [
         "21:00-21:30",
         "16:00-16:30",
@@ -116,18 +86,48 @@
       "trades": 40,
       "score": 92.2,
       "plateau_score": 101.95
+    },
+    {
+      "rank": 4,
+      "windows": [
+        "21:00-21:30",
+        "16:00-16:30",
+        "13:30-14:00",
+        "11:30-12:00"
+      ],
+      "cc_per_window": "1.8|4.8|6.3|6.6",
+      "pnl_pts": 392.5,
+      "pnl_usd": 1475.76,
+      "trades": 38,
+      "score": 91.77,
+      "plateau_score": 101.93
+    },
+    {
+      "rank": 5,
+      "windows": [
+        "17:00-17:30",
+        "21:00-21:30",
+        "16:00-16:30",
+        "13:30-14:00"
+      ],
+      "cc_per_window": "6.6|1.6|4.6|6.3",
+      "pnl_pts": 456.25,
+      "pnl_usd": 1723.32,
+      "trades": 41,
+      "score": 92.07,
+      "plateau_score": 101.83
     }
   ],
-  "generated": "2026-02-20T21:57:31.495102",
+  "generated": "2026-02-20T23:08:18.565641",
   "data_file": "C:\\VisualStudios\\Trading_ViewBot\\data\\historical\\glbx-mdp3-20210101-20260220-NQ.ohlcv-1m.csv",
   "data_start": "20260101",
   "data_end": "20260219",
   "search_proof": {
-    "total_runs": 71128,
+    "total_runs": 71679,
     "phase1_runs": 5658,
     "phase2_runs": 55825,
-    "phase3_runs": 9645,
-    "unique_configs_evaluated": 8931,
+    "phase3_runs": 10196,
+    "unique_configs_evaluated": 8138,
     "windows_scanned": 46,
     "windows_combined": 45,
     "verdict": "EXHAUSTIVE within search space \u2014 all neighbors validated"
