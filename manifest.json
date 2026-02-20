@@ -1,0 +1,30 @@
+{
+  "last_updated": "2026-02-20T16:32:55.265034",
+  "reports": [
+    {
+      "asset": "GC",
+      "asset_name": "Gold Futures",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T16:32:55.264982",
+      "filename": "archive/GC_heatmap_20260220_163255.html",
+      "latest_filename": "GC_heatmap_latest.html",
+      "description": "23:00-23:30 CC=0.9 | 01:00-01:30 CC=3.0 | 00:00-00:30 CC=2.9 | 14:00-14:30 CC=0.1",
+      "trades": 48,
+      "win_rate": 60.416666666666664,
+      "profit_factor": 4.75,
+      "pnl_pts": 221.1,
+      "pnl_usd": 25704.08,
+      "score": 89.73,
+      "plateau_score": 99.73,
+      "total_runs": 67027,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
+    }
+  ]
+}
