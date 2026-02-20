@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T22:25:24.867495",
+  "last_updated": "2026-02-20T22:28:55.138879",
   "reports": [
     {
       "asset": "MGC",
@@ -250,6 +250,31 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "SIL",
+      "asset_name": "Micro Silver Futures",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T22:28:55.138769",
+      "filename": "archive/SIL_heatmap_20210101-20260220.html",
+      "latest_filename": "SIL_heatmap_latest.html",
+      "description": "17:00-17:30 CC=0.160 | 02:30-03:00 CC=0.190 | 09:00-09:30 CC=0.060 | 16:30-17:00 CC=0.170",
+      "trades": 23,
+      "win_rate": 56.52173913043478,
+      "profit_factor": 4.0,
+      "pnl_pts": 6.72,
+      "pnl_usd": 6735.32,
+      "score": 49.01,
+      "plateau_score": 56.98,
+      "total_runs": 61467,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
