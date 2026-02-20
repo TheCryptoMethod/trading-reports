@@ -18,6 +18,16 @@
     {
       "rank": 1,
       "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
+      "cc_per_window": "3.0|0.8|2.0|1.8",
+      "train_pnl_pts": 55.75,
+      "oos_pnl_pts": -48.25,
+      "oos_trades": 16,
+      "oos_win_rate": 18.75,
+      "retention_pct": -86.5
+    },
+    {
+      "rank": 2,
+      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
       "cc_per_window": "3.0|0.5|2.0|1.8",
       "train_pnl_pts": 55.0,
       "oos_pnl_pts": -47.75,
@@ -26,7 +36,17 @@
       "retention_pct": -86.8
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
+      "cc_per_window": "3.0|0.8|1.8|1.8",
+      "train_pnl_pts": 55.0,
+      "oos_pnl_pts": -48.25,
+      "oos_trades": 16,
+      "oos_win_rate": 18.75,
+      "retention_pct": -87.7
+    },
+    {
+      "rank": 4,
       "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
       "cc_per_window": "3.0|0.5|1.8|1.8",
       "train_pnl_pts": 54.25,
@@ -36,34 +56,14 @@
       "retention_pct": -88.0
     },
     {
-      "rank": 3,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 13:30-14:00",
-      "cc_per_window": "3.0|0.8|1.0|1.8",
-      "train_pnl_pts": 50.25,
-      "oos_pnl_pts": -31.5,
-      "oos_trades": 16,
-      "oos_win_rate": 31.25,
-      "retention_pct": -62.7
-    },
-    {
-      "rank": 4,
+      "rank": 5,
       "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.8|2.0|1.8",
-      "train_pnl_pts": 55.75,
+      "cc_per_window": "3.0|1.0|2.0|1.8",
+      "train_pnl_pts": 56.0,
       "oos_pnl_pts": -48.25,
       "oos_trades": 16,
       "oos_win_rate": 18.75,
-      "retention_pct": -86.5
-    },
-    {
-      "rank": 5,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|1.0|1.8",
-      "train_pnl_pts": 49.5,
-      "oos_pnl_pts": -31.0,
-      "oos_trades": 20,
-      "oos_win_rate": 35.0,
-      "retention_pct": -62.6
+      "retention_pct": -86.2
     },
     {
       "rank": 6,
@@ -78,42 +78,42 @@
     {
       "rank": 7,
       "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|2.0|1.2",
-      "train_pnl_pts": 54.0,
-      "oos_pnl_pts": -50.25,
-      "oos_trades": 22,
-      "oos_win_rate": 22.727272727272727,
-      "retention_pct": -93.1
-    },
-    {
-      "rank": 8,
-      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.8|1.8|1.8",
-      "train_pnl_pts": 55.0,
-      "oos_pnl_pts": -48.25,
-      "oos_trades": 16,
-      "oos_win_rate": 18.75,
-      "retention_pct": -87.7
-    },
-    {
-      "rank": 9,
-      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|1.8|1.2",
-      "train_pnl_pts": 53.25,
-      "oos_pnl_pts": -50.25,
-      "oos_trades": 22,
-      "oos_win_rate": 22.727272727272727,
-      "retention_pct": -94.4
-    },
-    {
-      "rank": 10,
-      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
       "cc_per_window": "3.0|0.5|1.5|1.8",
       "train_pnl_pts": 53.25,
       "oos_pnl_pts": -48.5,
       "oos_trades": 26,
       "oos_win_rate": 26.923076923076923,
       "retention_pct": -91.1
+    },
+    {
+      "rank": 8,
+      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
+      "cc_per_window": "3.0|1.0|1.8|1.8",
+      "train_pnl_pts": 55.25,
+      "oos_pnl_pts": -48.25,
+      "oos_trades": 16,
+      "oos_win_rate": 18.75,
+      "retention_pct": -87.3
+    },
+    {
+      "rank": 9,
+      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
+      "cc_per_window": "3.0|0.8|1.5|1.8",
+      "train_pnl_pts": 54.0,
+      "oos_pnl_pts": -49.0,
+      "oos_trades": 22,
+      "oos_win_rate": 22.727272727272727,
+      "retention_pct": -90.7
+    },
+    {
+      "rank": 10,
+      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00",
+      "cc_per_window": "3.0|0.5|2.0|1.2",
+      "train_pnl_pts": 54.0,
+      "oos_pnl_pts": -50.25,
+      "oos_trades": 22,
+      "oos_win_rate": 22.727272727272727,
+      "retention_pct": -93.1
     }
   ],
   "walk_forward": {
@@ -216,28 +216,28 @@
     "total_pnl_pts": 3.75
   },
   "monte_carlo": {
-    "full_data_pnl_pts": 9.5,
-    "full_data_trades": 44,
+    "full_data_pnl_pts": 9.749999999999998,
+    "full_data_trades": 34,
     "iterations": 500,
     "drop_pct": 0.1,
-    "p5": -13.3,
-    "p25": 3.7,
-    "median": 9.35,
-    "p75": 14.53,
-    "p95": 23.6,
-    "pct_profitable": 85.4,
-    "avg_drawdown_pts": 46.44,
+    "p5": -11.66,
+    "p25": 4.08,
+    "median": 9.65,
+    "p75": 15.15,
+    "p95": 24.05,
+    "pct_profitable": 86.4,
+    "avg_drawdown_pts": 47.0,
     "verdict": "\u26a0\ufe0f FRAGIL"
   },
   "significance": {
     "significant": false,
-    "p_value": 0.9941,
-    "win_rate_pct": 25.0,
-    "n_trades": 20,
-    "n_wins": 5,
-    "min_wins_for_sig": 15,
+    "p_value": 0.9979,
+    "win_rate_pct": 18.8,
+    "n_trades": 16,
+    "n_wins": 3,
+    "min_wins_for_sig": 12,
     "min_wr_for_sig_pct": 75.0,
-    "detail": "\u274c Nicht signifikant (p=0.9941, braucht \u226515/20 = 75% f\u00fcr p<0.05)",
+    "detail": "\u274c Nicht signifikant (p=0.9979, braucht \u226512/16 = 75% f\u00fcr p<0.05)",
     "scope": "OOS-only trades"
   },
   "score": {
