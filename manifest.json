@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T23:23:28.205640",
+  "last_updated": "2026-02-20T23:27:06.048643",
   "reports": [
     {
       "asset": "MGC",
@@ -307,7 +307,7 @@
       "type": "heatmap",
       "date_start": "2021-01-01",
       "date_end": "2026-02-20",
-      "created": "2026-02-20T22:54:22.203521",
+      "created": "2026-02-20T23:27:06.048580",
       "filename": "archive/MHG_heatmap_20210101-20260220.html",
       "latest_filename": "MHG_heatmap_latest.html",
       "description": "14:30-15:00 CC=0.0017 | 15:00-15:30 CC=0.0007 | 09:00-09:30 CC=0.0017 | 06:00-06:30 CC=0.0012",
@@ -316,8 +316,8 @@
       "profit_factor": 4.28,
       "pnl_pts": 0.45,
       "pnl_usd": 2106.08,
-      "score": 53.19,
-      "plateau_score": 63.46,
+      "score": 92.83,
+      "plateau_score": 103.08,
       "total_runs": 55177,
       "val_score": 0,
       "val_max": 100,
