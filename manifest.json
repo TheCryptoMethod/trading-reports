@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T23:27:06.048643",
+  "last_updated": "2026-02-20T23:27:36.988792",
   "reports": [
     {
       "asset": "MGC",
@@ -332,7 +332,7 @@
       "type": "equity",
       "date_start": "2026-01-01",
       "date_end": "2026-02-19",
-      "created": "2026-02-20T22:54:57.603105",
+      "created": "2026-02-20T23:27:36.988757",
       "filename": "archive/MHG_equity_20260101-20260219.html",
       "latest_filename": "MHG_equity_latest.html",
       "description": "",
