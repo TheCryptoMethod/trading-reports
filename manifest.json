@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T18:39:49.290263",
+  "last_updated": "2026-02-20T18:47:47.225489",
   "reports": [
     {
       "asset": "GC",
@@ -200,6 +200,31 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "SI",
+      "asset_name": "Silver Futures",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T18:47:47.225359",
+      "filename": "archive/SI_heatmap_20210101-20260220.html",
+      "latest_filename": "SI_heatmap_latest.html",
+      "description": "17:00-17:30 CC=0.4 | 02:30-03:00 CC=0.2 | 16:30-17:00 CC=0.4",
+      "trades": 6,
+      "win_rate": 83.33333333333334,
+      "profit_factor": 13.93,
+      "pnl_pts": 4.92,
+      "pnl_usd": 24567.56,
+      "score": 49.77,
+      "plateau_score": 53.03,
+      "total_runs": 24738,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
