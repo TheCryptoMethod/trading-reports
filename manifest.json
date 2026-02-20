@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T23:27:36.988792",
+  "last_updated": "2026-02-20T23:38:06.074532",
   "reports": [
     {
       "asset": "MGC",
@@ -350,6 +350,31 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "MNG",
+      "asset_name": "Micro Henry Hub Natural Gas",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T23:38:06.074474",
+      "filename": "archive/MNG_heatmap_20210101-20260220.html",
+      "latest_filename": "MNG_heatmap_latest.html",
+      "description": "08:30-09:00 CC=0.007 | 00:00-00:30 CC=0.004 | 07:00-07:30 CC=0.005 | 23:00-23:30 CC=0.003",
+      "trades": 23,
+      "win_rate": 78.26086956521739,
+      "profit_factor": 5.89,
+      "pnl_pts": 0.36,
+      "pnl_usd": 656.96,
+      "score": 91.28,
+      "plateau_score": 99.21,
+      "total_runs": 48750,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 0.0,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
