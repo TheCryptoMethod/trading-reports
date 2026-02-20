@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T21:52:00.483735",
+  "last_updated": "2026-02-20T21:57:36.738572",
   "reports": [
     {
       "asset": "MGC",
@@ -50,6 +50,31 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "MNQ",
+      "asset_name": "Micro E-mini Nasdaq 100",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T21:57:36.738539",
+      "filename": "archive/MNQ_heatmap_20210101-20260220.html",
+      "latest_filename": "MNQ_heatmap_latest.html",
+      "description": "21:00-21:30 CC=1.6 | 16:00-16:30 CC=4.6 | 13:30-14:00 CC=6.3 | 20:30-21:00 CC=10.1",
+      "trades": 39,
+      "win_rate": 64.1025641025641,
+      "profit_factor": 4.0,
+      "pnl_pts": 400.25,
+      "pnl_usd": 1504.28,
+      "score": 92.3,
+      "plateau_score": 102.08,
+      "total_runs": 71128,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 99.6,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
