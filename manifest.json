@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T23:19:14.159358",
+  "last_updated": "2026-02-20T23:19:55.691486",
   "reports": [
     {
       "asset": "MGC",
@@ -232,7 +232,7 @@
       "type": "equity",
       "date_start": "2026-01-01",
       "date_end": "2026-02-19",
-      "created": "2026-02-20T22:25:24.867426",
+      "created": "2026-02-20T23:19:55.691312",
       "filename": "archive/MYM_equity_20260101-20260219.html",
       "latest_filename": "MYM_equity_latest.html",
       "description": "",
