@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T23:42:20.359786",
+  "last_updated": "2026-02-20T23:44:57.409267",
   "reports": [
     {
       "asset": "MGC",
@@ -450,6 +450,31 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "MBT",
+      "asset_name": "Micro Bitcoin Futures",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T23:44:57.409197",
+      "filename": "archive/MBT_heatmap_20210101-20260220.html",
+      "latest_filename": "MBT_heatmap_latest.html",
+      "description": "04:00-04:30 CC=30.0 | 16:00-16:30 CC=75.0 | 20:30-21:00 CC=5.0 | 21:00-21:30 CC=15.0",
+      "trades": 35,
+      "win_rate": 51.42857142857142,
+      "profit_factor": 2.92,
+      "pnl_pts": 2650.0,
+      "pnl_usd": 443.2,
+      "score": 78.02,
+      "plateau_score": 83.81,
+      "total_runs": 58249,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
