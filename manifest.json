@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T16:50:42.833057",
+  "last_updated": "2026-02-20T17:00:27.165509",
   "reports": [
     {
       "asset": "GC",
@@ -25,6 +25,31 @@
       "mc_profitable_pct": 100.0,
       "wf_profitable": 0,
       "wf_total": 0
+    },
+    {
+      "asset": "GC",
+      "asset_name": "Gold Futures",
+      "type": "equity",
+      "date_start": "unknown",
+      "date_end": "unknown",
+      "created": "2026-02-20T17:00:27.165425",
+      "filename": "archive/GC_equity_unknown-unknown.html",
+      "latest_filename": "GC_equity_latest.html",
+      "description": "",
+      "trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "pnl_pts": 0,
+      "pnl_usd": 0,
+      "score": 0,
+      "plateau_score": 0,
+      "total_runs": 0,
+      "val_score": null,
+      "val_max": null,
+      "val_grade": null,
+      "mc_profitable_pct": null,
+      "wf_profitable": null,
+      "wf_total": null
     }
   ]
 }
