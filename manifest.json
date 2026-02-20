@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T18:32:19.172586",
+  "last_updated": "2026-02-20T18:35:54.674807",
   "reports": [
     {
       "asset": "GC",
@@ -150,6 +150,31 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "YM",
+      "asset_name": "Mini Dow Jones",
+      "type": "heatmap",
+      "date_start": "2021-01-01",
+      "date_end": "2026-02-20",
+      "created": "2026-02-20T18:35:54.674653",
+      "filename": "archive/YM_heatmap_20210101-20260220.html",
+      "latest_filename": "YM_heatmap_latest.html",
+      "description": "10:30-11:00 CC=3.4",
+      "trades": 9,
+      "win_rate": 88.88888888888889,
+      "profit_factor": 14.3,
+      "pnl_pts": 133.0,
+      "pnl_usd": 15117.96,
+      "score": 88.08,
+      "plateau_score": 98.08,
+      "total_runs": 65263,
+      "val_score": 0,
+      "val_max": 100,
+      "val_grade": "?",
+      "mc_profitable_pct": 91.4,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
