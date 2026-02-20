@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T22:28:55.138879",
+  "last_updated": "2026-02-20T22:29:30.511413",
   "reports": [
     {
       "asset": "MGC",
@@ -275,6 +275,31 @@
       "mc_profitable_pct": 100.0,
       "wf_profitable": 0,
       "wf_total": 0
+    },
+    {
+      "asset": "SIL",
+      "asset_name": "SIL",
+      "type": "equity",
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-19",
+      "created": "2026-02-20T22:29:30.511373",
+      "filename": "archive/SIL_equity_20260101-20260219.html",
+      "latest_filename": "SIL_equity_latest.html",
+      "description": "",
+      "trades": 0,
+      "win_rate": 0,
+      "profit_factor": 0,
+      "pnl_pts": 0,
+      "pnl_usd": 0,
+      "score": 0,
+      "plateau_score": 0,
+      "total_runs": 0,
+      "val_score": null,
+      "val_max": null,
+      "val_grade": null,
+      "mc_profitable_pct": null,
+      "wf_profitable": null,
+      "wf_total": null
     }
   ]
 }
