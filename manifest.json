@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T17:00:27.165509",
+  "last_updated": "2026-02-20T17:14:11.623470",
   "reports": [
     {
       "asset": "GC",
@@ -32,7 +32,7 @@
       "type": "equity",
       "date_start": "unknown",
       "date_end": "unknown",
-      "created": "2026-02-20T17:00:27.165425",
+      "created": "2026-02-20T17:14:11.623360",
       "filename": "archive/GC_equity_unknown-unknown.html",
       "latest_filename": "GC_equity_latest.html",
       "description": "",
