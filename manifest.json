@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-20T23:22:43.631373",
+  "last_updated": "2026-02-20T23:23:28.205640",
   "reports": [
     {
       "asset": "MGC",
@@ -282,7 +282,7 @@
       "type": "equity",
       "date_start": "2026-01-01",
       "date_end": "2026-02-19",
-      "created": "2026-02-20T22:58:46.063852",
+      "created": "2026-02-20T23:23:28.205594",
       "filename": "archive/SIL_equity_20260101-20260219.html",
       "latest_filename": "SIL_equity_latest.html",
       "description": "",
