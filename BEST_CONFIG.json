@@ -113,8 +113,10 @@
       "plateau_score": 99.47
     }
   ],
-  "generated": "2026-02-20T16:50:42.267796",
+  "generated": "2026-02-20T17:18:48.384385",
   "data_file": "C:\\VisualStudios\\Trading_ViewBot\\data\\historical\\glbx-mdp3-20210101-20260220-GC.ohlcv-1m.csv",
+  "data_start": "20260101",
+  "data_end": "20260219",
   "search_proof": {
     "total_runs": 67027,
     "phase1_runs": 9154,

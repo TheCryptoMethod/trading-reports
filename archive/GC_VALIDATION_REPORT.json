@@ -90,20 +90,20 @@
       "windows": "23:00-23:30 + 01:00-01:30 + 00:00-00:30 + 14:00-14:30",
       "cc_per_window": "0.9|3.0|2.8|0.1",
       "train_pnl_pts": 217.1,
-      "oos_pnl_pts": -58.1,
-      "oos_trades": 34,
-      "oos_win_rate": 23.52941176470588,
-      "retention_pct": -26.8
+      "oos_pnl_pts": -36.8,
+      "oos_trades": 32,
+      "oos_win_rate": 28.125,
+      "retention_pct": -17.0
     },
     {
       "rank": 9,
       "windows": "23:00-23:30 + 17:00-17:30 + 00:00-00:30 + 14:00-14:30",
       "cc_per_window": "1.0|2.1|2.8|0.1",
       "train_pnl_pts": 225.2,
-      "oos_pnl_pts": -36.8,
-      "oos_trades": 32,
-      "oos_win_rate": 28.125,
-      "retention_pct": -16.3
+      "oos_pnl_pts": -58.1,
+      "oos_trades": 34,
+      "oos_win_rate": 23.52941176470588,
+      "retention_pct": -25.8
     },
     {
       "rank": 10,
