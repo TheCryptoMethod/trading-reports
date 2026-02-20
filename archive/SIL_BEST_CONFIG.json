@@ -13,32 +13,32 @@
     "windows": [
       {
         "window": "17:00-17:30",
-        "cc_min_pts": 0.16
+        "cc_min_pts": 0.152
       },
       {
         "window": "02:30-03:00",
-        "cc_min_pts": 0.19
+        "cc_min_pts": 0.187
       },
       {
         "window": "09:00-09:30",
-        "cc_min_pts": 0.06
+        "cc_min_pts": 0.062
       },
       {
         "window": "16:30-17:00",
-        "cc_min_pts": 0.17
+        "cc_min_pts": 0.172
       }
     ],
-    "description": "17:00-17:30 CC=0.160 | 02:30-03:00 CC=0.190 | 09:00-09:30 CC=0.060 | 16:30-17:00 CC=0.170"
+    "description": "17:00-17:30 CC=0.152 | 02:30-03:00 CC=0.187 | 09:00-09:30 CC=0.062 | 16:30-17:00 CC=0.172"
   },
   "backtest": {
-    "total_pnl_pts": 6.72,
-    "total_pnl_usd": 6735.32,
-    "trades": 23,
-    "win_rate": 56.52173913043478,
-    "profit_factor": 4.0,
-    "max_drawdown_usd": 797.36,
-    "score": 49.01,
-    "plateau_score": 56.98,
+    "total_pnl_pts": 6.76,
+    "total_pnl_usd": 6827.8,
+    "trades": 22,
+    "win_rate": 59.09090909090909,
+    "profit_factor": 4.09,
+    "max_drawdown_usd": 704.88,
+    "score": 49.67,
+    "plateau_score": 58.27,
     "ranking_method": "plateau (Gaussian neighbor stability)"
   },
   "top5": [
@@ -50,12 +50,12 @@
         "09:00-09:30",
         "16:30-17:00"
       ],
-      "cc_per_window": "0.160|0.190|0.060|0.170",
-      "pnl_pts": 6.72,
-      "pnl_usd": 6735.32,
-      "trades": 23,
-      "score": 49.01,
-      "plateau_score": 56.98
+      "cc_per_window": "0.152|0.187|0.062|0.172",
+      "pnl_pts": 6.76,
+      "pnl_usd": 6827.8,
+      "trades": 22,
+      "score": 49.67,
+      "plateau_score": 58.27
     },
     {
       "rank": 2,
@@ -65,68 +65,69 @@
         "09:00-09:30",
         "16:30-17:00"
       ],
-      "cc_per_window": "0.160|0.180|0.060|0.170",
-      "pnl_pts": 6.6,
-      "pnl_usd": 6502.84,
-      "trades": 24,
-      "score": 47.68,
-      "plateau_score": 56.88
+      "cc_per_window": "0.152|0.187|0.057|0.172",
+      "pnl_pts": 6.72,
+      "pnl_usd": 6735.32,
+      "trades": 23,
+      "score": 49.01,
+      "plateau_score": 58.27
     },
     {
       "rank": 3,
       "windows": [
         "17:00-17:30",
-        "20:00-20:30",
         "02:30-03:00",
+        "09:00-09:30",
         "16:30-17:00"
       ],
-      "cc_per_window": "0.160|0.110|0.190|0.170",
-      "pnl_pts": 8.12,
-      "pnl_usd": 7834.04,
-      "trades": 23,
-      "score": 47.9,
-      "plateau_score": 56.57
+      "cc_per_window": "0.152|0.187|0.017|0.172",
+      "pnl_pts": 7.32,
+      "pnl_usd": 7152.92,
+      "trades": 29,
+      "score": 47.85,
+      "plateau_score": 57.85
     },
     {
       "rank": 4,
       "windows": [
         "17:00-17:30",
         "02:30-03:00",
+        "09:00-09:30",
         "16:30-17:00"
       ],
-      "cc_per_window": "0.160|0.190|0.170",
-      "pnl_pts": 6.53,
-      "pnl_usd": 6380.2,
-      "trades": 17,
-      "score": 47.32,
-      "plateau_score": 56.56
+      "cc_per_window": "0.155|0.175|0.055|0.160",
+      "pnl_pts": 6.32,
+      "pnl_usd": 5927.88,
+      "trades": 26,
+      "score": 43.98,
+      "plateau_score": 57.79
     },
     {
       "rank": 5,
       "windows": [
         "17:00-17:30",
-        "20:00-20:30",
         "02:30-03:00",
+        "09:00-09:30",
         "16:30-17:00"
       ],
-      "cc_per_window": "0.160|0.110|0.180|0.170",
-      "pnl_pts": 8.01,
-      "pnl_usd": 7601.56,
-      "trades": 24,
-      "score": 46.88,
-      "plateau_score": 56.52
+      "cc_per_window": "0.140|0.175|0.055|0.160",
+      "pnl_pts": 6.03,
+      "pnl_usd": 5636.64,
+      "trades": 27,
+      "score": 41.89,
+      "plateau_score": 57.48
     }
   ],
-  "generated": "2026-02-20T22:28:50.034940",
+  "generated": "2026-02-20T22:57:54.002056",
   "data_file": "C:\\VisualStudios\\Trading_ViewBot\\data\\historical\\glbx-mdp3-20210101-20260220-SI.ohlcv-1m.csv",
   "data_start": "20260101",
   "data_end": "20260219",
   "search_proof": {
-    "total_runs": 61467,
+    "total_runs": 61480,
     "phase1_runs": 5612,
     "phase2_runs": 55825,
-    "phase3_runs": 30,
-    "unique_configs_evaluated": 11797,
+    "phase3_runs": 43,
+    "unique_configs_evaluated": 5414,
     "windows_scanned": 46,
     "windows_combined": 45,
     "verdict": "EXHAUSTIVE within search space \u2014 all neighbors validated"
