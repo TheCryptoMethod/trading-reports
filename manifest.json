@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-22T13:21:53.246162",
+  "last_updated": "2026-02-22T19:39:04.226189",
   "reports": [
     {
       "asset": "MGC",
@@ -672,6 +672,31 @@
       "val_score": 38,
       "val_max": 100,
       "val_grade": "🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
+    },
+    {
+      "asset": "M2K",
+      "asset_name": "Micro E-mini Russell 2000",
+      "type": "heatmap",
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-19",
+      "created": "2026-02-22T19:39:04.226141",
+      "filename": "archive/M2K_heatmap_20260101-20260219.html",
+      "latest_filename": "M2K_heatmap_latest.html",
+      "description": "21:30-22:00 CC=0.5 | 14:30-15:00 CC=2.5 | 16:00-16:30 CC=0.6 | 20:30-21:00 CC=0.6 | 15:30-16:00 CC=1.6",
+      "trades": 47,
+      "win_rate": 61.702127659574465,
+      "profit_factor": 2.79,
+      "pnl_pts": 73.5,
+      "pnl_usd": 618.44,
+      "score": 88.03,
+      "plateau_score": 98.03,
+      "total_runs": 264312,
+      "val_score": 23,
+      "val_max": 100,
+      "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
       "mc_profitable_pct": 100.0,
       "wf_profitable": 0,
       "wf_total": 0
