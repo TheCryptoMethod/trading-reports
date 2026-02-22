@@ -22,7 +22,7 @@ tr:nth-child(1) td{background:#0d2818}
 
 <h1>🔬 MNQ — Per-Window CC Optimization</h1>
 <p style="text-align:center;color:#8b949e">
-Micro E-mini Nasdaq 100 | $2.0/pt | 2026-02-22 11:40
+Micro E-mini Nasdaq 100 | $2.0/pt | 2026-02-22 12:25
 </p>
 
 <div class="stats">
@@ -91,20 +91,21 @@ Micro E-mini Nasdaq 100 | $2.0/pt | 2026-02-22 11:40
 <h2>🧪 Out-of-Sample Test</h2>
 <p style="color:#8b949e">
     Optimizer trainiert auf <b>2025-01-01 → 2025-10-17</b> (289d, 279,429 Bars)<br>
-    Getestet auf <b>2025-10-17 → 2026-02-19</b> (125d, 117,366 Bars) — <b>Daten die der Optimizer nie gesehen hat</b>
+    <b style="color:#f0883e">Embargo: 2 Tage</b> (kein Training, kein Testing — verhindert Leakage)<br>
+    Getestet auf <b>2025-10-19 → 2026-02-19</b> (123d, 117,306 Bars) — <b>Daten die der Optimizer nie gesehen hat</b>
 </p>
 <table>
 <tr><th>#</th><th>Windows</th><th>CC/Win</th><th>Train PnL</th><th>OOS PnL</th><th>OOS Trades</th><th>OOS WR</th><th>Retention</th></tr>
-<tr><td>1</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.1|18.3|7.8|22.6</td><td class='pos'>+1516.00</td><td class='neg'>-336.50</td><td>62</td><td>40.3%</td><td class='neg'>❌ -22%</td></tr>
-<tr><td>2</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.1|18.3|7.8|22.1</td><td class='pos'>+1549.50</td><td class='neg'>-369.75</td><td>63</td><td>39.7%</td><td class='neg'>❌ -24%</td></tr>
-<tr><td>3</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.9|18.3|7.8|22.3</td><td class='pos'>+1688.00</td><td class='neg'>-369.75</td><td>63</td><td>39.7%</td><td class='neg'>❌ -22%</td></tr>
-<tr><td>4</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.1|18.3|7.8|21.6</td><td class='pos'>+1531.50</td><td class='neg'>-391.75</td><td>64</td><td>39.1%</td><td class='neg'>❌ -26%</td></tr>
-<tr><td>5</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.9|18.3|7.8|21.8</td><td class='pos'>+1721.50</td><td class='neg'>-369.75</td><td>63</td><td>39.7%</td><td class='neg'>❌ -22%</td></tr>
-<tr><td>6</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.6|18.3|7.8|22.6</td><td class='pos'>+1711.00</td><td class='neg'>-345.50</td><td>63</td><td>39.7%</td><td class='neg'>❌ -20%</td></tr>
-<tr><td>7</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.3|18.3|7.8|22.6</td><td class='pos'>+1525.50</td><td class='neg'>-336.50</td><td>62</td><td>40.3%</td><td class='neg'>❌ -22%</td></tr>
-<tr><td>8</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.1|18.1|7.8|22.6</td><td class='pos'>+1509.75</td><td class='neg'>-336.50</td><td>62</td><td>40.3%</td><td class='neg'>❌ -22%</td></tr>
-<tr><td>9</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.1|18.3|7.8|22.6</td><td class='pos'>+1662.25</td><td class='neg'>-337.25</td><td>63</td><td>39.7%</td><td class='neg'>❌ -20%</td></tr>
-<tr><td>10</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.9|18.3|7.8|21.3</td><td class='pos'>+1703.50</td><td class='neg'>-410.75</td><td>65</td><td>38.5%</td><td class='neg'>❌ -24%</td></tr>
+<tr><td>1</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.1|18.3|7.8|22.6</td><td class='pos'>+1516.00</td><td class='neg'>-366.50</td><td>61</td><td>39.3%</td><td class='neg'>❌ -24%</td></tr>
+<tr><td>2</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.1|18.3|7.8|22.1</td><td class='pos'>+1549.50</td><td class='neg'>-399.75</td><td>62</td><td>38.7%</td><td class='neg'>❌ -26%</td></tr>
+<tr><td>3</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.9|18.3|7.8|22.3</td><td class='pos'>+1688.00</td><td class='neg'>-399.75</td><td>62</td><td>38.7%</td><td class='neg'>❌ -24%</td></tr>
+<tr><td>4</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.1|18.3|7.8|21.6</td><td class='pos'>+1531.50</td><td class='neg'>-399.75</td><td>62</td><td>38.7%</td><td class='neg'>❌ -26%</td></tr>
+<tr><td>5</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.9|18.3|7.8|21.8</td><td class='pos'>+1721.50</td><td class='neg'>-421.75</td><td>63</td><td>38.1%</td><td class='neg'>❌ -24%</td></tr>
+<tr><td>6</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.6|18.3|7.8|22.6</td><td class='pos'>+1711.00</td><td class='neg'>-375.50</td><td>62</td><td>38.7%</td><td class='neg'>❌ -22%</td></tr>
+<tr><td>7</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.3|18.3|7.8|22.6</td><td class='pos'>+1525.50</td><td class='neg'>-366.50</td><td>61</td><td>39.3%</td><td class='neg'>❌ -24%</td></tr>
+<tr><td>8</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>13.1|18.1|7.8|22.6</td><td class='pos'>+1509.75</td><td class='neg'>-367.25</td><td>62</td><td>38.7%</td><td class='neg'>❌ -24%</td></tr>
+<tr><td>9</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.1|18.3|7.8|22.6</td><td class='pos'>+1662.25</td><td class='neg'>-366.50</td><td>61</td><td>39.3%</td><td class='neg'>❌ -22%</td></tr>
+<tr><td>10</td><td>15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00</td><td>12.9|18.3|7.8|21.3</td><td class='pos'>+1703.50</td><td class='neg'>-440.75</td><td>64</td><td>37.5%</td><td class='neg'>❌ -26%</td></tr>
 
 </table>
 </div>
@@ -117,19 +118,19 @@ Micro E-mini Nasdaq 100 | $2.0/pt | 2026-02-22 11:40
 <div id="wf_chart" style="width:100%;height:300px"></div>
 <table>
 <tr><th>Fold</th><th>Train</th><th>Test</th><th>Gefundene Config</th><th>OOS PnL</th><th>Trades</th><th>WR</th><th>PF</th></tr>
-<tr><td>F1</td><td>2025-01-01→2025-02-16</td><td>2025-02-16→2025-04-03</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='pos'>+127.50</td><td>7</td><td>71.4%</td><td>2.82</td></tr>
-<tr><td>F2</td><td>2025-01-01→2025-04-03</td><td>2025-04-03→2025-05-19</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='pos'>+549.25</td><td>9</td><td>55.6%</td><td>6.78</td></tr>
-<tr><td>F3</td><td>2025-01-01→2025-05-19</td><td>2025-05-19→2025-07-04</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>+0.00</td><td>0</td><td>0.0%</td><td>0.00</td></tr>
-<tr><td>F4</td><td>2025-01-01→2025-07-04</td><td>2025-07-04→2025-08-19</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='pos'>+37.25</td><td>4</td><td>50.0%</td><td>2.27</td></tr>
-<tr><td>F5</td><td>2025-01-01→2025-08-19</td><td>2025-08-19→2025-10-04</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>+0.00</td><td>0</td><td>0.0%</td><td>0.00</td></tr>
-<tr><td>F6</td><td>2025-01-01→2025-10-04</td><td>2025-10-04→2025-11-19</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>-164.00</td><td>8</td><td>25.0%</td><td>0.11</td></tr>
-<tr><td>F7</td><td>2025-01-01→2025-11-19</td><td>2025-11-19→2026-01-04</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>-33.75</td><td>3</td><td>66.7%</td><td>0.27</td></tr>
-<tr><td>F8</td><td>2025-01-01→2026-01-04</td><td>2026-01-04→2026-02-19</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>-197.00</td><td>23</td><td>30.4%</td><td>0.64</td></tr>
+<tr><td>F1</td><td>2025-01-01→2025-02-16</td><td>2025-02-18→2025-04-03</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='pos'>+127.50</td><td>7</td><td>71.4%</td><td>2.82</td></tr>
+<tr><td>F2</td><td>2025-01-01→2025-04-03</td><td>2025-04-05→2025-05-19</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='pos'>+525.25</td><td>6</td><td>50.0%</td><td>8.37</td></tr>
+<tr><td>F3</td><td>2025-01-01→2025-05-19</td><td>2025-05-21→2025-07-04</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>+0.00</td><td>0</td><td>0.0%</td><td>0.00</td></tr>
+<tr><td>F4</td><td>2025-01-01→2025-07-04</td><td>2025-07-06→2025-08-19</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='pos'>+37.25</td><td>4</td><td>50.0%</td><td>2.27</td></tr>
+<tr><td>F5</td><td>2025-01-01→2025-08-19</td><td>2025-08-21→2025-10-04</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>+0.00</td><td>0</td><td>0.0%</td><td>0.00</td></tr>
+<tr><td>F6</td><td>2025-01-01→2025-10-04</td><td>2025-10-06→2025-11-19</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>-164.00</td><td>8</td><td>25.0%</td><td>0.11</td></tr>
+<tr><td>F7</td><td>2025-01-01→2025-11-19</td><td>2025-11-21→2026-01-04</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>-33.75</td><td>3</td><td>66.7%</td><td>0.27</td></tr>
+<tr><td>F8</td><td>2025-01-01→2026-01-04</td><td>2026-01-06→2026-02-19</td><td style='font-size:11px'>15:00-15:30 + 19:00-19:30 + 01:00-01:...</td><td class='neg'>-197.00</td><td>23</td><td>30.4%</td><td>0.64</td></tr>
 
 </table>
 <p style="margin-top:12px">
-    Ø OOS PnL: <b>+53.21</b> pts | 
-    StdDev: <b>248.05</b> | 
+    Ø OOS PnL: <b>+49.21</b> pts | 
+    StdDev: <b>240.09</b> | 
     Profitabel: <b>50%</b> der Folds
 </p>
 </div>
@@ -150,16 +151,46 @@ Micro E-mini Nasdaq 100 | $2.0/pt | 2026-02-22 11:40
 </div>
 <p style="margin-top:16px;font-size:18px">Bewertung: <span style="color:#7ee787">✅ ROBUST</span></p>
 </div>
+<div class="card">
+<h2>📐 Statistische Tests (Lopez de Prado Framework)</h2>
+<p style="color:#8b949e">
+    Embargo: 2 Tage zwischen Train und Test (verhindert Leakage)
+</p>
+<div class="stats">
+    <div class="sb" style="border-color:#f85149"><div class="sv" style="color:#f85149">❌</div><div class="sl">t-Test OOS</div></div>
+    <div class="sb" style="border-color:#f85149"><div class="sv" style="color:#f85149">❌</div><div class="sl">Deflated SR</div></div>
+    <div class="sb" style="border-color:#f85149"><div class="sv" style="color:#f85149">❌</div><div class="sl">White's RC</div></div>
+    <div class="sb" style="border-color:#f85149"><div class="sv" style="color:#f85149">❌</div><div class="sl">Regime-Div.</div></div>
+    <div class="sb" style="border-color:#7ee787"><div class="sv" style="color:#7ee787">✅</div><div class="sl">MinBTL</div></div>
+</div>
+<table style="max-width:700px;margin-top:16px">
+<tr><th>Test</th><th>Ergebnis</th><th>Detail</th></tr>
+<tr><td>t-Test (OOS)</td><td style="color:#f85149">p=0.9047</td><td style="font-size:12px">❌ Nicht signifikant (t=-1.31, p=0.9047, Ø=-12.02, σ=71.75, n=61)</td></tr>
+<tr><td>Deflated SR</td><td style="color:#f85149">DSR=0.0%</td><td style="font-size:12px">E[max SR]=4.396 bei 66,427 Trials</td></tr>
+<tr><td>White's RC (OOS)</td><td style="color:#f85149">p=0.8740</td><td style="font-size:12px">Block-Bootstrap, non-parametrisch</td></tr>
+<tr><td>Shuffled OOS</td><td>93% profitabel</td><td style="font-size:12px">P5=-59.8</td></tr>
+<tr><td>Regime-Diversität</td><td style="color:#f85149">Konzentriert</td><td style="font-size:12px">4/6 Perioden, Konz.=62%</td></tr>
+<tr><td>MinBTL</td><td style="color:#7ee787">Ausreichend</td><td style="font-size:12px">1.1y vorhanden, SR_ann=1.723</td></tr>
+</table>
+</div>
 <div class="card" style="background:#0d1520;border-color:#58a6ff">
-<h2>🏆 Validierungs-Score</h2>
+<h2>🏆 Validierungs-Score (10-Layer)</h2>
 <table style="max-width:700px">
-    <tr><td style="width:160px">Out-of-Sample</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#58a6ff;height:100%;width:0.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="width:80px;text-align:right"><b>0</b> / 40</td></tr>
-    <tr><td>Walk-Forward</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#7ee787;height:100%;width:22.857142857142858%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>8</b> / 35</td></tr>
-    <tr><td>Monte Carlo</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#f0883e;height:100%;width:100.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>15</b> / 15</td></tr>
-    <tr><td>Signifikanz</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#d2a8ff;height:100%;width:0.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>0</b> / 10</td></tr>
+    <tr><td style="width:160px">Out-of-Sample</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#58a6ff;height:100%;width:0.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="width:80px;text-align:right"><b>0</b> / 20</td></tr>
+    <tr><td>Config-Fwd WF</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#7ee787;height:100%;width:40.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>6</b> / 15</td></tr>
+    <tr><td>Monte Carlo</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#f0883e;height:100%;width:100.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>10</b> / 10</td></tr>
+    <tr><td>t-Test (OOS)</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#d2a8ff;height:100%;width:0.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>0</b> / 12</td></tr>
+    <tr><td>Deflated SR</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#d2a8ff;height:100%;width:0.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>0</b> / 10</td></tr>
+    <tr><td>White's RC</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#79c0ff;height:100%;width:0.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>0</b> / 10</td></tr>
+    <tr><td>Shuffled OOS</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#f0883e;height:100%;width:75.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>6</b> / 8</td></tr>
+    <tr><td>Regime-Divers.</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#7ee787;height:100%;width:40.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>4</b> / 10</td></tr>
+    <tr><td>MinBTL</td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#8b949e;height:100%;width:100.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b>5</b> / 5</td></tr>
     <tr style="border-top:2px solid #30363d"><td><b>GESAMT</b></td><td><div style="background:#21262d;border-radius:4px;height:24px;width:200px;display:inline-block;vertical-align:middle"><div style="background:#58a6ff;height:100%;width:31.0%;border-radius:4px;transition:width 0.5s"></div></div></td><td style="text-align:right"><b style="font-size:20px">31</b> / 100</td></tr>
 </table>
-<p style="font-size:24px;margin-top:16px;text-align:center">
+<p style="font-size:18px;margin-top:12px;text-align:center">
+    Stat. Tests: 0/3 bestätigt (t-Test, DSR, WRC)
+</p>
+<p style="font-size:24px;margin-top:8px;text-align:center">
     <span style="color:#f85149">🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades</span>
 </p>
 </div>
@@ -190,9 +221,9 @@ colorbar:{title:'PnL (smoothed)'}
 <script>
 if(document.getElementById('wf_chart')){
 Plotly.newPlot('wf_chart',[{
-    x:["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8"],y:[127.5, 549.25, 0.0, 37.25, 0.0, -164.0, -33.75, -197.0],type:'bar',
+    x:["F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8"],y:[127.5, 525.25, 0.0, 37.25, 0.0, -164.0, -33.75, -197.0],type:'bar',
     marker:{color:["#7ee787", "#7ee787", "#f85149", "#7ee787", "#f85149", "#f85149", "#f85149", "#f85149"]},
-    text:["Fold 1<br>Train: 2025-01-01\u21922025-02-16<br>Test: 2025-02-16\u21922025-04-03<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=24.1<br>OOS PnL: +127.50 pts<br>Trades: 7 | WR: 71.4%", "Fold 2<br>Train: 2025-01-01\u21922025-04-03<br>Test: 2025-04-03\u21922025-05-19<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=25.3<br>OOS PnL: +549.25 pts<br>Trades: 9 | WR: 55.6%", "Fold 3<br>Train: 2025-01-01\u21922025-05-19<br>Test: 2025-05-19\u21922025-07-04<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: +0.00 pts<br>Trades: 0 | WR: 0.0%", "Fold 4<br>Train: 2025-01-01\u21922025-07-04<br>Test: 2025-07-04\u21922025-08-19<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: +37.25 pts<br>Trades: 4 | WR: 50.0%", "Fold 5<br>Train: 2025-01-01\u21922025-08-19<br>Test: 2025-08-19\u21922025-10-04<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: +0.00 pts<br>Trades: 0 | WR: 0.0%", "Fold 6<br>Train: 2025-01-01\u21922025-10-04<br>Test: 2025-10-04\u21922025-11-19<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: -164.00 pts<br>Trades: 8 | WR: 25.0%", "Fold 7<br>Train: 2025-01-01\u21922025-11-19<br>Test: 2025-11-19\u21922026-01-04<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=30.0<br>OOS PnL: -33.75 pts<br>Trades: 3 | WR: 66.7%", "Fold 8<br>Train: 2025-01-01\u21922026-01-04<br>Test: 2026-01-04\u21922026-02-19<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: -197.00 pts<br>Trades: 23 | WR: 30.4%"],hoverinfo:'text',
+    text:["Fold 1<br>Train: 2025-01-01\u21922025-02-16<br>Test: 2025-02-18\u21922025-04-03<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=24.1<br>OOS PnL: +127.50 pts<br>Trades: 7 | WR: 71.4%", "Fold 2<br>Train: 2025-01-01\u21922025-04-03<br>Test: 2025-04-05\u21922025-05-19<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=25.3<br>OOS PnL: +525.25 pts<br>Trades: 6 | WR: 50.0%", "Fold 3<br>Train: 2025-01-01\u21922025-05-19<br>Test: 2025-05-21\u21922025-07-04<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: +0.00 pts<br>Trades: 0 | WR: 0.0%", "Fold 4<br>Train: 2025-01-01\u21922025-07-04<br>Test: 2025-07-06\u21922025-08-19<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: +37.25 pts<br>Trades: 4 | WR: 50.0%", "Fold 5<br>Train: 2025-01-01\u21922025-08-19<br>Test: 2025-08-21\u21922025-10-04<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: +0.00 pts<br>Trades: 0 | WR: 0.0%", "Fold 6<br>Train: 2025-01-01\u21922025-10-04<br>Test: 2025-10-06\u21922025-11-19<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: -164.00 pts<br>Trades: 8 | WR: 25.0%", "Fold 7<br>Train: 2025-01-01\u21922025-11-19<br>Test: 2025-11-21\u21922026-01-04<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=30.0<br>OOS PnL: -33.75 pts<br>Trades: 3 | WR: 66.7%", "Fold 8<br>Train: 2025-01-01\u21922026-01-04<br>Test: 2026-01-06\u21922026-02-19<br>Config: 15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00 CC=21.8<br>OOS PnL: -197.00 pts<br>Trades: 23 | WR: 30.4%"],hoverinfo:'text',
     textposition:'outside',textfont:{color:'#e6edf3',size:12}
 }],{
     paper_bgcolor:'#0d1117',plot_bgcolor:'#161b22',
