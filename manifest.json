@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-22T19:56:49.909494",
+  "last_updated": "2026-02-22T19:59:58.082467",
   "reports": [
     {
       "asset": "MGC",
@@ -657,7 +657,7 @@
       "type": "heatmap",
       "date_start": "2026-01-01",
       "date_end": "2026-02-19",
-      "created": "2026-02-22T13:21:12.148106",
+      "created": "2026-02-22T19:59:58.082405",
       "filename": "archive/MGC_heatmap_20260101-20260219.html",
       "latest_filename": "MGC_heatmap_latest.html",
       "description": "23:00-23:30 CC=0.8 | 01:00-01:30 CC=4.7 | 02:00-02:30 CC=1.2 | 00:00-00:30 CC=2.7 | 14:00-14:30 CC=1.0",
