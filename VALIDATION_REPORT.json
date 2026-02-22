@@ -5,304 +5,304 @@
       "start": "2026-01-01",
       "end": "2026-02-04",
       "days": 34,
-      "bars": 32880
+      "bars": 25625
     },
     "embargo": {
       "days": 1,
-      "bars": 1380
+      "bars": 1276
     },
     "test": {
       "start": "2026-02-05",
       "end": "2026-02-19",
       "days": 14,
-      "bars": 13620
+      "bars": 11237
     }
   },
   "out_of_sample": [
     {
       "rank": 1,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|1.0|2.0|1.5",
-      "train_pnl_pts": 67.75,
-      "oos_pnl_pts": -37.0,
-      "oos_trades": 24,
-      "oos_win_rate": 29.166666666666668,
-      "retention_pct": -54.6
+      "windows": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00",
+      "cc_per_window": "0.2|0.2|2.8|3.0",
+      "train_pnl_pts": 496.5,
+      "oos_pnl_pts": -52.5,
+      "oos_trades": 16,
+      "oos_win_rate": 12.5,
+      "retention_pct": -10.6
     },
     {
       "rank": 2,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|1.0|1.8|1.5",
-      "train_pnl_pts": 67.0,
-      "oos_pnl_pts": -37.0,
-      "oos_trades": 24,
-      "oos_win_rate": 29.166666666666668,
-      "retention_pct": -55.2
+      "windows": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00",
+      "cc_per_window": "0.2|0.2|3.1|2.9",
+      "train_pnl_pts": 500.25,
+      "oos_pnl_pts": -52.5,
+      "oos_trades": 16,
+      "oos_win_rate": 12.5,
+      "retention_pct": -10.5
     },
     {
       "rank": 3,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|0.8|1.8|1.5",
-      "train_pnl_pts": 64.0,
-      "oos_pnl_pts": -37.0,
-      "oos_trades": 24,
-      "oos_win_rate": 29.166666666666668,
-      "retention_pct": -57.8
+      "windows": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00",
+      "cc_per_window": "0.2|0.8|3.0|2.8",
+      "train_pnl_pts": 494.25,
+      "oos_pnl_pts": -49.25,
+      "oos_trades": 15,
+      "oos_win_rate": 13.333333333333334,
+      "retention_pct": -10.0
     },
     {
       "rank": 4,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|0.8|2.0|1.5",
-      "train_pnl_pts": 64.75,
-      "oos_pnl_pts": -37.0,
-      "oos_trades": 23,
-      "oos_win_rate": 30.434782608695656,
-      "retention_pct": -57.1
+      "windows": "15:30-16:00 + 04:30-05:00 + 03:30-04:00",
+      "cc_per_window": "1.0|0.2|0.8",
+      "train_pnl_pts": 445.0,
+      "oos_pnl_pts": -54.0,
+      "oos_trades": 13,
+      "oos_win_rate": 15.384615384615385,
+      "retention_pct": -12.1
     },
     {
       "rank": 5,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|1.0|2.0|1.8",
-      "train_pnl_pts": 61.75,
-      "oos_pnl_pts": -37.0,
-      "oos_trades": 24,
-      "oos_win_rate": 29.166666666666668,
-      "retention_pct": -59.9
+      "windows": "15:30-16:00 + 04:30-05:00 + 03:30-04:00",
+      "cc_per_window": "1.0|0.8|0.8",
+      "train_pnl_pts": 442.75,
+      "oos_pnl_pts": -57.25,
+      "oos_trades": 14,
+      "oos_win_rate": 14.285714285714285,
+      "retention_pct": -12.9
     },
     {
       "rank": 6,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|1.0|1.8|1.8",
-      "train_pnl_pts": 61.0,
-      "oos_pnl_pts": -37.0,
-      "oos_trades": 23,
-      "oos_win_rate": 30.434782608695656,
-      "retention_pct": -60.7
+      "windows": "15:30-16:00 + 04:30-05:00 + 03:30-04:00",
+      "cc_per_window": "1.0|0.2|0.2",
+      "train_pnl_pts": 441.25,
+      "oos_pnl_pts": -62.25,
+      "oos_trades": 16,
+      "oos_win_rate": 12.5,
+      "retention_pct": -14.1
     },
     {
       "rank": 7,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|0.8|2.0|1.8",
-      "train_pnl_pts": 58.75,
-      "oos_pnl_pts": -37.0,
-      "oos_trades": 23,
-      "oos_win_rate": 30.434782608695656,
-      "retention_pct": -63.0
+      "windows": "15:30-16:00 + 04:30-05:00 + 03:30-04:00",
+      "cc_per_window": "1.0|0.8|0.2",
+      "train_pnl_pts": 439.0,
+      "oos_pnl_pts": -59.0,
+      "oos_trades": 15,
+      "oos_win_rate": 13.333333333333334,
+      "retention_pct": -13.4
     },
     {
       "rank": 8,
-      "windows": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00",
-      "cc_per_window": "3.0|0.5|0.8|1.8|1.8",
-      "train_pnl_pts": 58.0,
-      "oos_pnl_pts": -37.0,
-      "oos_trades": 23,
-      "oos_win_rate": 30.434782608695656,
-      "retention_pct": -63.8
+      "windows": "15:30-16:00 + 04:30-05:00 + 03:30-04:00",
+      "cc_per_window": "0.5|0.2|0.8",
+      "train_pnl_pts": 438.0,
+      "oos_pnl_pts": -67.25,
+      "oos_trades": 16,
+      "oos_win_rate": 12.5,
+      "retention_pct": -15.4
     },
     {
       "rank": 9,
-      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00 + 05:00-05:30",
-      "cc_per_window": "3.0|0.5|2.0|1.5|0.5",
-      "train_pnl_pts": 65.75,
-      "oos_pnl_pts": -40.25,
-      "oos_trades": 28,
-      "oos_win_rate": 28.57142857142857,
-      "retention_pct": -61.2
+      "windows": "15:30-16:00 + 04:30-05:00 + 03:30-04:00",
+      "cc_per_window": "0.5|0.8|0.8",
+      "train_pnl_pts": 435.75,
+      "oos_pnl_pts": -64.0,
+      "oos_trades": 15,
+      "oos_win_rate": 13.333333333333334,
+      "retention_pct": -14.7
     },
     {
       "rank": 10,
-      "windows": "19:00-19:30 + 02:00-02:30 + 14:00-14:30 + 13:30-14:00 + 05:00-05:30",
-      "cc_per_window": "3.0|0.5|1.8|1.5|0.5",
-      "train_pnl_pts": 65.0,
-      "oos_pnl_pts": -40.25,
-      "oos_trades": 28,
-      "oos_win_rate": 28.57142857142857,
-      "retention_pct": -61.9
+      "windows": "15:30-16:00 + 04:30-05:00 + 03:30-04:00",
+      "cc_per_window": "0.5|0.2|0.2",
+      "train_pnl_pts": 434.25,
+      "oos_pnl_pts": -72.25,
+      "oos_trades": 18,
+      "oos_win_rate": 11.11111111111111,
+      "retention_pct": -16.6
     }
   ],
   "walk_forward": {
     "type": "config-forward (same windows, CC re-optimized per fold, with embargo)",
     "n_folds": 8,
-    "folds_with_trades": 8,
-    "folds_skipped": 0,
+    "folds_with_trades": 6,
+    "folds_skipped": 2,
     "folds": [
       {
         "fold": 1,
         "train": "2026-01-01\u21922026-01-06",
         "test": "2026-01-07\u21922026-01-11",
-        "train_config": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00 CC=0.8",
-        "train_pnl_pts": 27.0,
-        "oos_pnl_pts": 6.0,
-        "trades": 9,
-        "win_rate": 22.22222222222222,
-        "profit_factor": 1.46
+        "train_config": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00 CC=0.2",
+        "train_pnl_pts": 3.0,
+        "oos_pnl_pts": 8.5,
+        "trades": 7,
+        "win_rate": 42.857142857142854,
+        "profit_factor": 1.55
       },
       {
         "fold": 2,
         "train": "2026-01-01\u21922026-01-11",
         "test": "2026-01-12\u21922026-01-16",
-        "train_config": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00 CC=1.5",
-        "train_pnl_pts": 41.75,
-        "oos_pnl_pts": 20.0,
-        "trades": 7,
-        "win_rate": 85.71428571428571,
-        "profit_factor": 8.27
+        "train_config": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00 CC=2.6",
+        "train_pnl_pts": 10.75,
+        "oos_pnl_pts": -1.0,
+        "trades": 4,
+        "win_rate": 25.0,
+        "profit_factor": 0.93
       },
       {
         "fold": 3,
         "train": "2026-01-01\u21922026-01-16",
         "test": "2026-01-17\u21922026-01-21",
-        "train_config": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00 CC=1.5",
-        "train_pnl_pts": 61.75,
-        "oos_pnl_pts": -1.5,
-        "trades": 6,
-        "win_rate": 33.33333333333333,
-        "profit_factor": 0.9
+        "train_config": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00 CC=0.2",
+        "train_pnl_pts": 9.25,
+        "oos_pnl_pts": 6.75,
+        "trades": 8,
+        "win_rate": 37.5,
+        "profit_factor": 1.43
       },
       {
         "fold": 4,
         "train": "2026-01-01\u21922026-01-21",
         "test": "2026-01-22\u21922026-01-26",
-        "train_config": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00 CC=1.5",
-        "train_pnl_pts": 60.25,
-        "oos_pnl_pts": 5.0,
-        "trades": 3,
-        "win_rate": 66.66666666666666,
-        "profit_factor": 3.5
+        "train_config": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00 CC=4.2",
+        "train_pnl_pts": 22.0,
+        "oos_pnl_pts": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0
       },
       {
         "fold": 5,
         "train": "2026-01-01\u21922026-01-26",
         "test": "2026-01-27\u21922026-01-31",
-        "train_config": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00 CC=1.5",
-        "train_pnl_pts": 65.25,
-        "oos_pnl_pts": 4.25,
-        "trades": 3,
-        "win_rate": 33.33333333333333,
-        "profit_factor": 2.0
+        "train_config": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00 CC=4.2",
+        "train_pnl_pts": 22.0,
+        "oos_pnl_pts": 0.0,
+        "trades": 0,
+        "win_rate": 0.0,
+        "profit_factor": 0.0
       },
       {
         "fold": 6,
         "train": "2026-01-01\u21922026-01-31",
         "test": "2026-02-01\u21922026-02-05",
-        "train_config": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00 CC=3.0",
-        "train_pnl_pts": 51.0,
-        "oos_pnl_pts": -31.75,
-        "trades": 3,
-        "win_rate": 0.0,
-        "profit_factor": 0.0
+        "train_config": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00 CC=4.2",
+        "train_pnl_pts": 22.0,
+        "oos_pnl_pts": 5.25,
+        "trades": 7,
+        "win_rate": 57.14285714285714,
+        "profit_factor": 1.21
       },
       {
         "fold": 7,
         "train": "2026-01-01\u21922026-02-05",
         "test": "2026-02-06\u21922026-02-10",
-        "train_config": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00 CC=1.5",
-        "train_pnl_pts": 35.0,
-        "oos_pnl_pts": 4.75,
-        "trades": 8,
-        "win_rate": 37.5,
-        "profit_factor": 1.51
+        "train_config": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00 CC=0.6",
+        "train_pnl_pts": 492.25,
+        "oos_pnl_pts": -8.75,
+        "trades": 9,
+        "win_rate": 22.22222222222222,
+        "profit_factor": 0.73
       },
       {
         "fold": 8,
         "train": "2026-01-01\u21922026-02-10",
         "test": "2026-02-11\u21922026-02-15",
-        "train_config": "19:00-19:30 + 02:00-02:30 + 07:30-08:00 + 14:00-14:30 + 13:30-14:00 CC=1.5",
-        "train_pnl_pts": 39.75,
-        "oos_pnl_pts": -9.25,
-        "trades": 10,
-        "win_rate": 40.0,
-        "profit_factor": 0.45
+        "train_config": "15:30-16:00 + 04:30-05:00 + 21:00-21:30 + 20:30-21:00 CC=0.6",
+        "train_pnl_pts": 483.5,
+        "oos_pnl_pts": -25.25,
+        "trades": 7,
+        "win_rate": 0.0,
+        "profit_factor": 0.0
       }
     ],
-    "consistency_pct": 62.5,
-    "mean_pnl_pts": -0.31,
-    "std_pnl_pts": 14.13,
-    "total_pnl_pts": -2.5
+    "consistency_pct": 50.0,
+    "mean_pnl_pts": -2.42,
+    "std_pnl_pts": 11.73,
+    "total_pnl_pts": -14.5
   },
   "monte_carlo": {
-    "full_data_pnl_pts": 18.45,
-    "full_data_trades": 56,
+    "full_data_pnl_pts": 454.7000000000001,
+    "full_data_trades": 54,
     "iterations": 500,
     "drop_pct": 0.1,
-    "p5": -2.76,
-    "p25": 11.85,
-    "median": 17.75,
-    "p75": 24.01,
-    "p95": 31.96,
-    "pct_profitable": 94.0,
-    "avg_drawdown_pts": 49.68,
-    "verdict": "\u26a0\ufe0f FRAGIL"
+    "p5": 38.41,
+    "p25": 436.98,
+    "median": 450.1,
+    "p75": 463.38,
+    "p95": 477.01,
+    "pct_profitable": 99.8,
+    "avg_drawdown_pts": 52.99,
+    "verdict": "\u2705 ROBUST"
   },
   "significance": {
     "ttest_oos": {
       "significant": false,
-      "p_value": 0.98232,
-      "t_stat": -2.104,
-      "mean_pnl": -7.7917,
-      "std_pnl": 18.1404,
-      "n_trades": 24,
-      "sharpe_per_trade": -0.4295,
-      "detail": "\u274c Nicht signifikant (t=-2.10, p=0.9823, \u00d8=-7.79, \u03c3=18.14, n=24)"
+      "p_value": 0.981836,
+      "t_stat": -1.626,
+      "mean_pnl": -0.3367,
+      "std_pnl": 0.8021,
+      "n_trades": 15,
+      "sharpe_per_trade": -0.4197,
+      "detail": "\u274c Nicht signifikant (t=-1.63, p=0.9818, \u00d8=-0.34, \u03c3=0.80, n=15)"
     },
     "ttest_all": {
       "significant": false,
-      "p_value": 0.31521,
-      "t_stat": 0.481,
-      "mean_pnl": 1.6473,
-      "std_pnl": 25.6215,
-      "n_trades": 56,
-      "sharpe_per_trade": 0.0643,
-      "detail": "\u274c Nicht signifikant (t=+0.48, p=0.3152, \u00d8=+1.65, \u03c3=25.62, n=56)"
+      "p_value": 0.141904,
+      "t_stat": 1.072,
+      "mean_pnl": 0.842,
+      "std_pnl": 5.7732,
+      "n_trades": 54,
+      "sharpe_per_trade": 0.1459,
+      "detail": "\u274c Nicht signifikant (t=+1.07, p=0.1419, \u00d8=+0.84, \u03c3=5.77, n=54)"
     },
     "deflated_sharpe_ratio": {
       "dsr_pvalue": 0.0,
       "dsr_significant": false,
-      "expected_max_sr": 4.6861,
-      "observed_sr": 0.0649,
-      "n_trials": 263640,
-      "z_score": -35.986,
-      "detail": "\u274c DSR=0.0% (SR=0.065, E[max]=4.686 bei 263,640 Trials, Skew=1.60, Kurt=11.56)"
+      "expected_max_sr": 4.688,
+      "observed_sr": 0.1472,
+      "n_trials": 266159,
+      "z_score": -66.575,
+      "detail": "\u274c DSR=0.0% (SR=0.147, E[max]=4.688 bei 266,159 Trials, Skew=6.92, Kurt=49.90)"
     },
     "whites_reality_check_all": {
-      "p_value": 0.323,
+      "p_value": 0.135,
       "significant": false,
-      "observed_pnl": 18.45,
-      "bootstrap_median": -1.12,
-      "bootstrap_p95": 75.06,
+      "observed_pnl": 454.7,
+      "bootstrap_median": -25.0,
+      "bootstrap_p95": 842.41,
       "n_bootstrap": 1000,
       "block_size": 2,
-      "detail": "\u274c WRC p=0.3230 (Obs=+18.4, Bootstrap-Median=-1.1, P95=+75.1, 1000\u00d7 Block-Bootstrap)"
+      "detail": "\u274c WRC p=0.1350 (Obs=+454.7, Bootstrap-Median=-25.0, P95=+842.4, 1000\u00d7 Block-Bootstrap)"
     },
     "whites_reality_check_oos": {
-      "p_value": 0.943,
+      "p_value": 0.98,
       "significant": false,
-      "observed_pnl": -37.4,
-      "bootstrap_median": 0.98,
-      "bootstrap_p95": 30.05,
+      "observed_pnl": -50.5,
+      "bootstrap_median": -6.82,
+      "bootstrap_p95": 46.34,
       "n_bootstrap": 1000,
       "block_size": 2,
-      "detail": "\u274c WRC p=0.9430 (Obs=-37.4, Bootstrap-Median=+1.0, P95=+30.1, 1000\u00d7 Block-Bootstrap)"
+      "detail": "\u274c WRC p=0.9800 (Obs=-50.5, Bootstrap-Median=-6.8, P95=+46.3, 1000\u00d7 Block-Bootstrap)"
     },
     "shuffled_oos": {
-      "pct_profitable": 65.0,
-      "median_pnl": 7.65,
-      "p5_pnl": -21.7225,
-      "p25_pnl": -5.425,
-      "mean_sharpe": 0.0675,
+      "pct_profitable": 77.5,
+      "median_pnl": 25.95,
+      "p5_pnl": -22.64,
+      "p25_pnl": 2.2,
+      "mean_sharpe": 0.1258,
       "n_iterations": 200,
       "oos_size": 16,
-      "detail": "\u26a0\ufe0f 65% profitabel (Median=+7.65, P5=-21.72, \u00d8 Sharpe=0.067, 200\u00d7 Splits)"
+      "detail": "\u26a0\ufe0f 78% profitabel (Median=+25.95, P5=-22.64, \u00d8 Sharpe=0.126, 200\u00d7 Splits)"
     },
     "binomial_legacy": {
       "significant": false,
-      "p_value": 0.6556,
-      "win_rate_pct": 48.2,
-      "n_trades": 56,
-      "n_wins": 27,
-      "min_wins_for_sig": 35,
-      "min_wr_for_sig_pct": 62.5,
-      "detail": "\u274c Nicht signifikant (p=0.6556, braucht \u226535/56 = 62% f\u00fcr p<0.05)"
+      "p_value": 0.9799,
+      "win_rate_pct": 37.0,
+      "n_trades": 54,
+      "n_wins": 20,
+      "min_wins_for_sig": 34,
+      "min_wr_for_sig_pct": 63.0,
+      "detail": "\u274c Nicht signifikant (p=0.9799, braucht \u226534/54 = 63% f\u00fcr p<0.05)"
     },
     "overall_significant": false
   },
@@ -312,12 +312,12 @@
       "n_buckets": 6,
       "profitable_buckets": 3,
       "bucket_pnls": [
-        35.1,
-        10.95,
-        18.6,
-        -33.6,
-        -3.5,
-        -9.1
+        -2.8,
+        5.4,
+        63.1,
+        439.2,
+        -6.5,
+        -43.7
       ],
       "bucket_trades": [
         9,
@@ -325,25 +325,25 @@
         9,
         9,
         9,
-        11
+        9
       ],
-      "concentration": 1.902,
-      "herfindahl": 4.988,
-      "detail": "\u26a0\ufe0f 3/6 Perioden profitabel, Konzentration=190%, HHI=4.99"
+      "concentration": 0.966,
+      "herfindahl": 0.952,
+      "detail": "\u26a0\ufe0f 3/6 Perioden profitabel, Konzentration=97%, HHI=0.95"
     },
     "oos_trades": {
       "diverse": false,
       "n_buckets": 3,
       "profitable_buckets": 1,
       "bucket_pnls": [
-        -28.4,
-        1.3,
-        -10.3
+        1.4,
+        -33.2,
+        -18.7
       ],
       "bucket_trades": [
-        8,
-        8,
-        8
+        5,
+        5,
+        5
       ],
       "concentration": 1.0,
       "herfindahl": 1.0,
@@ -351,28 +351,28 @@
     }
   },
   "min_backtest_length": {
-    "min_years": 1.5,
-    "min_years_corrected": 14.2,
-    "min_trades": 643,
-    "min_trades_corrected": 5931,
-    "sr_annual": 1.3255,
-    "trades_per_year": 417.4,
-    "n_trials": 263640,
+    "min_years": 0.3,
+    "min_years_corrected": 2.9,
+    "min_trades": 125,
+    "min_trades_corrected": 1153,
+    "sr_annual": 2.9537,
+    "trades_per_year": 402.5,
+    "n_trials": 266159,
     "sufficient": false,
-    "detail": "MinBTL=1.5y (643 Trades) bei SR_ann=1.325, mit 263,640 Trials: 14.2y (5931 Trades)",
+    "detail": "MinBTL=0.3y (125 Trades) bei SR_ann=2.954, mit 266,159 Trials: 2.9y (1153 Trades)",
     "data_years": 0.1
   },
   "score": {
     "oos": 0,
     "wf": 6,
-    "mc": 7,
+    "mc": 10,
     "ttest": 0,
     "dsr": 0,
     "wrc": 0,
     "shuffled": 3,
     "regime": 4,
     "minbtl": 1,
-    "total": 21,
+    "total": 24,
     "max": 100,
     "stat_confirmed": 0,
     "grade": "\ud83d\udd34 F \u2014 Wahrscheinlich overfitted oder kein Edge"

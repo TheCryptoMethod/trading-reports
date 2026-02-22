@@ -116,16 +116,16 @@
       "plateau_score": 57.84
     }
   ],
-  "generated": "2026-02-20T23:47:56.288855",
+  "generated": "2026-02-22T19:56:25.349174",
   "data_file": "C:\\VisualStudios\\Trading_ViewBot\\data\\historical\\glbx-mdp3-20210101-20260220-ETH.ohlcv-1m.csv",
   "data_start": "20260101",
   "data_end": "20260219",
   "search_proof": {
-    "total_runs": 57731,
+    "total_runs": 266159,
     "phase1_runs": 1840,
-    "phase2_runs": 55611,
-    "phase3_runs": 280,
-    "unique_configs_evaluated": 10236,
+    "phase2_runs": 264015,
+    "phase3_runs": 304,
+    "unique_configs_evaluated": 54391,
     "windows_scanned": 46,
     "windows_combined": 45,
     "verdict": "EXHAUSTIVE within search space \u2014 all neighbors validated"
