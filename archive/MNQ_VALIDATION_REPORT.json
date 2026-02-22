@@ -24,20 +24,20 @@
       "windows": "17:00-17:30 + 21:00-21:30 + 16:00-16:30 + 20:30-21:00 + 00:30-01:00",
       "cc_per_window": "6.6|1.3|4.6|9.6|2.3",
       "train_pnl_pts": 478.5,
-      "oos_pnl_pts": -41.75,
-      "oos_trades": 27,
-      "oos_win_rate": 33.33333333333333,
-      "retention_pct": -8.7
+      "oos_pnl_pts": -153.25,
+      "oos_trades": 25,
+      "oos_win_rate": 20.0,
+      "retention_pct": -32.0
     },
     {
       "rank": 2,
       "windows": "21:00-21:30 + 16:00-16:30 + 20:30-21:00 + 00:30-01:00 + 11:30-12:00",
       "cc_per_window": "1.3|4.8|9.6|2.3|6.3",
       "train_pnl_pts": 413.75,
-      "oos_pnl_pts": -153.25,
-      "oos_trades": 25,
-      "oos_win_rate": 20.0,
-      "retention_pct": -37.0
+      "oos_pnl_pts": -41.75,
+      "oos_trades": 27,
+      "oos_win_rate": 33.33333333333333,
+      "retention_pct": -10.1
     },
     {
       "rank": 3,
@@ -64,30 +64,30 @@
       "windows": "17:00-17:30 + 21:00-21:30 + 16:00-16:30 + 00:30-01:00 + 11:30-12:00",
       "cc_per_window": "6.6|1.3|4.6|2.3|6.3",
       "train_pnl_pts": 469.75,
-      "oos_pnl_pts": -53.5,
-      "oos_trades": 33,
-      "oos_win_rate": 30.303030303030305,
-      "retention_pct": -11.4
-    },
-    {
-      "rank": 6,
-      "windows": "17:00-17:30 + 21:00-21:30 + 16:00-16:30 + 00:30-01:00 + 11:30-12:00",
-      "cc_per_window": "6.6|1.8|4.6|2.3|6.3",
-      "train_pnl_pts": 470.75,
       "oos_pnl_pts": -15.5,
       "oos_trades": 28,
       "oos_win_rate": 28.57142857142857,
       "retention_pct": -3.3
     },
     {
+      "rank": 6,
+      "windows": "17:00-17:30 + 21:00-21:30 + 16:00-16:30 + 00:30-01:00 + 11:30-12:00",
+      "cc_per_window": "6.6|1.8|4.6|2.3|6.3",
+      "train_pnl_pts": 470.75,
+      "oos_pnl_pts": -9.0,
+      "oos_trades": 29,
+      "oos_win_rate": 31.03448275862069,
+      "retention_pct": -1.9
+    },
+    {
       "rank": 7,
       "windows": "17:00-17:30 + 21:00-21:30 + 20:30-21:00 + 00:30-01:00 + 03:00-03:30",
       "cc_per_window": "6.6|1.8|9.6|2.3|0.8",
       "train_pnl_pts": 394.5,
-      "oos_pnl_pts": -9.0,
-      "oos_trades": 29,
-      "oos_win_rate": 31.03448275862069,
-      "retention_pct": -2.3
+      "oos_pnl_pts": -53.5,
+      "oos_trades": 33,
+      "oos_win_rate": 30.303030303030305,
+      "retention_pct": -13.6
     },
     {
       "rank": 8,
