@@ -40,50 +40,50 @@
       "windows": "15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00",
       "cc_per_window": "12.9|18.3|7.8|22.3",
       "train_pnl_pts": 1688.0,
-      "oos_pnl_pts": -391.75,
-      "oos_trades": 64,
-      "oos_win_rate": 39.0625,
-      "retention_pct": -23.2
+      "oos_pnl_pts": -369.75,
+      "oos_trades": 63,
+      "oos_win_rate": 39.682539682539684,
+      "retention_pct": -21.9
     },
     {
       "rank": 4,
       "windows": "15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00",
       "cc_per_window": "13.1|18.3|7.8|21.6",
       "train_pnl_pts": 1531.5,
-      "oos_pnl_pts": -369.75,
-      "oos_trades": 63,
-      "oos_win_rate": 39.682539682539684,
-      "retention_pct": -24.1
+      "oos_pnl_pts": -391.75,
+      "oos_trades": 64,
+      "oos_win_rate": 39.0625,
+      "retention_pct": -25.6
     },
     {
       "rank": 5,
       "windows": "15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00",
       "cc_per_window": "12.9|18.3|7.8|21.8",
       "train_pnl_pts": 1721.5,
-      "oos_pnl_pts": -336.5,
-      "oos_trades": 62,
-      "oos_win_rate": 40.32258064516129,
-      "retention_pct": -19.5
+      "oos_pnl_pts": -369.75,
+      "oos_trades": 63,
+      "oos_win_rate": 39.682539682539684,
+      "retention_pct": -21.5
     },
     {
       "rank": 6,
       "windows": "15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00",
       "cc_per_window": "12.6|18.3|7.8|22.6",
       "train_pnl_pts": 1711.0,
-      "oos_pnl_pts": -369.75,
+      "oos_pnl_pts": -345.5,
       "oos_trades": 63,
       "oos_win_rate": 39.682539682539684,
-      "retention_pct": -21.6
+      "retention_pct": -20.2
     },
     {
       "rank": 7,
       "windows": "15:00-15:30 + 19:00-19:30 + 01:00-01:30 + 16:30-17:00",
       "cc_per_window": "13.3|18.3|7.8|22.6",
       "train_pnl_pts": 1525.5,
-      "oos_pnl_pts": -345.5,
-      "oos_trades": 63,
-      "oos_win_rate": 39.682539682539684,
-      "retention_pct": -22.6
+      "oos_pnl_pts": -336.5,
+      "oos_trades": 62,
+      "oos_win_rate": 40.32258064516129,
+      "retention_pct": -22.1
     },
     {
       "rank": 8,
@@ -119,6 +119,8 @@
   "walk_forward": {
     "type": "config-forward (same windows, CC re-optimized per fold)",
     "n_folds": 8,
+    "folds_with_trades": 6,
+    "folds_skipped": 2,
     "folds": [
       {
         "fold": 1,
@@ -209,9 +211,9 @@
         "profit_factor": 0.64
       }
     ],
-    "consistency_pct": 37.5,
-    "mean_pnl_pts": 39.91,
-    "std_pnl_pts": 216.05,
+    "consistency_pct": 50.0,
+    "mean_pnl_pts": 53.21,
+    "std_pnl_pts": 248.05,
     "total_pnl_pts": 319.25
   },
   "monte_carlo": {
@@ -282,13 +284,13 @@
   },
   "score": {
     "oos": 0,
-    "wf": 3,
+    "wf": 8,
     "mc": 15,
     "ttest": 0,
     "dsr": 0,
     "shuffled": 8,
-    "total": 26,
+    "total": 31,
     "max": 100,
-    "grade": "\ud83d\udd34 F \u2014 Wahrscheinlich overfitted oder kein Edge"
+    "grade": "\ud83d\udfe1 D \u2014 Schwach, wahrscheinlich Zufall oder wenig Trades"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-22T11:25:16.809624",
+  "last_updated": "2026-02-22T11:40:43.232895",
   "reports": [
     {
       "asset": "MGC",
@@ -607,7 +607,7 @@
       "type": "heatmap",
       "date_start": "2025-01-01",
       "date_end": "2026-02-19",
-      "created": "2026-02-22T11:25:16.809514",
+      "created": "2026-02-22T11:40:43.232793",
       "filename": "archive/MNQ_heatmap_20250101-20260219.html",
       "latest_filename": "MNQ_heatmap_latest.html",
       "description": "15:00-15:30 CC=13.1 | 19:00-19:30 CC=18.3 | 01:00-01:30 CC=7.8 | 16:30-17:00 CC=22.6",
@@ -619,9 +619,9 @@
       "score": 93.37,
       "plateau_score": 104.54,
       "total_runs": 66427,
-      "val_score": 26,
+      "val_score": 31,
       "val_max": 100,
-      "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
+      "val_grade": "🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades",
       "mc_profitable_pct": 100.0,
       "wf_profitable": 0,
       "wf_total": 0
