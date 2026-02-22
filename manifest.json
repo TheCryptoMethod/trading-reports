@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-22T20:24:38.903368",
+  "last_updated": "2026-02-22T20:31:23.790278",
   "reports": [
     {
       "asset": "MGC",
@@ -848,6 +848,31 @@
       "val_max": 100,
       "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
       "mc_profitable_pct": 0.0,
+      "wf_profitable": 0,
+      "wf_total": 0
+    },
+    {
+      "asset": "MYM",
+      "asset_name": "Micro Dow Jones",
+      "type": "heatmap",
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-19",
+      "created": "2026-02-22T20:31:23.790224",
+      "filename": "archive/MYM_heatmap_20260101-20260219.html",
+      "latest_filename": "MYM_heatmap_latest.html",
+      "description": "14:30-15:00 CC=38.0 | 16:30-17:00 CC=14.0 | 10:30-11:00 CC=1.0 | 07:00-07:30 CC=7.0 | 21:30-22:00 CC=7.0",
+      "trades": 47,
+      "win_rate": 70.2127659574468,
+      "profit_factor": 6.12,
+      "pnl_pts": 880.0,
+      "pnl_usd": 763.44,
+      "score": 96.52,
+      "plateau_score": 105.99,
+      "total_runs": 266094,
+      "val_score": 43,
+      "val_max": 100,
+      "val_grade": "🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades",
+      "mc_profitable_pct": 100.0,
       "wf_profitable": 0,
       "wf_total": 0
     }
