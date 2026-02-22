@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-22T20:00:34.588842",
+  "last_updated": "2026-02-22T20:03:45.202508",
   "reports": [
     {
       "asset": "MGC",
@@ -798,6 +798,31 @@
       "val_max": 100,
       "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
       "mc_profitable_pct": 99.8,
+      "wf_profitable": 0,
+      "wf_total": 0
+    },
+    {
+      "asset": "MHG",
+      "asset_name": "Micro Copper Futures",
+      "type": "heatmap",
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-19",
+      "created": "2026-02-22T20:03:45.202459",
+      "filename": "archive/MHG_heatmap_20260101-20260219.html",
+      "latest_filename": "MHG_heatmap_latest.html",
+      "description": "14:30-15:00 CC=0.0025 | 15:00-15:30 CC=0.0020 | 09:00-09:30 CC=0.0020 | 06:00-06:30 CC=0.0015 | 00:00-00:30 CC=0.0035",
+      "trades": 47,
+      "win_rate": 65.95744680851064,
+      "profit_factor": 5.82,
+      "pnl_pts": 0.5,
+      "pnl_usd": 2390.94,
+      "score": 95.1,
+      "plateau_score": 104.45,
+      "total_runs": 262427,
+      "val_score": 19,
+      "val_max": 100,
+      "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
+      "mc_profitable_pct": 92.0,
       "wf_profitable": 0,
       "wf_total": 0
     }
