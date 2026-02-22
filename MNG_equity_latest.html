@@ -46,28 +46,28 @@ tr:hover td{background:rgba(30,41,59,.5)}
 <body>
 <div class="header">
 <h1>🤖 GC Futures Backtest — Equity Curve</h1>
-<div class="sub">2026-01-01 → 2026-02-12 &nbsp;|&nbsp; trades_20260220_233834.csv</div>
+<div class="sub">2026-01-01 → 2026-02-16 &nbsp;|&nbsp; trades_20260222_201559.csv</div>
 </div>
 
 <div class="cfg-banner">
 <div class="cfg-title">⚙️ Optimizer Config — MNG Micro Henry Hub Natural Gas </div>
-<div class="cfg-windows"><span class="cfg-chip"><span class="cfg-win">08:30-09:00</span><span class="cfg-cc">CC=0.0</span></span><span class="cfg-chip"><span class="cfg-win">00:00-00:30</span><span class="cfg-cc">CC=0.0</span></span><span class="cfg-chip"><span class="cfg-win">07:00-07:30</span><span class="cfg-cc">CC=0.0</span></span><span class="cfg-chip"><span class="cfg-win">23:00-23:30</span><span class="cfg-cc">CC=0.0</span></span></div>
+<div class="cfg-windows"><span class="cfg-chip"><span class="cfg-win">08:30-09:00</span><span class="cfg-cc">CC=0.0</span></span><span class="cfg-chip"><span class="cfg-win">00:00-00:30</span><span class="cfg-cc">CC=0.0</span></span><span class="cfg-chip"><span class="cfg-win">23:00-23:30</span><span class="cfg-cc">CC=0.0</span></span><span class="cfg-chip"><span class="cfg-win">21:00-21:30</span><span class="cfg-cc">CC=0.0</span></span><span class="cfg-chip"><span class="cfg-win">12:00-12:30</span><span class="cfg-cc">CC=0.0</span></span></div>
 </div>
 
 <div class="stats">
-<div class="sc"><div class="l">Trades</div><div class="v neutral">19</div></div>
-<div class="sc"><div class="l">Win Rate</div><div class="v negative">5.3%</div></div>
-<div class="sc"><div class="l">Total P&L</div><div class="v negative">-0.02 Pts</div></div>
-<div class="sc"><div class="l">Profit Factor</div><div class="v negative">0.39</div></div>
-<div class="sc"><div class="l">Max Drawdown</div><div class="v negative">-0.02 Pts</div></div>
-<div class="sc"><div class="l">Avg Win</div><div class="v positive">+0.01 Pts</div></div>
-<div class="sc"><div class="l">Avg Loss</div><div class="v negative">-0.00 Pts</div></div>
-<div class="sc"><div class="l">TP / SL / Time</div><div class="v neutral">0 / 18 / 1</div></div>
-<div class="sc"><div class="l">Long P&L</div><div class="v negative">+0.00</div></div>
-<div class="sc"><div class="l">Short P&L</div><div class="v negative">-0.02</div></div>
-<div class="sc"><div class="l">Cancelled</div><div class="v neutral">21</div></div>
-<div class="sc"><div class="l">CC zu klein</div><div class="v neutral">236</div></div>
-<div class="sc"><div class="l">VWAP Skip</div><div class="v neutral">0</div></div>
+<div class="sc"><div class="l">Trades</div><div class="v neutral">28</div></div>
+<div class="sc"><div class="l">Win Rate</div><div class="v negative">0.0%</div></div>
+<div class="sc"><div class="l">Total P&L</div><div class="v negative">-0.20 Pts</div></div>
+<div class="sc"><div class="l">Profit Factor</div><div class="v negative">0.00</div></div>
+<div class="sc"><div class="l">Max Drawdown</div><div class="v negative">-0.20 Pts</div></div>
+<div class="sc"><div class="l">Avg Win</div><div class="v positive">+0.00 Pts</div></div>
+<div class="sc"><div class="l">Avg Loss</div><div class="v negative">-0.01 Pts</div></div>
+<div class="sc"><div class="l">TP / SL / Time</div><div class="v neutral">0 / 26 / 2</div></div>
+<div class="sc"><div class="l">Long P&L</div><div class="v negative">-0.16</div></div>
+<div class="sc"><div class="l">Short P&L</div><div class="v negative">-0.04</div></div>
+<div class="sc"><div class="l">Cancelled</div><div class="v neutral">34</div></div>
+<div class="sc"><div class="l">CC zu klein</div><div class="v neutral">294</div></div>
+<div class="sc"><div class="l">VWAP Skip</div><div class="v neutral">1</div></div>
 <div class="sc"><div class="l">Doji / RR Skip</div><div class="v neutral">0 / 0</div></div>
 </div>
 
@@ -80,132 +80,132 @@ tr:hover td{background:rgba(30,41,59,.5)}
 <button class="btn btn-g" onclick="dlCSV()">⬇ Download Trades CSV</button>
 <button class="btn btn-b" onclick="Plotly.downloadImage('eq',{format:'png',width:1600,height:800,filename:'equity_curve'})">📸 Equity PNG</button>
 <button class="btn btn-x" onclick="Plotly.downloadImage('bar',{format:'png',width:1600,height:500,filename:'trade_pnl'})">📸 Bars PNG</button>
-<span class="fi">trades_20260220_233834.csv — 19 Trades — 2026-02-20 23:38</span>
+<span class="fi">trades_20260222_201559.csv — 28 Trades — 2026-02-22 20:16</span>
 </div>
 
 <div class="tc"><div class="tb">
 <div class="th">📋 Letzte 15 Trades</div>
 <table><thead><tr><th>ID</th><th>Dir</th><th>Entry$</th><th>Exit$</th><th>Entry</th><th>Exit</th><th>Result</th><th>P&L</th></tr></thead>
 <tbody><tr>
-            <td>5</td>
-            <td class="dir-short">SHORT</td>
-            <td>$3.70</td><td>$3.70</td>
-            <td>01-20 07:17</td>
-            <td>01-20 07:17</td>
-            <td class="reason-sl_hit">SL_HIT</td>
-            <td class="loss">-0.00</td></tr><tr>
-            <td>6</td>
+            <td>14</td>
             <td class="dir-long">LONG</td>
-            <td>$3.90</td><td>$3.90</td>
-            <td>01-21 00:17</td>
-            <td>01-21 00:17</td>
-            <td class="reason-sl_hit">SL_HIT</td>
-            <td class="loss">-0.00</td></tr><tr>
-            <td>7</td>
-            <td class="dir-short">SHORT</td>
-            <td>$5.00</td><td>$5.00</td>
-            <td>01-21 23:01</td>
-            <td>01-21 23:01</td>
-            <td class="reason-sl_hit">SL_HIT</td>
-            <td class="loss">-0.00</td></tr><tr>
-            <td>8</td>
-            <td class="dir-short">SHORT</td>
-            <td>$5.30</td><td>$5.30</td>
-            <td>01-22 07:05</td>
-            <td>01-22 07:05</td>
-            <td class="reason-sl_hit">SL_HIT</td>
-            <td class="loss">-0.00</td></tr><tr>
-            <td>9</td>
-            <td class="dir-long">LONG</td>
-            <td>$5.40</td><td>$5.42</td>
-            <td>01-22 07:11</td>
-            <td>01-22 07:31</td>
+            <td>$4.90</td><td>$4.87</td>
+            <td>01-22 21:30</td>
+            <td>01-22 21:31</td>
             <td class="reason-time_exit">TIME_EXIT</td>
-            <td class="win">+0.01</td></tr><tr>
-            <td>10</td>
-            <td class="dir-long">LONG</td>
-            <td>$5.30</td><td>$5.30</td>
-            <td>01-22 08:53</td>
-            <td>01-22 08:53</td>
-            <td class="reason-sl_hit">SL_HIT</td>
-            <td class="loss">-0.00</td></tr><tr>
-            <td>11</td>
-            <td class="dir-long">LONG</td>
-            <td>$4.70</td><td>$4.70</td>
-            <td>01-23 07:23</td>
-            <td>01-23 07:23</td>
-            <td class="reason-sl_hit">SL_HIT</td>
-            <td class="loss">-0.00</td></tr><tr>
-            <td>12</td>
+            <td class="loss">-0.03</td></tr><tr>
+            <td>15</td>
             <td class="dir-long">LONG</td>
             <td>$4.90</td><td>$4.90</td>
             <td>01-23 08:59</td>
             <td>01-23 08:59</td>
             <td class="reason-sl_hit">SL_HIT</td>
             <td class="loss">-0.00</td></tr><tr>
-            <td>13</td>
+            <td>16</td>
             <td class="dir-short">SHORT</td>
             <td>$6.20</td><td>$6.20</td>
             <td>01-26 00:15</td>
             <td>01-26 00:15</td>
             <td class="reason-sl_hit">SL_HIT</td>
             <td class="loss">-0.00</td></tr><tr>
-            <td>14</td>
+            <td>17</td>
             <td class="dir-short">SHORT</td>
             <td>$6.20</td><td>$6.20</td>
             <td>01-26 00:27</td>
             <td>01-26 00:27</td>
             <td class="reason-sl_hit">SL_HIT</td>
             <td class="loss">-0.00</td></tr><tr>
-            <td>15</td>
+            <td>18</td>
+            <td class="dir-long">LONG</td>
+            <td>$6.20</td><td>$6.20</td>
+            <td>01-26 12:24</td>
+            <td>01-26 12:24</td>
+            <td class="reason-sl_hit">SL_HIT</td>
+            <td class="loss">-0.00</td></tr><tr>
+            <td>19</td>
+            <td class="dir-long">LONG</td>
+            <td>$6.50</td><td>$6.40</td>
+            <td>01-27 12:07</td>
+            <td>01-27 12:09</td>
+            <td class="reason-sl_hit">SL_HIT</td>
+            <td class="loss">-0.10</td></tr><tr>
+            <td>20</td>
+            <td class="dir-short">SHORT</td>
+            <td>$3.80</td><td>$3.80</td>
+            <td>01-29 12:03</td>
+            <td>01-29 12:03</td>
+            <td class="reason-sl_hit">SL_HIT</td>
+            <td class="loss">-0.00</td></tr><tr>
+            <td>21</td>
+            <td class="dir-long">LONG</td>
+            <td>$3.90</td><td>$3.90</td>
+            <td>01-29 21:29</td>
+            <td>01-29 21:29</td>
+            <td class="reason-sl_hit">SL_HIT</td>
+            <td class="loss">-0.00</td></tr><tr>
+            <td>22</td>
+            <td class="dir-long">LONG</td>
+            <td>$4.40</td><td>$4.40</td>
+            <td>01-30 21:01</td>
+            <td>01-30 21:01</td>
+            <td class="reason-sl_hit">SL_HIT</td>
+            <td class="loss">-0.00</td></tr><tr>
+            <td>23</td>
             <td class="dir-long">LONG</td>
             <td>$3.70</td><td>$3.70</td>
             <td>02-02 00:04</td>
             <td>02-02 00:04</td>
             <td class="reason-sl_hit">SL_HIT</td>
             <td class="loss">-0.00</td></tr><tr>
-            <td>16</td>
+            <td>24</td>
             <td class="dir-short">SHORT</td>
-            <td>$3.50</td><td>$3.50</td>
-            <td>02-05 23:27</td>
-            <td>02-05 23:27</td>
+            <td>$3.60</td><td>$3.60</td>
+            <td>02-02 12:20</td>
+            <td>02-02 12:20</td>
             <td class="reason-sl_hit">SL_HIT</td>
             <td class="loss">-0.00</td></tr><tr>
-            <td>17</td>
+            <td>25</td>
+            <td class="dir-long">LONG</td>
+            <td>$3.50</td><td>$3.50</td>
+            <td>02-05 21:07</td>
+            <td>02-05 21:07</td>
+            <td class="reason-sl_hit">SL_HIT</td>
+            <td class="loss">-0.00</td></tr><tr>
+            <td>26</td>
             <td class="dir-short">SHORT</td>
             <td>$3.10</td><td>$3.10</td>
             <td>02-10 08:42</td>
             <td>02-10 08:42</td>
             <td class="reason-sl_hit">SL_HIT</td>
             <td class="loss">-0.00</td></tr><tr>
-            <td>18</td>
+            <td>27</td>
             <td class="dir-short">SHORT</td>
             <td>$3.20</td><td>$3.20</td>
             <td>02-11 23:02</td>
             <td>02-11 23:02</td>
             <td class="reason-sl_hit">SL_HIT</td>
             <td class="loss">-0.00</td></tr><tr>
-            <td>19</td>
-            <td class="dir-short">SHORT</td>
-            <td>$3.20</td><td>$3.20</td>
-            <td>02-12 23:28</td>
-            <td>02-12 23:28</td>
+            <td>28</td>
+            <td class="dir-long">LONG</td>
+            <td>$3.00</td><td>$3.00</td>
+            <td>02-16 12:20</td>
+            <td>02-16 12:20</td>
             <td class="reason-sl_hit">SL_HIT</td>
             <td class="loss">-0.00</td></tr></tbody></table>
 </div></div>
 
 <script>
-function dlCSV(){var d=atob("aWQsZW50cnlfdGltZSxleGl0X3RpbWUsZGlyZWN0aW9uLGVudHJ5LGV4aXQsc2wsdHAscG5sX3B0cyxwbmxfdXNkLGV4aXRfcmVhc29uLGVudHJ5X2Nhc2UscnIsbG90cyxjdW1fcG5sLHJ1bm5pbmdfbWF4LGRyYXdkb3duDQoxLDIwMjYtMDEtMDEgMjM6Mjk6MDAsMjAyNi0wMS0wMSAyMzoyOTowMCxTSE9SVCwzLjYsMy42LDMuNiwzLjYsLTAuMDAyLC0zLjI0LFNMX0hJVCxLZWluIFdpY2sg4oaSIEJDIEAgMy42MywwLjAsMSwtMC4wMDIsLTAuMDAyLDAuMA0KMiwyMDI2LTAxLTA3IDIzOjEzOjAwLDIwMjYtMDEtMDcgMjM6MTM6MDAsTE9ORywzLjYsMy42LDMuNiwzLjYsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCAzLjU2LDAuMCwxLC0wLjAwNCwtMC4wMDIsLTAuMDAyDQozLDIwMjYtMDEtMTUgMDA6MDU6MDAsMjAyNi0wMS0xNSAwMDowNTowMCxTSE9SVCwzLjEsMy4xLDMuMSwzLjEsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCAzLjEwLDAuMCwxLC0wLjAwNiwtMC4wMDIsLTAuMDA0DQo0LDIwMjYtMDEtMjAgMDA6MTA6MDAsMjAyNi0wMS0yMCAwMDoxMDowMCxMT05HLDMuNiwzLjYsMy42LDMuNiwtMC4wMDIsLTMuMjQsU0xfSElULEtlaW4gV2ljayDihpIgQkMgQCAzLjU5LDAuMCwxLC0wLjAwOCwtMC4wMDIsLTAuMDA2DQo1LDIwMjYtMDEtMjAgMDc6MTc6MDAsMjAyNi0wMS0yMCAwNzoxNzowMCxTSE9SVCwzLjcsMy43LDMuNywzLjYsLTAuMDAyLC0zLjI0LFNMX0hJVCxLZWluIFdpY2sg4oaSIEJDIEAgMy43MiwwLjAsMSwtMC4wMSwtMC4wMDIsLTAuMDA4DQo2LDIwMjYtMDEtMjEgMDA6MTc6MDAsMjAyNi0wMS0yMSAwMDoxNzowMCxMT05HLDMuOSwzLjksMy45LDMuOSwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDMuODcsMC4wLDEsLTAuMDEyLC0wLjAwMiwtMC4wMQ0KNywyMDI2LTAxLTIxIDIzOjAxOjAwLDIwMjYtMDEtMjEgMjM6MDE6MDAsU0hPUlQsNS4wLDUuMCw1LjAsNS4wLC0wLjAwMiwtMy4yNCxTTF9ISVQsV2ljayDinJMg4oaSIENDIEAgNS4wNCwwLjAsMSwtMC4wMTQsLTAuMDAyLC0wLjAxMg0KOCwyMDI2LTAxLTIyIDA3OjA1OjAwLDIwMjYtMDEtMjIgMDc6MDU6MDAsU0hPUlQsNS4zLDUuMyw1LjMsNS4zLC0wLjAwMiwtMy4yNCxTTF9ISVQsS2VpbiBXaWNrIOKGkiBCQyBAIDUuMzIsMC4wLDEsLTAuMDE2LC0wLjAwMiwtMC4wMTQNCjksMjAyNi0wMS0yMiAwNzoxMTowMCwyMDI2LTAxLTIyIDA3OjMxOjAwLExPTkcsNS40LDUuNDE2LDUuMyw1LjYsMC4wMTQsMjUuNTIsVElNRV9FWElULEtlaW4gV2ljayDihpIgQkMgQCA1LjM5LDIuMCwyLC0wLjAwMiwtMC4wMDIsMC4wDQoxMCwyMDI2LTAxLTIyIDA4OjUzOjAwLDIwMjYtMDEtMjIgMDg6NTM6MDAsTE9ORyw1LjMsNS4zLDUuMyw1LjQsLTAuMDAyLC0zLjI0LFNMX0hJVCxLZWluIFdpY2sg4oaSIEJDIEAgNS4zMiwwLjAsMSwtMC4wMDQsLTAuMDAyLC0wLjAwMg0KMTEsMjAyNi0wMS0yMyAwNzoyMzowMCwyMDI2LTAxLTIzIDA3OjIzOjAwLExPTkcsNC43LDQuNyw0LjcsNC45LC0wLjAwMiwtMy4yNCxTTF9ISVQsS2VpbiBXaWNrIOKGkiBCQyBAIDQuNzMsMC4wLDEsLTAuMDA2LC0wLjAwMiwtMC4wMDQNCjEyLDIwMjYtMDEtMjMgMDg6NTk6MDAsMjAyNi0wMS0yMyAwODo1OTowMCxMT05HLDQuOSw0LjksNC45LDQuOSwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDQuODgsMC4wLDEsLTAuMDA4LC0wLjAwMiwtMC4wMDYNCjEzLDIwMjYtMDEtMjYgMDA6MTU6MDAsMjAyNi0wMS0yNiAwMDoxNTowMCxTSE9SVCw2LjIsNi4yLDYuMiw2LjIsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCA2LjIzLDAuMCwxLC0wLjAxLC0wLjAwMiwtMC4wMDgNCjE0LDIwMjYtMDEtMjYgMDA6Mjc6MDAsMjAyNi0wMS0yNiAwMDoyNzowMCxTSE9SVCw2LjIsNi4yLDYuMiw2LjIsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCA2LjIxLDAuMCwxLC0wLjAxMiwtMC4wMDIsLTAuMDENCjE1LDIwMjYtMDItMDIgMDA6MDQ6MDAsMjAyNi0wMi0wMiAwMDowNDowMCxMT05HLDMuNywzLjcsMy43LDMuNywtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDMuNjYsMC4wLDEsLTAuMDE0LC0wLjAwMiwtMC4wMTINCjE2LDIwMjYtMDItMDUgMjM6Mjc6MDAsMjAyNi0wMi0wNSAyMzoyNzowMCxTSE9SVCwzLjUsMy41LDMuNSwzLjUsLTAuMDAyLC0zLjI0LFNMX0hJVCxLZWluIFdpY2sg4oaSIEJDIEAgMy41MiwwLjAsMSwtMC4wMTYsLTAuMDAyLC0wLjAxNA0KMTcsMjAyNi0wMi0xMCAwODo0MjowMCwyMDI2LTAyLTEwIDA4OjQyOjAwLFNIT1JULDMuMSwzLjEsMy4xLDMuMSwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDMuMTAsMC4wLDEsLTAuMDE4MDAwMDAwMDAwMDAwMDAyLC0wLjAwMiwtMC4wMTYNCjE4LDIwMjYtMDItMTEgMjM6MDI6MDAsMjAyNi0wMi0xMSAyMzowMjowMCxTSE9SVCwzLjIsMy4yLDMuMiwzLjIsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCAzLjIzLDAuMCwxLC0wLjAyMDAwMDAwMDAwMDAwMDAwNCwtMC4wMDIsLTAuMDE4MDAwMDAwMDAwMDAwMDAyDQoxOSwyMDI2LTAyLTEyIDIzOjI4OjAwLDIwMjYtMDItMTIgMjM6Mjg6MDAsU0hPUlQsMy4yLDMuMiwzLjIsMy4yLC0wLjAwMiwtMy4yNCxTTF9ISVQsS2VpbiBXaWNrIOKGkiBCQyBAIDMuMjIsMC4wLDEsLTAuMDIyMDAwMDAwMDAwMDAwMDA2LC0wLjAwMiwtMC4wMjAwMDAwMDAwMDAwMDAwMDQNCg==");var b=new Blob([d],{type:'text/csv'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download="trades_20260220_233834.csv";a.click()}
+function dlCSV(){var d=atob("aWQsZW50cnlfdGltZSxleGl0X3RpbWUsZGlyZWN0aW9uLGVudHJ5LGV4aXQsc2wsdHAscG5sX3B0cyxwbmxfdXNkLGV4aXRfcmVhc29uLGVudHJ5X2Nhc2UscnIsbG90cyxjdW1fcG5sLHJ1bm5pbmdfbWF4LGRyYXdkb3duDQoxLDIwMjYtMDEtMDEgMjM6Mjk6MDAsMjAyNi0wMS0wMSAyMzoyOTowMCxTSE9SVCwzLjYsMy42LDMuNiwzLjYsLTAuMDAyLC0zLjI0LFNMX0hJVCxLZWluIFdpY2sg4oaSIEJDIEAgMy42MywwLjAsMSwtMC4wMDIsLTAuMDAyLDAuMA0KMiwyMDI2LTAxLTA2IDIxOjEwOjAwLDIwMjYtMDEtMDYgMjE6MTA6MDAsU0hPUlQsMy40LDMuNCwzLjQsMy40LC0wLjAwMiwtMy4yNCxTTF9ISVQsV2ljayDinJMg4oaSIENDIEAgMy40MCwwLjAsMSwtMC4wMDQsLTAuMDAyLC0wLjAwMg0KMywyMDI2LTAxLTA5IDEyOjI5OjAwLDIwMjYtMDEtMDkgMTI6MzE6MDAsU0hPUlQsMy40LDMuNDE2LDMuNSwzLjQsLTAuMDE4LC0zOC40OCxUSU1FX0VYSVQsV2ljayDinJMg4oaSIENDIEAgMy40NSwwLjAsMiwtMC4wMjIsLTAuMDAyLC0wLjAxOTk5OTk5OTk5OTk5OTk5Nw0KNCwyMDI2LTAxLTEzIDEyOjIyOjAwLDIwMjYtMDEtMTMgMTI6MjI6MDAsTE9ORywzLjUsMy41LDMuNSwzLjUsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCAzLjQ2LDAuMCwxLC0wLjAyNCwtMC4wMDIsLTAuMDIyDQo1LDIwMjYtMDEtMTUgMDA6MDU6MDAsMjAyNi0wMS0xNSAwMDowNTowMCxTSE9SVCwzLjEsMy4xLDMuMSwzLjEsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCAzLjEwLDAuMCwxLC0wLjAyNjAwMDAwMDAwMDAwMDAwMiwtMC4wMDIsLTAuMDI0DQo2LDIwMjYtMDEtMTYgMTI6MDQ6MDAsMjAyNi0wMS0xNiAxMjowNDowMCxMT05HLDMuMiwzLjIsMy4yLDMuMiwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDMuMTgsMC4wLDEsLTAuMDI4MDAwMDAwMDAwMDAwMDA0LC0wLjAwMiwtMC4wMjYwMDAwMDAwMDAwMDAwMDINCjcsMjAyNi0wMS0xNiAxMjoyMzowMCwyMDI2LTAxLTE2IDEyOjIzOjAwLFNIT1JULDMuMiwzLjIsMy4yLDMuMiwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDMuMjEsMC4wLDEsLTAuMDMwMDAwMDAwMDAwMDAwMDA2LC0wLjAwMiwtMC4wMjgwMDAwMDAwMDAwMDAwMDQNCjgsMjAyNi0wMS0yMCAwMDoxMDowMCwyMDI2LTAxLTIwIDAwOjEwOjAwLExPTkcsMy42LDMuNiwzLjYsMy42LC0wLjAwMiwtMy4yNCxTTF9ISVQsS2VpbiBXaWNrIOKGkiBCQyBAIDMuNTksMC4wLDEsLTAuMDMyMDAwMDAwMDAwMDAwMDEsLTAuMDAyLC0wLjAzMDAwMDAwMDAwMDAwMDAwNg0KOSwyMDI2LTAxLTIwIDEyOjIxOjAwLDIwMjYtMDEtMjAgMTI6MjE6MDAsTE9ORywzLjgsMy44LDMuOCwzLjksLTAuMDAyLC0zLjI0LFNMX0hJVCxLZWluIFdpY2sg4oaSIEJDIEAgMy44MCwwLjAsMSwtMC4wMzQwMDAwMDAwMDAwMDAwMSwtMC4wMDIsLTAuMDMyMDAwMDAwMDAwMDAwMDENCjEwLDIwMjYtMDEtMjAgMjE6MTg6MDAsMjAyNi0wMS0yMCAyMToxODowMCxTSE9SVCwzLjksMy45LDMuOSwzLjksLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCAzLjkxLDAuMCwxLC0wLjAzNjAwMDAwMDAwMDAwMDAxLC0wLjAwMiwtMC4wMzQwMDAwMDAwMDAwMDAwMQ0KMTEsMjAyNi0wMS0yMSAwMDoxNzowMCwyMDI2LTAxLTIxIDAwOjE3OjAwLExPTkcsMy45LDMuOSwzLjksMy45LC0wLjAwMiwtMy4yNCxTTF9ISVQsV2ljayDinJMg4oaSIENDIEAgMy44NywwLjAsMSwtMC4wMzgwMDAwMDAwMDAwMDAwMSwtMC4wMDIsLTAuMDM2MDAwMDAwMDAwMDAwMDENCjEyLDIwMjYtMDEtMjEgMjM6MDE6MDAsMjAyNi0wMS0yMSAyMzowMTowMCxTSE9SVCw1LjAsNS4wLDUuMCw1LjAsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCA1LjA0LDAuMCwxLC0wLjA0MDAwMDAwMDAwMDAwMDAxNSwtMC4wMDIsLTAuMDM4MDAwMDAwMDAwMDAwMDENCjEzLDIwMjYtMDEtMjIgMDg6NTM6MDAsMjAyNi0wMS0yMiAwODo1MzowMCxMT05HLDUuMyw1LjMsNS4zLDUuNCwtMC4wMDIsLTMuMjQsU0xfSElULEtlaW4gV2ljayDihpIgQkMgQCA1LjMyLDAuMCwxLC0wLjA0MjAwMDAwMDAwMDAwMDAxNiwtMC4wMDIsLTAuMDQwMDAwMDAwMDAwMDAwMDE1DQoxNCwyMDI2LTAxLTIyIDIxOjMwOjAwLDIwMjYtMDEtMjIgMjE6MzE6MDAsTE9ORyw0LjksNC44NzMsNC44LDUuMywtMC4wMjksLTYwLjQ4LFRJTUVfRVhJVCxLZWluIFdpY2sg4oaSIEJDIEAgNC44Nyw0LjAsMiwtMC4wNzEwMDAwMDAwMDAwMDAwMiwtMC4wMDIsLTAuMDY5MDAwMDAwMDAwMDAwMDINCjE1LDIwMjYtMDEtMjMgMDg6NTk6MDAsMjAyNi0wMS0yMyAwODo1OTowMCxMT05HLDQuOSw0LjksNC45LDQuOSwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDQuODgsMC4wLDEsLTAuMDczMDAwMDAwMDAwMDAwMDIsLTAuMDAyLC0wLjA3MTAwMDAwMDAwMDAwMDAyDQoxNiwyMDI2LTAxLTI2IDAwOjE1OjAwLDIwMjYtMDEtMjYgMDA6MTU6MDAsU0hPUlQsNi4yLDYuMiw2LjIsNi4yLC0wLjAwMiwtMy4yNCxTTF9ISVQsV2ljayDinJMg4oaSIENDIEAgNi4yMywwLjAsMSwtMC4wNzUwMDAwMDAwMDAwMDAwMiwtMC4wMDIsLTAuMDczMDAwMDAwMDAwMDAwMDINCjE3LDIwMjYtMDEtMjYgMDA6Mjc6MDAsMjAyNi0wMS0yNiAwMDoyNzowMCxTSE9SVCw2LjIsNi4yLDYuMiw2LjIsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCA2LjIxLDAuMCwxLC0wLjA3NzAwMDAwMDAwMDAwMDAzLC0wLjAwMiwtMC4wNzUwMDAwMDAwMDAwMDAwMg0KMTgsMjAyNi0wMS0yNiAxMjoyNDowMCwyMDI2LTAxLTI2IDEyOjI0OjAwLExPTkcsNi4yLDYuMiw2LjIsNi4yLC0wLjAwMiwtMy4yNCxTTF9ISVQsV2ljayDinJMg4oaSIENDIEAgNi4xNiwwLjAsMSwtMC4wNzkwMDAwMDAwMDAwMDAwMywtMC4wMDIsLTAuMDc3MDAwMDAwMDAwMDAwMDMNCjE5LDIwMjYtMDEtMjcgMTI6MDc6MDAsMjAyNi0wMS0yNyAxMjowOTowMCxMT05HLDYuNSw2LjQsNi40LDYuNiwtMC4xMDIsLTIwNi40OCxTTF9ISVQsS2VpbiBXaWNrIOKGkiBCQyBAIDYuNDgsMS4wLDIsLTAuMTgxMDAwMDAwMDAwMDAwMDIsLTAuMDAyLC0wLjE3OTAwMDAwMDAwMDAwMDAyDQoyMCwyMDI2LTAxLTI5IDEyOjAzOjAwLDIwMjYtMDEtMjkgMTI6MDM6MDAsU0hPUlQsMy44LDMuOCwzLjgsMy44LC0wLjAwMiwtMy4yNCxTTF9ISVQsS2VpbiBXaWNrIOKGkiBCQyBAIDMuODMsMC4wLDEsLTAuMTgzMDAwMDAwMDAwMDAwMDIsLTAuMDAyLC0wLjE4MTAwMDAwMDAwMDAwMDAyDQoyMSwyMDI2LTAxLTI5IDIxOjI5OjAwLDIwMjYtMDEtMjkgMjE6Mjk6MDAsTE9ORywzLjksMy45LDMuOSwzLjksLTAuMDAyLC0zLjI0LFNMX0hJVCxLZWluIFdpY2sg4oaSIEJDIEAgMy44OCwwLjAsMSwtMC4xODUwMDAwMDAwMDAwMDAwMywtMC4wMDIsLTAuMTgzMDAwMDAwMDAwMDAwMDINCjIyLDIwMjYtMDEtMzAgMjE6MDE6MDAsMjAyNi0wMS0zMCAyMTowMTowMCxMT05HLDQuNCw0LjQsNC40LDQuNCwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDQuMzYsMC4wLDEsLTAuMTg3MDAwMDAwMDAwMDAwMDMsLTAuMDAyLC0wLjE4NTAwMDAwMDAwMDAwMDAzDQoyMywyMDI2LTAyLTAyIDAwOjA0OjAwLDIwMjYtMDItMDIgMDA6MDQ6MDAsTE9ORywzLjcsMy43LDMuNywzLjcsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCAzLjY2LDAuMCwxLC0wLjE4OTAwMDAwMDAwMDAwMDAzLC0wLjAwMiwtMC4xODcwMDAwMDAwMDAwMDAwMw0KMjQsMjAyNi0wMi0wMiAxMjoyMDowMCwyMDI2LTAyLTAyIDEyOjIwOjAwLFNIT1JULDMuNiwzLjYsMy42LDMuNiwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDMuNjQsMC4wLDEsLTAuMTkxMDAwMDAwMDAwMDAwMDMsLTAuMDAyLC0wLjE4OTAwMDAwMDAwMDAwMDAzDQoyNSwyMDI2LTAyLTA1IDIxOjA3OjAwLDIwMjYtMDItMDUgMjE6MDc6MDAsTE9ORywzLjUsMy41LDMuNSwzLjUsLTAuMDAyLC0zLjI0LFNMX0hJVCxXaWNrIOKckyDihpIgQ0MgQCAzLjQ5LDAuMCwxLC0wLjE5MzAwMDAwMDAwMDAwMDAzLC0wLjAwMiwtMC4xOTEwMDAwMDAwMDAwMDAwMw0KMjYsMjAyNi0wMi0xMCAwODo0MjowMCwyMDI2LTAyLTEwIDA4OjQyOjAwLFNIT1JULDMuMSwzLjEsMy4xLDMuMSwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDMuMTAsMC4wLDEsLTAuMTk1MDAwMDAwMDAwMDAwMDMsLTAuMDAyLC0wLjE5MzAwMDAwMDAwMDAwMDAzDQoyNywyMDI2LTAyLTExIDIzOjAyOjAwLDIwMjYtMDItMTEgMjM6MDI6MDAsU0hPUlQsMy4yLDMuMiwzLjIsMy4yLC0wLjAwMiwtMy4yNCxTTF9ISVQsV2ljayDinJMg4oaSIENDIEAgMy4yMywwLjAsMSwtMC4xOTcwMDAwMDAwMDAwMDAwNCwtMC4wMDIsLTAuMTk1MDAwMDAwMDAwMDAwMDMNCjI4LDIwMjYtMDItMTYgMTI6MjA6MDAsMjAyNi0wMi0xNiAxMjoyMDowMCxMT05HLDMuMCwzLjAsMy4wLDMuMCwtMC4wMDIsLTMuMjQsU0xfSElULFdpY2sg4pyTIOKGkiBDQyBAIDMuMDAsMC4wLDEsLTAuMTk5MDAwMDAwMDAwMDAwMDQsLTAuMDAyLC0wLjE5NzAwMDAwMDAwMDAwMDA0DQo=");var b=new Blob([d],{type:'text/csv'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download="trades_20260222_201559.csv";a.click()}
 
 var dk={paper_bgcolor:'#1e293b',plot_bgcolor:'#0f172a',font:{color:'#94a3b8',family:'-apple-system,sans-serif',size:11},margin:{l:55,r:16,t:8,b:45},xaxis:{gridcolor:'#1e293b',linecolor:'#334155'},yaxis:{gridcolor:'#1e293b',linecolor:'#334155'},legend:{bgcolor:'rgba(15,23,42,0.9)',bordercolor:'#334155',borderwidth:1,font:{size:11}},hovermode:'closest',hoverlabel:{bgcolor:'#1e293b',bordercolor:'#475569',font:{size:12}}};
 
-var eT=[{"x": ["2026-01-01T23:29", "2026-01-07T23:13", "2026-01-15T00:05", "2026-01-20T00:10", "2026-01-20T07:17", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T07:05", "2026-01-22T07:31", "2026-01-22T08:53", "2026-01-23T07:23", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-02-02T00:04", "2026-02-05T23:27", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-12T23:28"], "y": [-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0], "type": "scatter", "mode": "lines", "name": "Peak", "line": {"color": "rgba(0,0,0,0)", "width": 0}, "showlegend": false, "hoverinfo": "skip"}, {"x": ["2026-01-01T23:29", "2026-01-07T23:13", "2026-01-15T00:05", "2026-01-20T00:10", "2026-01-20T07:17", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T07:05", "2026-01-22T07:31", "2026-01-22T08:53", "2026-01-23T07:23", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-02-02T00:04", "2026-02-05T23:27", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-12T23:28"], "y": [-0.0, -0.0, -0.01, -0.01, -0.01, -0.01, -0.01, -0.02, -0.0, -0.0, -0.01, -0.01, -0.01, -0.01, -0.01, -0.02, -0.02, -0.02, -0.02], "type": "scatter", "mode": "lines", "name": "Drawdown", "line": {"color": "rgba(0,0,0,0)", "width": 0}, "fill": "tonexty", "fillcolor": "rgba(239,68,68,0.15)", "hoverinfo": "skip"}, {"x": ["2026-01-01T23:29", "2026-01-07T23:13", "2026-01-15T00:05", "2026-01-20T00:10", "2026-01-20T07:17", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T07:05", "2026-01-22T07:31", "2026-01-22T08:53", "2026-01-23T07:23", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-02-02T00:04", "2026-02-05T23:27", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-12T23:28"], "y": [-0.0, -0.0, -0.01, -0.01, -0.01, -0.01, -0.01, -0.02, -0.0, -0.0, -0.01, -0.01, -0.01, -0.01, -0.01, -0.02, -0.02, -0.02, -0.02], "type": "scatter", "mode": "lines", "name": "Equity", "line": {"color": "#2563eb", "width": 2.5}, "hovertemplate": "<b>%{x}</b><br>Equity: %{y:+.2f} Pts<extra></extra>"}, {"x": ["2026-01-01T23:29", "2026-01-07T23:13", "2026-01-15T00:05", "2026-01-20T00:10", "2026-01-20T07:17", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T07:05", "2026-01-22T08:53", "2026-01-23T07:23", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-02-02T00:04", "2026-02-05T23:27", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-12T23:28"], "y": [-0.0, -0.0, -0.01, -0.01, -0.01, -0.01, -0.01, -0.02, -0.0, -0.01, -0.01, -0.01, -0.01, -0.01, -0.02, -0.02, -0.02, -0.02], "type": "scatter", "mode": "markers", "name": "SL Hit (18)", "marker": {"color": "#ef4444", "size": 12, "symbol": "triangle-down", "line": {"width": 1.5, "color": "white"}}, "hovertemplate": "%{customdata}<extra></extra>", "customdata": ["<b>#1 SHORT</b><br>Entry: $3.60 @ 01-01 23:29<br>Exit: $3.60 @ 01-01 23:29<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#2 LONG</b><br>Entry: $3.60 @ 01-07 23:13<br>Exit: $3.60 @ 01-07 23:13<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#3 SHORT</b><br>Entry: $3.10 @ 01-15 00:05<br>Exit: $3.10 @ 01-15 00:05<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#4 LONG</b><br>Entry: $3.60 @ 01-20 00:10<br>Exit: $3.60 @ 01-20 00:10<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#5 SHORT</b><br>Entry: $3.70 @ 01-20 07:17<br>Exit: $3.70 @ 01-20 07:17<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#6 LONG</b><br>Entry: $3.90 @ 01-21 00:17<br>Exit: $3.90 @ 01-21 00:17<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#7 SHORT</b><br>Entry: $5.00 @ 01-21 23:01<br>Exit: $5.00 @ 01-21 23:01<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#8 SHORT</b><br>Entry: $5.30 @ 01-22 07:05<br>Exit: $5.30 @ 01-22 07:05<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#10 LONG</b><br>Entry: $5.30 @ 01-22 08:53<br>Exit: $5.30 @ 01-22 08:53<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#11 LONG</b><br>Entry: $4.70 @ 01-23 07:23<br>Exit: $4.70 @ 01-23 07:23<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#12 LONG</b><br>Entry: $4.90 @ 01-23 08:59<br>Exit: $4.90 @ 01-23 08:59<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#13 SHORT</b><br>Entry: $6.20 @ 01-26 00:15<br>Exit: $6.20 @ 01-26 00:15<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#14 SHORT</b><br>Entry: $6.20 @ 01-26 00:27<br>Exit: $6.20 @ 01-26 00:27<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#15 LONG</b><br>Entry: $3.70 @ 02-02 00:04<br>Exit: $3.70 @ 02-02 00:04<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#16 SHORT</b><br>Entry: $3.50 @ 02-05 23:27<br>Exit: $3.50 @ 02-05 23:27<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#17 SHORT</b><br>Entry: $3.10 @ 02-10 08:42<br>Exit: $3.10 @ 02-10 08:42<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#18 SHORT</b><br>Entry: $3.20 @ 02-11 23:02<br>Exit: $3.20 @ 02-11 23:02<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#19 SHORT</b><br>Entry: $3.20 @ 02-12 23:28<br>Exit: $3.20 @ 02-12 23:28<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0"]}, {"x": ["2026-01-22T07:31"], "y": [-0.0], "type": "scatter", "mode": "markers", "name": "Time Exit (1)", "marker": {"color": "#8b5cf6", "size": 10, "symbol": "square", "line": {"width": 1.5, "color": "white"}}, "hovertemplate": "%{customdata}<extra></extra>", "customdata": ["<b>#9 LONG</b><br>Entry: $5.40 @ 01-22 07:11<br>Exit: $5.42 @ 01-22 07:31<br>P&L: <b>+0.01 pts</b><br>RR: 1:2.0"]}];
+var eT=[{"x": ["2026-01-01T23:29", "2026-01-06T21:10", "2026-01-09T12:31", "2026-01-13T12:22", "2026-01-15T00:05", "2026-01-16T12:04", "2026-01-16T12:23", "2026-01-20T00:10", "2026-01-20T12:21", "2026-01-20T21:18", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T08:53", "2026-01-22T21:31", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-01-26T12:24", "2026-01-27T12:09", "2026-01-29T12:03", "2026-01-29T21:29", "2026-01-30T21:01", "2026-02-02T00:04", "2026-02-02T12:20", "2026-02-05T21:07", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-16T12:20"], "y": [-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0], "type": "scatter", "mode": "lines", "name": "Peak", "line": {"color": "rgba(0,0,0,0)", "width": 0}, "showlegend": false, "hoverinfo": "skip"}, {"x": ["2026-01-01T23:29", "2026-01-06T21:10", "2026-01-09T12:31", "2026-01-13T12:22", "2026-01-15T00:05", "2026-01-16T12:04", "2026-01-16T12:23", "2026-01-20T00:10", "2026-01-20T12:21", "2026-01-20T21:18", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T08:53", "2026-01-22T21:31", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-01-26T12:24", "2026-01-27T12:09", "2026-01-29T12:03", "2026-01-29T21:29", "2026-01-30T21:01", "2026-02-02T00:04", "2026-02-02T12:20", "2026-02-05T21:07", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-16T12:20"], "y": [-0.0, -0.0, -0.02, -0.02, -0.03, -0.03, -0.03, -0.03, -0.03, -0.04, -0.04, -0.04, -0.04, -0.07, -0.07, -0.08, -0.08, -0.08, -0.18, -0.18, -0.19, -0.19, -0.19, -0.19, -0.19, -0.2, -0.2, -0.2], "type": "scatter", "mode": "lines", "name": "Drawdown", "line": {"color": "rgba(0,0,0,0)", "width": 0}, "fill": "tonexty", "fillcolor": "rgba(239,68,68,0.15)", "hoverinfo": "skip"}, {"x": ["2026-01-01T23:29", "2026-01-06T21:10", "2026-01-09T12:31", "2026-01-13T12:22", "2026-01-15T00:05", "2026-01-16T12:04", "2026-01-16T12:23", "2026-01-20T00:10", "2026-01-20T12:21", "2026-01-20T21:18", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T08:53", "2026-01-22T21:31", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-01-26T12:24", "2026-01-27T12:09", "2026-01-29T12:03", "2026-01-29T21:29", "2026-01-30T21:01", "2026-02-02T00:04", "2026-02-02T12:20", "2026-02-05T21:07", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-16T12:20"], "y": [-0.0, -0.0, -0.02, -0.02, -0.03, -0.03, -0.03, -0.03, -0.03, -0.04, -0.04, -0.04, -0.04, -0.07, -0.07, -0.08, -0.08, -0.08, -0.18, -0.18, -0.19, -0.19, -0.19, -0.19, -0.19, -0.2, -0.2, -0.2], "type": "scatter", "mode": "lines", "name": "Equity", "line": {"color": "#2563eb", "width": 2.5}, "hovertemplate": "<b>%{x}</b><br>Equity: %{y:+.2f} Pts<extra></extra>"}, {"x": ["2026-01-01T23:29", "2026-01-06T21:10", "2026-01-13T12:22", "2026-01-15T00:05", "2026-01-16T12:04", "2026-01-16T12:23", "2026-01-20T00:10", "2026-01-20T12:21", "2026-01-20T21:18", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T08:53", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-01-26T12:24", "2026-01-27T12:09", "2026-01-29T12:03", "2026-01-29T21:29", "2026-01-30T21:01", "2026-02-02T00:04", "2026-02-02T12:20", "2026-02-05T21:07", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-16T12:20"], "y": [-0.0, -0.0, -0.02, -0.03, -0.03, -0.03, -0.03, -0.03, -0.04, -0.04, -0.04, -0.04, -0.07, -0.08, -0.08, -0.08, -0.18, -0.18, -0.19, -0.19, -0.19, -0.19, -0.19, -0.2, -0.2, -0.2], "type": "scatter", "mode": "markers", "name": "SL Hit (26)", "marker": {"color": "#ef4444", "size": 12, "symbol": "triangle-down", "line": {"width": 1.5, "color": "white"}}, "hovertemplate": "%{customdata}<extra></extra>", "customdata": ["<b>#1 SHORT</b><br>Entry: $3.60 @ 01-01 23:29<br>Exit: $3.60 @ 01-01 23:29<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#2 SHORT</b><br>Entry: $3.40 @ 01-06 21:10<br>Exit: $3.40 @ 01-06 21:10<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#4 LONG</b><br>Entry: $3.50 @ 01-13 12:22<br>Exit: $3.50 @ 01-13 12:22<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#5 SHORT</b><br>Entry: $3.10 @ 01-15 00:05<br>Exit: $3.10 @ 01-15 00:05<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#6 LONG</b><br>Entry: $3.20 @ 01-16 12:04<br>Exit: $3.20 @ 01-16 12:04<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#7 SHORT</b><br>Entry: $3.20 @ 01-16 12:23<br>Exit: $3.20 @ 01-16 12:23<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#8 LONG</b><br>Entry: $3.60 @ 01-20 00:10<br>Exit: $3.60 @ 01-20 00:10<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#9 LONG</b><br>Entry: $3.80 @ 01-20 12:21<br>Exit: $3.80 @ 01-20 12:21<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#10 SHORT</b><br>Entry: $3.90 @ 01-20 21:18<br>Exit: $3.90 @ 01-20 21:18<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#11 LONG</b><br>Entry: $3.90 @ 01-21 00:17<br>Exit: $3.90 @ 01-21 00:17<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#12 SHORT</b><br>Entry: $5.00 @ 01-21 23:01<br>Exit: $5.00 @ 01-21 23:01<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#13 LONG</b><br>Entry: $5.30 @ 01-22 08:53<br>Exit: $5.30 @ 01-22 08:53<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#15 LONG</b><br>Entry: $4.90 @ 01-23 08:59<br>Exit: $4.90 @ 01-23 08:59<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#16 SHORT</b><br>Entry: $6.20 @ 01-26 00:15<br>Exit: $6.20 @ 01-26 00:15<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#17 SHORT</b><br>Entry: $6.20 @ 01-26 00:27<br>Exit: $6.20 @ 01-26 00:27<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#18 LONG</b><br>Entry: $6.20 @ 01-26 12:24<br>Exit: $6.20 @ 01-26 12:24<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#19 LONG</b><br>Entry: $6.50 @ 01-27 12:07<br>Exit: $6.40 @ 01-27 12:09<br>P&L: <b>-0.10 pts</b><br>RR: 1:1.0", "<b>#20 SHORT</b><br>Entry: $3.80 @ 01-29 12:03<br>Exit: $3.80 @ 01-29 12:03<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#21 LONG</b><br>Entry: $3.90 @ 01-29 21:29<br>Exit: $3.90 @ 01-29 21:29<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#22 LONG</b><br>Entry: $4.40 @ 01-30 21:01<br>Exit: $4.40 @ 01-30 21:01<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#23 LONG</b><br>Entry: $3.70 @ 02-02 00:04<br>Exit: $3.70 @ 02-02 00:04<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#24 SHORT</b><br>Entry: $3.60 @ 02-02 12:20<br>Exit: $3.60 @ 02-02 12:20<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#25 LONG</b><br>Entry: $3.50 @ 02-05 21:07<br>Exit: $3.50 @ 02-05 21:07<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#26 SHORT</b><br>Entry: $3.10 @ 02-10 08:42<br>Exit: $3.10 @ 02-10 08:42<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#27 SHORT</b><br>Entry: $3.20 @ 02-11 23:02<br>Exit: $3.20 @ 02-11 23:02<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0", "<b>#28 LONG</b><br>Entry: $3.00 @ 02-16 12:20<br>Exit: $3.00 @ 02-16 12:20<br>P&L: <b>-0.00 pts</b><br>RR: 1:0.0"]}, {"x": ["2026-01-09T12:31", "2026-01-22T21:31"], "y": [-0.02, -0.07], "type": "scatter", "mode": "markers", "name": "Time Exit (2)", "marker": {"color": "#8b5cf6", "size": 10, "symbol": "square", "line": {"width": 1.5, "color": "white"}}, "hovertemplate": "%{customdata}<extra></extra>", "customdata": ["<b>#3 SHORT</b><br>Entry: $3.40 @ 01-09 12:29<br>Exit: $3.42 @ 01-09 12:31<br>P&L: <b>-0.02 pts</b><br>RR: 1:0.0", "<b>#14 LONG</b><br>Entry: $4.90 @ 01-22 21:30<br>Exit: $4.87 @ 01-22 21:31<br>P&L: <b>-0.03 pts</b><br>RR: 1:4.0"]}];
 var eL=JSON.parse(JSON.stringify(dk));
 eL.yaxis.title={text:'Cumulative P&L (Points)',font:{size:12}};
 eL.shapes=[{type:'line',y0:0,y1:0,x0:0,x1:1,xref:'paper',line:{color:'#475569',dash:'dash',width:1}}];
 Plotly.newPlot('eq',eT,eL,{responsive:true,displaylogo:false});
 
-var bT=[{"x": ["2026-01-01T23:29", "2026-01-07T23:13", "2026-01-15T00:05", "2026-01-20T00:10", "2026-01-20T07:17", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T07:05", "2026-01-22T07:31", "2026-01-22T08:53", "2026-01-23T07:23", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-02-02T00:04", "2026-02-05T23:27", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-12T23:28"], "y": [-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 0.01, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0], "type": "bar", "name": "Trade P&L", "marker": {"color": ["#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#8b5cf6", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444"], "opacity": 0.85}, "hovertemplate": "%{customdata}<extra></extra>", "customdata": ["<b>#1 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#2 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#3 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#4 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#5 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#6 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#7 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#8 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#9 LONG</b><br>P&L: <b>+0.01 pts</b><br>TIME_EXIT", "<b>#10 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#11 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#12 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#13 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#14 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#15 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#16 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#17 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#18 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#19 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT"], "showlegend": false}];
+var bT=[{"x": ["2026-01-01T23:29", "2026-01-06T21:10", "2026-01-09T12:31", "2026-01-13T12:22", "2026-01-15T00:05", "2026-01-16T12:04", "2026-01-16T12:23", "2026-01-20T00:10", "2026-01-20T12:21", "2026-01-20T21:18", "2026-01-21T00:17", "2026-01-21T23:01", "2026-01-22T08:53", "2026-01-22T21:31", "2026-01-23T08:59", "2026-01-26T00:15", "2026-01-26T00:27", "2026-01-26T12:24", "2026-01-27T12:09", "2026-01-29T12:03", "2026-01-29T21:29", "2026-01-30T21:01", "2026-02-02T00:04", "2026-02-02T12:20", "2026-02-05T21:07", "2026-02-10T08:42", "2026-02-11T23:02", "2026-02-16T12:20"], "y": [-0.0, -0.0, -0.02, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.03, -0.0, -0.0, -0.0, -0.0, -0.1, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0], "type": "bar", "name": "Trade P&L", "marker": {"color": ["#ef4444", "#ef4444", "#8b5cf6", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#8b5cf6", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444", "#ef4444"], "opacity": 0.85}, "hovertemplate": "%{customdata}<extra></extra>", "customdata": ["<b>#1 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#2 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#3 SHORT</b><br>P&L: <b>-0.02 pts</b><br>TIME_EXIT", "<b>#4 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#5 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#6 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#7 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#8 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#9 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#10 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#11 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#12 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#13 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#14 LONG</b><br>P&L: <b>-0.03 pts</b><br>TIME_EXIT", "<b>#15 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#16 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#17 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#18 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#19 LONG</b><br>P&L: <b>-0.10 pts</b><br>SL_HIT", "<b>#20 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#21 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#22 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#23 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#24 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#25 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#26 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#27 SHORT</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT", "<b>#28 LONG</b><br>P&L: <b>-0.00 pts</b><br>SL_HIT"], "showlegend": false}];
 var bL=JSON.parse(JSON.stringify(dk));
 bL.yaxis.title={text:'Trade P&L (Points)',font:{size:12}};
 bL.shapes=[{type:'line',y0:0,y1:0,x0:0,x1:1,xref:'paper',line:{color:'#475569',width:1}}];
