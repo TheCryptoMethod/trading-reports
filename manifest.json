@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-22T19:46:59.080985",
+  "last_updated": "2026-02-22T19:50:32.517874",
   "reports": [
     {
       "asset": "MGC",
@@ -748,6 +748,31 @@
       "val_max": 100,
       "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
       "mc_profitable_pct": 81.2,
+      "wf_profitable": 0,
+      "wf_total": 0
+    },
+    {
+      "asset": "MES",
+      "asset_name": "Micro E-mini S&P 500",
+      "type": "heatmap",
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-19",
+      "created": "2026-02-22T19:50:32.517835",
+      "filename": "archive/MES_heatmap_20260101-20260219.html",
+      "latest_filename": "MES_heatmap_latest.html",
+      "description": "19:00-19:30 CC=3.0 | 02:00-02:30 CC=0.5 | 07:30-08:00 CC=1.0 | 14:00-14:30 CC=2.0 | 13:30-14:00 CC=1.5",
+      "trades": 35,
+      "win_rate": 60.0,
+      "profit_factor": 2.67,
+      "pnl_pts": 67.75,
+      "pnl_usd": 590.7,
+      "score": 83.45,
+      "plateau_score": 90.85,
+      "total_runs": 263640,
+      "val_score": 21,
+      "val_max": 100,
+      "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
+      "mc_profitable_pct": 94.0,
       "wf_profitable": 0,
       "wf_total": 0
     }
