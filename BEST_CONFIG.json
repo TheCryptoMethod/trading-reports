@@ -1,9 +1,9 @@
 {
-  "asset": "MHG",
-  "asset_name": "Micro Copper Futures",
-  "tick_size": 0.0005,
-  "point_value": 2500.0,
-  "usd_per_tick": 1.25,
+  "asset": "MNG",
+  "asset_name": "Micro Henry Hub Natural Gas",
+  "tick_size": 0.001,
+  "point_value": 1000.0,
+  "usd_per_tick": 1.0,
   "max_lots": 2,
   "is_micro": true,
   "account_size": 50000,
@@ -12,131 +12,131 @@
   "config": {
     "windows": [
       {
-        "window": "14:30-15:00",
-        "cc_min_pts": 0.0025
-      },
-      {
-        "window": "15:00-15:30",
-        "cc_min_pts": 0.002
-      },
-      {
-        "window": "09:00-09:30",
-        "cc_min_pts": 0.002
-      },
-      {
-        "window": "06:00-06:30",
-        "cc_min_pts": 0.0015
+        "window": "08:30-09:00",
+        "cc_min_pts": 0.006
       },
       {
         "window": "00:00-00:30",
-        "cc_min_pts": 0.0035
+        "cc_min_pts": 0.004
+      },
+      {
+        "window": "23:00-23:30",
+        "cc_min_pts": 0.004
+      },
+      {
+        "window": "21:00-21:30",
+        "cc_min_pts": 0.005
+      },
+      {
+        "window": "12:00-12:30",
+        "cc_min_pts": 0.007
       }
     ],
-    "description": "14:30-15:00 CC=0.0025 | 15:00-15:30 CC=0.0020 | 09:00-09:30 CC=0.0020 | 06:00-06:30 CC=0.0015 | 00:00-00:30 CC=0.0035"
+    "description": "08:30-09:00 CC=0.006 | 00:00-00:30 CC=0.004 | 23:00-23:30 CC=0.004 | 21:00-21:30 CC=0.005 | 12:00-12:30 CC=0.007"
   },
   "backtest": {
-    "total_pnl_pts": 0.5,
-    "total_pnl_usd": 2390.94,
-    "trades": 47,
-    "win_rate": 65.95744680851064,
-    "profit_factor": 5.82,
-    "max_drawdown_usd": 162.36,
-    "score": 95.1,
-    "plateau_score": 104.45,
+    "total_pnl_pts": 0.41,
+    "total_pnl_usd": 738.64,
+    "trades": 32,
+    "win_rate": 78.125,
+    "profit_factor": 5.05,
+    "max_drawdown_usd": 80.48,
+    "score": 93.89,
+    "plateau_score": 102.85,
     "ranking_method": "plateau (Gaussian neighbor stability)"
   },
   "top5": [
     {
       "rank": 1,
       "windows": [
-        "14:30-15:00",
-        "15:00-15:30",
-        "09:00-09:30",
-        "06:00-06:30",
-        "00:00-00:30"
+        "08:30-09:00",
+        "00:00-00:30",
+        "23:00-23:30",
+        "21:00-21:30",
+        "12:00-12:30"
       ],
-      "cc_per_window": "0.0025|0.0020|0.0020|0.0015|0.0035",
-      "pnl_pts": 0.5,
-      "pnl_usd": 2390.94,
-      "trades": 47,
-      "score": 95.1,
-      "plateau_score": 104.45
+      "cc_per_window": "0.006|0.004|0.004|0.005|0.007",
+      "pnl_pts": 0.41,
+      "pnl_usd": 738.64,
+      "trades": 32,
+      "score": 93.89,
+      "plateau_score": 102.85
     },
     {
       "rank": 2,
       "windows": [
-        "14:30-15:00",
-        "15:00-15:30",
-        "09:00-09:30",
-        "06:00-06:30",
-        "00:00-00:30"
+        "08:30-09:00",
+        "00:00-00:30",
+        "23:00-23:30",
+        "21:00-21:30",
+        "12:00-12:30"
       ],
-      "cc_per_window": "0.0020|0.0025|0.0020|0.0015|0.0035",
-      "pnl_pts": 0.5,
-      "pnl_usd": 2393.48,
-      "trades": 49,
-      "score": 94.98,
-      "plateau_score": 104.45
+      "cc_per_window": "0.005|0.004|0.004|0.005|0.007",
+      "pnl_pts": 0.4,
+      "pnl_usd": 718.16,
+      "trades": 33,
+      "score": 93.6,
+      "plateau_score": 102.85
     },
     {
       "rank": 3,
       "windows": [
-        "14:30-15:00",
-        "15:00-15:30",
-        "09:00-09:30",
-        "06:00-06:30",
-        "00:00-00:30"
+        "08:30-09:00",
+        "00:00-00:30",
+        "23:00-23:30",
+        "21:00-21:30",
+        "12:00-12:30"
       ],
-      "cc_per_window": "0.0025|0.0025|0.0020|0.0015|0.0035",
-      "pnl_pts": 0.5,
-      "pnl_usd": 2380.92,
-      "trades": 46,
-      "score": 94.62,
-      "plateau_score": 104.44
+      "cc_per_window": "0.006|0.004|0.004|0.004|0.007",
+      "pnl_pts": 0.41,
+      "pnl_usd": 732.16,
+      "trades": 33,
+      "score": 93.6,
+      "plateau_score": 102.85
     },
     {
       "rank": 4,
       "windows": [
-        "14:30-15:00",
-        "15:00-15:30",
-        "09:00-09:30",
-        "06:00-06:30",
-        "00:00-00:30"
+        "08:30-09:00",
+        "00:00-00:30",
+        "23:00-23:30",
+        "21:00-21:30",
+        "12:00-12:30"
       ],
-      "cc_per_window": "0.0020|0.0025|0.0025|0.0015|0.0035",
-      "pnl_pts": 0.5,
-      "pnl_usd": 2385.96,
-      "trades": 48,
-      "score": 94.49,
-      "plateau_score": 104.44
+      "cc_per_window": "0.005|0.004|0.004|0.004|0.007",
+      "pnl_pts": 0.4,
+      "pnl_usd": 711.68,
+      "trades": 34,
+      "score": 93.34,
+      "plateau_score": 102.85
     },
     {
       "rank": 5,
       "windows": [
-        "14:30-15:00",
-        "15:00-15:30",
-        "09:00-09:30",
-        "06:00-06:30",
-        "00:00-00:30"
+        "08:30-09:00",
+        "00:00-00:30",
+        "23:00-23:30",
+        "21:00-21:30",
+        "12:00-12:30"
       ],
-      "cc_per_window": "0.0020|0.0020|0.0020|0.0015|0.0035",
-      "pnl_pts": 0.51,
-      "pnl_usd": 2403.5,
-      "trades": 50,
-      "score": 95.47,
-      "plateau_score": 104.43
+      "cc_per_window": "0.006|0.003|0.004|0.005|0.007",
+      "pnl_pts": 0.4,
+      "pnl_usd": 714.16,
+      "trades": 33,
+      "score": 92.84,
+      "plateau_score": 102.84
     }
   ],
-  "generated": "2026-02-22T20:03:40.823284",
-  "data_file": "C:\\VisualStudios\\Trading_ViewBot\\data\\historical\\glbx-mdp3-20210101-20260220-HG.ohlcv-1m.csv",
+  "generated": "2026-02-22T20:13:51.681101",
+  "data_file": "C:\\VisualStudios\\Trading_ViewBot\\data\\historical\\glbx-mdp3-20210101-20260220-NG.ohlcv-1m.csv",
   "data_start": "20260101",
   "data_end": "20260219",
   "search_proof": {
-    "total_runs": 262427,
-    "phase1_runs": 1380,
-    "phase2_runs": 261022,
+    "total_runs": 249410,
+    "phase1_runs": 1150,
+    "phase2_runs": 248235,
     "phase3_runs": 25,
-    "unique_configs_evaluated": 166906,
+    "unique_configs_evaluated": 92627,
     "windows_scanned": 46,
     "windows_combined": 45,
     "verdict": "EXHAUSTIVE within search space \u2014 all neighbors validated"
