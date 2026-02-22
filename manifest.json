@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-22T19:43:23.319531",
+  "last_updated": "2026-02-22T19:46:19.068650",
   "reports": [
     {
       "asset": "MGC",
@@ -723,6 +723,31 @@
       "val_max": 100,
       "val_grade": "🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades",
       "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
+    },
+    {
+      "asset": "MCL",
+      "asset_name": "Micro WTI Crude Oil",
+      "type": "heatmap",
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-19",
+      "created": "2026-02-22T19:46:19.068587",
+      "filename": "archive/MCL_heatmap_20260101-20260219.html",
+      "latest_filename": "MCL_heatmap_latest.html",
+      "description": "15:00-15:30 CC=0.05 | 18:30-19:00 CC=0.02 | 16:30-17:00 CC=0.04 | 12:30-13:00 CC=0.03 | 14:30-15:00 CC=0.05",
+      "trades": 46,
+      "win_rate": 63.04347826086957,
+      "profit_factor": 3.95,
+      "pnl_pts": 3.69,
+      "pnl_usd": 623.92,
+      "score": 94.01,
+      "plateau_score": 100.43,
+      "total_runs": 194476,
+      "val_score": 18,
+      "val_max": 100,
+      "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
+      "mc_profitable_pct": 81.2,
       "wf_profitable": 0,
       "wf_total": 0
     }
