@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-22T20:53:59.404839",
+  "last_updated": "2026-02-24T21:11:37.155637",
   "reports": [
     {
       "asset": "MGC",
@@ -897,6 +897,32 @@
       "val_score": 47,
       "val_max": 100,
       "val_grade": "🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
+    },
+    {
+      "asset": "MNQ",
+      "asset_name": "Micro E-mini Nasdaq 100",
+      "type": "heatmap",
+      "date_start": "2026-01-01",
+      "date_end": "2026-02-19",
+      "bar_interval": 5,
+      "created": "2026-02-24T21:11:37.155569",
+      "filename": "archive/MNQ_heatmap_20260101-20260219.html",
+      "latest_filename": "MNQ_heatmap_latest.html",
+      "description": "10:00-10:30 CC=1.3 | 20:30-21:00 CC=12.6",
+      "trades": 10,
+      "win_rate": 70.0,
+      "profit_factor": 3.04,
+      "pnl_pts": 156.75,
+      "pnl_usd": 602.2,
+      "score": 80.04,
+      "plateau_score": 89.7,
+      "total_runs": 157444,
+      "val_score": 28,
+      "val_max": 100,
+      "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
       "mc_profitable_pct": 100.0,
       "wf_profitable": 0,
       "wf_total": 0
