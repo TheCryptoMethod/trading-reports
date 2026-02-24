@@ -3,7 +3,7 @@
   "asset": "MNQ",
   "account_mode": "combine",
   "started_at": "2026-02-24T18:54:54.853867+00:00",
-  "updated_at": "2026-02-24T18:54:54.853867+00:00",
+  "updated_at": "2026-02-24T18:56:02.111349+00:00",
   "windows": [
     "17:00-17:30 CC=6.6",
     "21:00-21:30 CC=1.3",
@@ -22,9 +22,12 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "",
-  "ema_diff": 0.0,
+  "cloud_color": "green",
+  "ema_diff": 0.37,
   "terminal": [
-    "[18:54:54] \ud83d\ude80 Bot gestartet: MNQ (combine) \u2014 \ud83e\uddea SIMULATION"
+    "[18:54:54] \ud83d\ude80 Bot gestartet: MNQ (combine) \u2014 \ud83e\uddea SIMULATION",
+    "[18:56:02] \ud83d\udfe2 GREEN | Price: 25035.75 | EMA: +0.37 | VWAP: 24919.85 \u2191",
+    "[18:56:02] \ud83d\udcca 0 Bars | 0 Setups",
+    "[18:56:02] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
   ]
 }
