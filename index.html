@@ -177,12 +177,30 @@ body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text);
 }
 #sm-header .sm-stats span { color:var(--accent); font-weight:600; }
 #sm-close {
-    background:none; border:none; color:var(--text-dim); cursor:pointer;
-    font-size:1.2rem; padding:8px 12px; border-radius:6px;
+    background:var(--surface-2); border:1px solid var(--border); color:var(--text); cursor:pointer;
+    font-size:1.2rem; padding:8px 12px; border-radius:8px;
     min-width:44px; min-height:44px; display:flex; align-items:center; justify-content:center;
-    -webkit-tap-highlight-color:transparent;
+    -webkit-tap-highlight-color:transparent; flex-shrink:0;
 }
 #sm-close:hover { background:#21262d; color:var(--text); }
+#sm-close:active { background:var(--accent); color:var(--bg); }
+/* Drag Handle (mobile sheet-style) */
+.sm-drag-handle {
+    display:none; width:36px; height:4px; border-radius:2px;
+    background:var(--border); margin:8px auto 0; flex-shrink:0;
+}
+/* Bottom close button for thumb reach */
+#sm-footer {
+    display:none; padding:12px 20px; background:var(--surface-2);
+    border-top:1px solid var(--border); text-align:center;
+}
+#sm-footer-btn {
+    background:var(--surface); border:1px solid var(--border); color:var(--text);
+    font-family:'JetBrains Mono',monospace; font-size:0.8rem; font-weight:600;
+    padding:12px 0; width:100%; border-radius:10px; cursor:pointer;
+    -webkit-tap-highlight-color:transparent; min-height:48px;
+}
+#sm-footer-btn:active { background:var(--accent); color:var(--bg); border-color:var(--accent); }
 #sm-body {
     flex:1; overflow-y:auto; padding:0;
     font-family:'JetBrains Mono',monospace; font-size:0.75rem;
@@ -253,12 +271,13 @@ body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text);
     color:var(--text-dim); flex:1; text-align:center;
 }
 #terminal-close {
-    background:none; border:none; color:var(--text-dim); cursor:pointer;
-    font-size:1.2rem; padding:8px 12px; border-radius:6px;
+    background:#21262d; border:1px solid #30363d; color:var(--text); cursor:pointer;
+    font-size:1.2rem; padding:8px 12px; border-radius:8px;
     min-width:44px; min-height:44px; display:flex; align-items:center; justify-content:center;
-    -webkit-tap-highlight-color:transparent;
+    -webkit-tap-highlight-color:transparent; flex-shrink:0;
 }
-#terminal-close:hover { background:#21262d; color:var(--text); }
+#terminal-close:hover { background:#30363d; color:var(--text); }
+#terminal-close:active { background:var(--red); color:white; }
 #terminal-body {
     flex:1; overflow-y:auto; padding:16px;
     font-family:'JetBrains Mono',monospace; font-size:0.75rem;
@@ -428,15 +447,34 @@ td { padding:0.6rem 0.4rem; font-size:0.85rem; vertical-align:middle; }
     #terminal-close { font-size:1.5rem; min-width:48px; min-height:48px; }
 
     /* Sessions Modal: True fullscreen mit safe areas */
-    #sessions-modal { padding:0; }
+    #sessions-modal { padding:0; align-items:flex-end; }
     #sessions-modal-box {
-        width:100vw; max-height:100dvh; border-radius:0;
-        padding-top:var(--sat);
+        width:100vw; max-height:100dvh; border-radius:16px 16px 0 0;
+        padding-top:var(--sat); margin-top:auto; /* Sheet-style von unten */
     }
-    #sm-header { padding:10px 14px; min-height:44px; }
-    #sm-header h2 { font-size:0.85rem; }
-    #sm-header .sm-stats { font-size:0.65rem; gap:6px; }
-    #sm-close { font-size:1.5rem; min-width:48px; min-height:48px; }
+    .sm-drag-handle { display:block; } /* Drag Handle sichtbar */
+    #sm-header {
+        padding:8px 14px 12px; min-height:44px;
+        flex-wrap:nowrap; gap:6px;
+        position:relative;
+    }
+    #sm-header h2 { font-size:0.85rem; flex-shrink:0; }
+    #sm-header .sm-stats {
+        font-size:0.65rem; gap:6px;
+        flex:1; min-width:0; /* Allow shrinking */
+    }
+    #sm-close {
+        font-size:1.3rem; min-width:48px; min-height:48px;
+        background:var(--bg); border-color:var(--border);
+        border-radius:10px; flex-shrink:0;
+        /* Ensure it's always tappable */
+        position:relative; z-index:10;
+    }
+    #sm-footer {
+        display:block; /* Bottom close button sichtbar */
+        padding:12px 16px;
+        padding-bottom:calc(12px + var(--sab));
+    }
     #sm-body {
         font-size:0.7rem;
         padding-bottom:var(--sab);
@@ -535,6 +573,7 @@ td { padding:0.6rem 0.4rem; font-size:0.85rem; vertical-align:middle; }
 <!-- SESSIONS MODAL (full view) -->
 <div id="sessions-modal" onclick="if(event.target===this)closeSessionsModal()">
     <div id="sessions-modal-box">
+        <div class="sm-drag-handle"></div>
         <div id="sm-header">
             <h2>📋 Alle Sessions</h2>
             <div class="sm-stats">
@@ -545,6 +584,9 @@ td { padding:0.6rem 0.4rem; font-size:0.85rem; vertical-align:middle; }
         </div>
         <div id="sm-body">
             <div class="sm-empty">Laden...</div>
+        </div>
+        <div id="sm-footer">
+            <button id="sm-footer-btn" onclick="closeSessionsModal()">Schließen</button>
         </div>
     </div>
 </div>
