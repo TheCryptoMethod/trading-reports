@@ -1,34 +1,28 @@
 {
-  "status": "offline",
+  "status": "live",
   "asset": "MNQ",
-  "updated_at": "2026-02-24T20:15:41.643658+00:00",
-  "last_session": {
-    "account_mode": "combine",
-    "account_id": "SIMULATION",
-    "windows": [
-      "17:00-17:30",
-      "21:00-21:30",
-      "16:00-16:30",
-      "20:30-21:00",
-      "00:30-01:00"
-    ],
-    "cc_values": [
-      6.6,
-      1.3,
-      4.6,
-      9.6,
-      2.3
-    ],
-    "start_balance": null,
-    "end_balance": null,
-    "pnl": null,
-    "pnl_pct": null,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "win_rate": 0,
-    "bars_processed": 79,
-    "setups_detected": 0,
-    "duration_min": 80
-  }
+  "account_mode": "combine",
+  "started_at": "2026-02-24T20:15:58.763207+00:00",
+  "updated_at": "2026-02-24T20:15:58.763207+00:00",
+  "windows": [
+    "10:00-10:30 CC=1.3",
+    "20:30-21:00 CC=12.6"
+  ],
+  "balance": 51578.24,
+  "start_balance": 51578.24,
+  "pnl": 0.0,
+  "pnl_pct": 0.0,
+  "trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "win_rate": 0,
+  "open_orders": 0,
+  "open_positions": 0,
+  "last_signal": "",
+  "cloud_color": "",
+  "ema_diff": 0.0,
+  "terminal": [
+    "[20:15:58] \ud83d\ude80 Bot gestartet: MNQ (combine) \u2014 \ud83d\udd34 LIVE",
+    "[20:15:58] \ud83d\udcb0 Start-Balance: $51,578.24"
+  ]
 }
