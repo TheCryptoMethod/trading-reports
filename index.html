@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<title>Trading Reports Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+    --bg: #0a0e17; --surface: #111827; --surface-2: #1a2235;
+    --border: #1e293b; --text: #e2e8f0; --text-dim: #64748b;
+    --accent: #f59e0b; --green: #10b981; --red: #ef4444;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Outfit',sans-serif; background:var(--bg); color:var(--text); min-height:100vh; }
+.container { max-width:1100px; margin:0 auto; padding:0 1.5rem 2rem; }
+
+/* ===== LIVE BAR (sticky top) ===== */
+#live-bar {
+    position:sticky; top:0; z-index:1000;
+    display:none; /* hidden by default, shown when live */
+    align-items:center; justify-content:center; gap:12px;
+    padding:10px 20px;
+    background:rgba(10,14,23,0.92); backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--border);
+    font-family:'JetBrains Mono',monospace; font-size:0.8rem;
+    cursor:pointer; transition:all 0.3s;
+}
+#live-bar:hover { background:rgba(17,24,39,0.95); }
+#live-bar.visible { display:flex; }
+#live-dot {
+    width:8px; height:8px; border-radius:50%;
+    background:var(--green); flex-shrink:0;
+    animation:pulse 2s ease-in-out infinite;
+}
+#live-bar.sim #live-dot {
+    background:var(--yellow, #f59e0b);
+    animation:pulse-sim 2s ease-in-out infinite;
+}
+@keyframes pulse {
+    0%,100% { opacity:1; box-shadow:0 0 0 0 rgba(16,185,129,0.4); }
+    50% { opacity:0.8; box-shadow:0 0 0 6px rgba(16,185,129,0); }
+}
+@keyframes pulse-sim {
+    0%,100% { opacity:1; box-shadow:0 0 0 0 rgba(245,158,11,0.4); }
+    50% { opacity:0.8; box-shadow:0 0 0 6px rgba(245,158,11,0); }
+}
+#live-label { color:var(--green); font-weight:700; }
+#live-bar.sim #live-label { color:var(--yellow, #f59e0b); }
+#live-meta { color:var(--text-dim); font-size:0.72rem; }
+
+/* ===== HEADER ===== */
+.header {
+    padding:2.5rem 0; margin-bottom:2rem;
+    border-bottom:1px solid var(--border);
+}
+.header-top {
+    display:flex; align-items:flex-start; justify-content:space-between; gap:1.5rem;
+}
+.header-center {
+    flex:1; text-align:center;
+}
+.header-center h1 {
+    font-family:'JetBrains Mono',monospace; font-size:1.8rem; font-weight:700;
+    letter-spacing:-0.02em;
+    background:linear-gradient(135deg,var(--accent),#fbbf24);
+    -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+}
+.header-center .subtitle { color:var(--text-dim); margin-top:0.5rem; font-size:0.95rem; }
+.header-center .stats { display:flex; justify-content:center; gap:2rem; margin-top:1.2rem; }
+.header-center .stat { font-family:'JetBrains Mono',monospace; font-size:0.85rem; }
+.header-center .stat strong { color:var(--accent); font-size:1.3rem; display:block; }
+
+/* ===== SESSIONS CARD (right side of header) ===== */
+#sessions-card {
+    width:280px; flex-shrink:0;
+    background:var(--surface); border:1px solid var(--border); border-radius:12px;
+    font-family:'JetBrains Mono',monospace; font-size:0.72rem;
+    overflow:hidden; align-self:flex-start;
+}
+#sessions-card .sc-header {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:10px 14px; background:var(--surface-2);
+    border-bottom:1px solid var(--border);
+    font-size:0.78rem; font-weight:600; color:var(--text);
+    cursor:pointer; transition:background 0.2s;
+}
+#sessions-card .sc-header:hover { background:#1e293b; }
+#sessions-card .sc-mode {
+    font-size:0.65rem; font-weight:400; color:var(--text-dim);
+    padding:2px 8px; border-radius:8px; background:var(--bg);
+}
+#sessions-card .sc-body {
+    max-height:220px; overflow-y:auto; padding:0;
+}
+.s-row {
+    padding:8px 14px; border-bottom:1px solid var(--border);
+    cursor:pointer; transition:background 0.15s;
+}
+.s-row:last-child { border-bottom:none; }
+.s-row:hover { background:var(--surface-2); }
+.s-row-top {
+    display:flex; justify-content:space-between; align-items:center;
+}
+.s-date { color:var(--text-dim); }
+.s-asset { color:var(--accent); font-weight:700; font-size:0.78rem; }
+.s-row-mid {
+    display:flex; justify-content:space-between; align-items:center;
+    margin-top:3px;
+}
+.s-pnl { font-weight:700; }
+.s-pnl.pos { color:var(--green); }
+.s-pnl.neg { color:var(--red); }
+.s-wl { color:var(--text-dim); }
+.s-row-bot {
+    margin-top:2px; font-size:0.62rem; color:var(--text-dim);
+    white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+/* Expanded row details */
+.s-row-detail {
+    display:none; margin-top:6px; padding-top:6px;
+    border-top:1px dashed var(--border); font-size:0.65rem; color:var(--text-dim);
+    line-height:1.6;
+}
+.s-row.expanded .s-row-detail { display:block; }
+.s-row.expanded { background:var(--surface-2); }
+.s-detail-line { display:flex; justify-content:space-between; }
+.s-detail-line span:last-child { color:var(--text); }
+
+#sessions-card .sc-empty {
+    padding:16px; text-align:center; color:var(--text-dim); font-size:0.7rem;
+}
+
+/* ===== SESSIONS MODAL (full view) ===== */
+#sessions-modal {
+    display:none; position:fixed; top:0; left:0; right:0; bottom:0;
+    background:rgba(0,0,0,0.7); z-index:2000;
+    justify-content:center; align-items:center;
+}
+#sessions-modal.open { display:flex; }
+#sessions-modal-box {
+    width:min(600px, 90vw); max-height:80vh;
+    background:var(--surface); border:1px solid var(--border); border-radius:16px;
+    display:flex; flex-direction:column; overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+#sm-header {
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 20px; background:var(--surface-2);
+    border-bottom:1px solid var(--border);
+    font-family:'JetBrains Mono',monospace;
+}
+#sm-header h2 { font-size:1rem; font-weight:700; color:var(--text); }
+#sm-header .sm-stats {
+    font-size:0.72rem; color:var(--text-dim); display:flex; gap:12px;
+}
+#sm-header .sm-stats span { color:var(--accent); font-weight:600; }
+#sm-close {
+    background:none; border:none; color:var(--text-dim); cursor:pointer;
+    font-size:1.2rem; padding:4px 8px; border-radius:6px;
+}
+#sm-close:hover { background:#21262d; color:var(--text); }
+#sm-body {
+    flex:1; overflow-y:auto; padding:0;
+    font-family:'JetBrains Mono',monospace; font-size:0.75rem;
+}
+.sm-row {
+    padding:12px 20px; border-bottom:1px solid var(--border);
+    cursor:pointer; transition:background 0.15s;
+}
+.sm-row:hover { background:var(--surface-2); }
+.sm-row.expanded { background:var(--surface-2); }
+.sm-row-top {
+    display:grid; grid-template-columns:90px 50px 1fr 80px 80px;
+    align-items:center; gap:8px;
+}
+.sm-date { color:var(--text-dim); font-size:0.72rem; }
+.sm-asset { color:var(--accent); font-weight:700; }
+.sm-windows { color:var(--text-dim); font-size:0.65rem; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.sm-pnl { text-align:right; font-weight:700; }
+.sm-pnl.pos { color:var(--green); }
+.sm-pnl.neg { color:var(--red); }
+.sm-wl { text-align:right; color:var(--text-dim); font-size:0.7rem; }
+.sm-detail {
+    display:none; margin-top:10px; padding-top:10px;
+    border-top:1px dashed var(--border);
+    grid-template-columns:1fr 1fr; gap:4px 20px;
+    font-size:0.68rem;
+}
+.sm-row.expanded .sm-detail { display:grid; }
+.sm-detail-item { display:flex; justify-content:space-between; }
+.sm-detail-item span:first-child { color:var(--text-dim); }
+.sm-detail-item span:last-child { color:var(--text); }
+.sm-mode-badge {
+    font-size:0.6rem; padding:1px 6px; border-radius:6px;
+    background:var(--bg); display:inline-block; margin-left:4px;
+}
+.sm-mode-badge.practice { color:var(--green); }
+.sm-mode-badge.combine { color:var(--accent); }
+.sm-empty {
+    padding:40px 20px; text-align:center; color:var(--text-dim);
+}
+
+/* ===== TERMINAL OVERLAY ===== */
+#terminal-overlay {
+    display:none; position:fixed; top:0; left:0; right:0; bottom:0;
+    background:rgba(0,0,0,0.7); z-index:2000;
+    justify-content:center; align-items:center;
+}
+#terminal-overlay.open { display:flex; }
+#terminal-box {
+    width:min(800px, 90vw); height:min(600px, 80vh);
+    background:#0d1117; border:1px solid #30363d; border-radius:16px;
+    display:flex; flex-direction:column; overflow:hidden;
+    box-shadow:0 20px 60px rgba(0,0,0,0.5);
+}
+#terminal-header {
+    display:flex; align-items:center; padding:12px 16px;
+    background:#161b22; border-bottom:1px solid #30363d; gap:10px;
+}
+#terminal-header .dots { display:flex; gap:6px; }
+#terminal-header .dot { width:12px; height:12px; border-radius:50%; }
+#terminal-header .dot.red { background:#ff5f56; }
+#terminal-header .dot.yellow { background:#ffbd2e; }
+#terminal-header .dot.green { background:#27c93f; }
+#terminal-title {
+    font-family:'JetBrains Mono',monospace; font-size:0.8rem;
+    color:var(--text-dim); flex:1; text-align:center;
+}
+#terminal-close {
+    background:none; border:none; color:var(--text-dim); cursor:pointer;
+    font-size:1.2rem; padding:4px 8px; border-radius:6px;
+}
+#terminal-close:hover { background:#21262d; color:var(--text); }
+#terminal-body {
+    flex:1; overflow-y:auto; padding:16px;
+    font-family:'JetBrains Mono',monospace; font-size:0.75rem;
+    line-height:1.6; color:#c9d1d9;
+}
+#terminal-body .line { white-space:pre-wrap; }
+#terminal-body .line.signal { color:var(--accent); }
+#terminal-body .line.trade { color:var(--green); }
+#terminal-body .line.error { color:var(--red); }
+#terminal-body .line.info { color:var(--text-dim); }
+#terminal-info {
+    padding:10px 16px; background:#161b22;
+    border-top:1px solid #30363d; font-family:'JetBrains Mono',monospace;
+    font-size:0.72rem; color:var(--text-dim);
+    display:flex; justify-content:space-between;
+}
+
+/* ===== ASSET CARDS ===== */
+.asset-card {
+    background:var(--surface); border:1px solid var(--border);
+    border-radius:12px; margin-bottom:1.5rem; overflow:hidden;
+    transition:border-color 0.2s;
+}
+.asset-card:hover { border-color:#334155; }
+.asset-header {
+    padding:1.2rem 1.5rem; background:var(--surface-2);
+    display:flex; align-items:baseline; gap:1rem;
+    border-bottom:1px solid var(--border);
+}
+.asset-sym { font-family:'JetBrains Mono',monospace; font-size:1.5rem; font-weight:700; color:var(--accent); }
+.asset-name { font-size:1rem; color:var(--text-dim); }
+.asset-meta { margin-left:auto; font-size:0.8rem; color:var(--text-dim); font-family:'JetBrains Mono',monospace; }
+.asset-body { padding:1rem 1.5rem; }
+.report-type { margin-bottom:1rem; }
+.type-header {
+    display:flex; align-items:center; gap:0.5rem;
+    padding:0.5rem 0; border-left:3px solid; padding-left:0.8rem;
+    margin-bottom:0.5rem;
+}
+.type-icon { font-size:1.1rem; }
+.type-label { font-weight:600; font-size:0.9rem; }
+.type-count {
+    font-family:'JetBrains Mono',monospace; font-size:0.75rem;
+    color:var(--text-dim); background:var(--surface-2);
+    padding:0.15rem 0.5rem; border-radius:10px;
+}
+table { width:100%; border-collapse:collapse; }
+tr { border-bottom:1px solid var(--border); }
+tr:last-child { border-bottom:none; }
+td { padding:0.6rem 0.4rem; font-size:0.85rem; vertical-align:middle; }
+.date-range { font-family:'JetBrains Mono',monospace; font-size:0.8rem; white-space:nowrap; min-width:200px; }
+.badges { display:flex; gap:0.3rem; flex-wrap:wrap; }
+.badge {
+    font-family:'JetBrains Mono',monospace; font-size:0.7rem;
+    padding:0.15rem 0.5rem; border-radius:4px; color:white; white-space:nowrap;
+}
+.badge.score { background:#6366f1; }
+.badge.trades { background:#334155; color:var(--text-dim); }
+.created { color:var(--text-dim); font-size:0.78rem; white-space:nowrap; }
+.link a {
+    color:var(--accent); text-decoration:none; font-weight:600; font-size:0.85rem;
+    padding:0.3rem 0.7rem; border:1px solid var(--accent); border-radius:6px;
+    transition:all 0.2s;
+}
+.link a:hover { background:var(--accent); color:var(--bg); }
+.desc { color:var(--text-dim); font-size:0.78rem; padding:0.2rem 0 0.4rem 0.8rem; font-family:'JetBrains Mono',monospace; }
+.empty { text-align:center; padding:4rem 2rem; color:var(--text-dim); }
+.empty .icon { font-size:3rem; margin-bottom:1rem; }
+.empty .cmd { font-family:'JetBrains Mono',monospace; font-size:0.85rem; margin-top:0.8rem; color:var(--accent); }
+.footer {
+    text-align:center; padding:2rem 0; margin-top:2rem;
+    border-top:1px solid var(--border); color:var(--text-dim); font-size:0.8rem;
+}
+.footer a { color:var(--accent); text-decoration:none; }
+/* ===== MOBILE: Tablets ===== */
+@media(max-width:768px) {
+    .container { padding:0 1rem 1.5rem; }
+    .header { padding:1.5rem 0; margin-bottom:1.5rem; }
+    .header-top { flex-direction:column; gap:1rem; }
+    .header-center h1 { font-size:1.4rem; }
+    .header-center .subtitle { font-size:0.85rem; }
+    .header-center .stats { flex-wrap:wrap; gap:0.8rem; }
+    .header-center .stat strong { font-size:1.1rem; }
+    #sessions-card { width:100%; }
+
+    /* Terminal: volle Breite */
+    #terminal-box { width:95vw; height:85vh; border-radius:12px; }
+
+    /* Sessions Modal: volle Breite */
+    #sessions-modal-box { width:95vw; max-height:85vh; border-radius:12px; }
+    .sm-row-top {
+        grid-template-columns:1fr 1fr;
+        gap:4px;
+    }
+    .sm-windows { grid-column:1/-1; }
+    .sm-row { padding:10px 14px; }
+    .sm-pnl { font-size:0.75rem; }
+    .sm-wl { font-size:0.68rem; }
+    #sm-header { flex-wrap:wrap; gap:8px; padding:12px 16px; }
+    #sm-header h2 { font-size:0.9rem; }
+
+    /* Asset Cards */
+    .asset-header { flex-wrap:wrap; gap:0.5rem; padding:1rem; }
+    .asset-meta { margin-left:0; width:100%; }
+    .asset-body { padding:0.8rem 1rem; }
+    .asset-sym { font-size:1.2rem; }
+
+    /* Report Tables */
+    td { padding:0.5rem 0.3rem; font-size:0.78rem; }
+    .date-range { min-width:auto; font-size:0.7rem; }
+    .badges { gap:0.2rem; }
+    .badge { font-size:0.6rem; padding:0.1rem 0.4rem; }
+    .created { font-size:0.68rem; }
+    .link a { font-size:0.75rem; padding:0.25rem 0.5rem; }
+}
+
+/* ===== MOBILE: Phones ===== */
+@media(max-width:480px) {
+    .container { padding:0 0.6rem 1rem; }
+    .header { padding:1rem 0; margin-bottom:1rem; }
+    .header-center h1 { font-size:1.2rem; }
+    .header-center .subtitle { font-size:0.78rem; }
+    .header-center .stats { gap:0.6rem; }
+    .header-center .stat { font-size:0.75rem; }
+    .header-center .stat strong { font-size:1rem; }
+
+    /* Live Bar: kompakt */
+    #live-bar {
+        padding:8px 12px; gap:8px;
+        font-size:0.7rem;
+        flex-wrap:wrap; justify-content:flex-start;
+    }
+    #live-label { font-size:0.72rem; }
+    #live-meta { font-size:0.65rem; width:100%; }
+
+    /* Terminal: Fullscreen-nah */
+    #terminal-box { width:100vw; height:100vh; border-radius:0; }
+    #terminal-header { padding:10px 12px; }
+    #terminal-title { font-size:0.72rem; }
+    #terminal-body { padding:10px; font-size:0.65rem; line-height:1.5; }
+    #terminal-body .line { word-break:break-word; }
+    #terminal-info { padding:8px 12px; font-size:0.65rem; flex-wrap:wrap; gap:4px; }
+    #terminal-close { font-size:1.4rem; padding:6px 10px; min-width:44px; min-height:44px; }
+
+    /* Sessions Modal: Fullscreen */
+    #sessions-modal-box { width:100vw; max-height:100vh; border-radius:0; }
+    #sm-header { padding:10px 12px; }
+    #sm-header h2 { font-size:0.85rem; }
+    #sm-header .sm-stats { font-size:0.65rem; gap:6px; }
+    #sm-close { font-size:1.4rem; padding:6px 10px; min-width:44px; min-height:44px; }
+    #sm-body { font-size:0.68rem; }
+    .sm-row { padding:10px 12px; }
+    .sm-row-top {
+        grid-template-columns:1fr auto;
+        gap:3px;
+    }
+    .sm-date { font-size:0.65rem; }
+    .sm-asset { font-size:0.72rem; }
+    .sm-windows { grid-column:1/-1; font-size:0.6rem; }
+    .sm-pnl { font-size:0.72rem; }
+    .sm-wl { font-size:0.62rem; }
+    .sm-detail {
+        grid-template-columns:1fr;
+        font-size:0.62rem; gap:2px;
+    }
+    .sm-mode-badge { font-size:0.55rem; }
+
+    /* Sessions Card */
+    #sessions-card { font-size:0.68rem; }
+    #sessions-card .sc-header { padding:8px 12px; font-size:0.72rem; }
+    .s-row { padding:6px 12px; }
+    .s-row-bot { font-size:0.58rem; }
+    .s-row-detail { font-size:0.6rem; }
+    .s-detail-line { gap:8px; }
+
+    /* Asset Cards */
+    .asset-header { padding:0.8rem; }
+    .asset-sym { font-size:1rem; }
+    .asset-name { font-size:0.85rem; }
+    .asset-meta { font-size:0.7rem; }
+    .asset-body { padding:0.5rem 0.8rem; }
+
+    /* Report Tables: Scrollbar oder stack */
+    table { display:block; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+    td { white-space:nowrap; font-size:0.7rem; padding:0.4rem 0.3rem; }
+    .date-range { min-width:auto; font-size:0.65rem; }
+    .badge { font-size:0.55rem; padding:0.1rem 0.3rem; }
+    .created { display:none; }
+    .link a { font-size:0.7rem; padding:0.2rem 0.4rem; }
+
+    /* Touch Targets min 44px */
+    .s-row, .sm-row { min-height:44px; }
+    .type-header { padding:0.6rem 0; padding-left:0.6rem; }
+
+    /* Footer */
+    .footer { font-size:0.7rem; padding:1.5rem 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- LIVE BAR (sticky top, hidden by default) -->
+<div id="live-bar" onclick="toggleTerminal()">
+    <span id="live-dot"></span>
+    <span id="live-label">LIVE</span>
+    <span id="live-meta"></span>
+</div>
+
+<!-- TERMINAL OVERLAY -->
+<div id="terminal-overlay" onclick="if(event.target===this)toggleTerminal()">
+    <div id="terminal-box">
+        <div id="terminal-header">
+            <div class="dots"><div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div></div>
+            <div id="terminal-title">Bot Terminal</div>
+            <button id="terminal-close" onclick="toggleTerminal()">✕</button>
+        </div>
+        <div id="terminal-body">
+            <div class="line info">Warte auf Bot-Verbindung...</div>
+        </div>
+        <div id="terminal-info">
+            <span id="t-status">⚫ Offline</span>
+            <span id="t-updated">—</span>
+        </div>
+    </div>
+</div>
+
+<!-- SESSIONS MODAL (full view) -->
+<div id="sessions-modal" onclick="if(event.target===this)closeSessionsModal()">
+    <div id="sessions-modal-box">
+        <div id="sm-header">
+            <h2>📋 Alle Sessions</h2>
+            <div class="sm-stats">
+                <span id="sm-total">0</span> Sessions ·
+                <span id="sm-pnl-total">$0</span> Gesamt
+            </div>
+            <button id="sm-close" onclick="closeSessionsModal()">✕</button>
+        </div>
+        <div id="sm-body">
+            <div class="sm-empty">Laden...</div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="header">
+        <div class="header-top">
+            <div class="header-center">
+                <h1>⚡ Trading Reports</h1>
+                <div class="subtitle">Automatisierte Optimierung & Backtesting</div>
+                <div class="stats">
+                    <div class="stat"><strong>11</strong>Assets</div>
+                    <div class="stat"><strong>36</strong>Tests</div>
+                    <div class="stat"><strong>2026-02-22 20:53</strong>Aktualisiert</div>
+                </div>
+            </div>
+            <div id="sessions-card">
+                <div class="sc-header" onclick="openSessionsModal()">
+                    <span>📋 Sessions</span>
+                    <span id="sc-count" class="sc-mode">0</span>
+                </div>
+                <div class="sc-body" id="sessions-body">
+                    <div class="sc-empty">Laden...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">M2K</div>
+                <div class="asset-name">Micro E-mini Russell 2000</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 19:39</td>
+                    <td class="link"><a href="archive/M2K_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🔴 F — Wahrscheinlich overfitted oder kein Edge</span><span class="badge score">23/100</span><span class="badge trades">47 Trades</span><span class="badge" style="background:#10b981">61.7% WR</span><span class="badge" style="background:#10b981">+73.5 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-22 19:39</td>
+                    <td class="link"><a href="archive/M2K_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">21:30-22:00 CC=0.5 | 14:30-15:00 CC=2.5 | 16:00-16:30 CC=0.6 | 20:30-21:00 CC=0.6 | 15:30-16:00 CC=1.6</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">42 Trades</span><span class="badge" style="background:#10b981">57.1% WR</span><span class="badge" style="background:#10b981">+60.9 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-20 23:41</td>
+                    <td class="link"><a href="archive/M2K_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">21:30-22:00 CC=0.1 | 14:30-15:00 CC=2.6 | 16:00-16:30 CC=0.6 | 15:30-16:00 CC=1.6</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MBT</div>
+                <div class="asset-name">Micro Bitcoin Futures</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 19:43</td>
+                    <td class="link"><a href="archive/MBT_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades</span><span class="badge score">36/100</span><span class="badge trades">41 Trades</span><span class="badge" style="background:#10b981">56.1% WR</span><span class="badge" style="background:#10b981">+3215.0 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-22 19:42</td>
+                    <td class="link"><a href="archive/MBT_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">04:00-04:30 CC=30.0 | 16:00-16:30 CC=80.0 | 20:30-21:00 CC=5.0 | 09:00-09:30 CC=20.0 | 21:00-21:30 CC=20.0</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">35 Trades</span><span class="badge" style="background:#f59e0b">51.4% WR</span><span class="badge" style="background:#10b981">+2650.0 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-20 23:44</td>
+                    <td class="link"><a href="archive/MBT_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">04:00-04:30 CC=30.0 | 16:00-16:30 CC=75.0 | 20:30-21:00 CC=5.0 | 21:00-21:30 CC=15.0</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MCL</div>
+                <div class="asset-name">Micro WTI Crude Oil</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 19:46</td>
+                    <td class="link"><a href="archive/MCL_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🔴 F — Wahrscheinlich overfitted oder kein Edge</span><span class="badge score">18/100</span><span class="badge trades">46 Trades</span><span class="badge" style="background:#10b981">63.0% WR</span><span class="badge" style="background:#10b981">+3.7 pts</span><span class="badge" style="background:#10b981">MC 81%</span></td>
+                    <td class="created">2026-02-22 19:46</td>
+                    <td class="link"><a href="archive/MCL_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">15:00-15:30 CC=0.05 | 18:30-19:00 CC=0.02 | 16:30-17:00 CC=0.04 | 12:30-13:00 CC=0.03 | 14:30-15:00 CC=0.05</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">28 Trades</span><span class="badge" style="background:#10b981">64.3% WR</span><span class="badge" style="background:#10b981">+2.8 pts</span><span class="badge" style="background:#ef4444">MC 36%</span></td>
+                    <td class="created">2026-02-20 23:15</td>
+                    <td class="link"><a href="archive/MCL_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">15:00-15:30 CC=0.05 | 18:30-19:00 CC=0.03 | 16:30-17:00 CC=0.05 | 14:30-15:00 CC=0.06</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MES</div>
+                <div class="asset-name">Micro E-mini S&P 500</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 19:51</td>
+                    <td class="link"><a href="archive/MES_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🔴 F — Wahrscheinlich overfitted oder kein Edge</span><span class="badge score">21/100</span><span class="badge trades">35 Trades</span><span class="badge" style="background:#10b981">60.0% WR</span><span class="badge" style="background:#10b981">+67.8 pts</span><span class="badge" style="background:#10b981">MC 94%</span></td>
+                    <td class="created">2026-02-22 19:50</td>
+                    <td class="link"><a href="archive/MES_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">19:00-19:30 CC=3.0 | 02:00-02:30 CC=0.5 | 07:30-08:00 CC=1.0 | 14:00-14:30 CC=2.0 | 13:30-14:00 CC=1.5</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">24 Trades</span><span class="badge" style="background:#f59e0b">54.2% WR</span><span class="badge" style="background:#10b981">+55.8 pts</span><span class="badge" style="background:#10b981">MC 86%</span></td>
+                    <td class="created">2026-02-20 23:12</td>
+                    <td class="link"><a href="archive/MES_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">19:00-19:30 CC=3.0 | 02:00-02:30 CC=0.8 | 14:00-14:30 CC=2.0 | 13:30-14:00 CC=1.8</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MET</div>
+                <div class="asset-name">Micro Ether Futures</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 19:56</td>
+                    <td class="link"><a href="archive/MET_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🔴 F — Wahrscheinlich overfitted oder kein Edge</span><span class="badge score">24/100</span><span class="badge trades">40 Trades</span><span class="badge" style="background:#f59e0b">50.0% WR</span><span class="badge" style="background:#10b981">+496.5 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-22 19:56</td>
+                    <td class="link"><a href="archive/MET_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">15:30-16:00 CC=0.2 | 04:30-05:00 CC=0.2 | 21:00-21:30 CC=2.8 | 20:30-21:00 CC=3.0</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">40 Trades</span><span class="badge" style="background:#f59e0b">50.0% WR</span><span class="badge" style="background:#10b981">+496.5 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-20 23:47</td>
+                    <td class="link"><a href="archive/MET_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">15:30-16:00 CC=0.2 | 04:30-05:00 CC=0.2 | 21:00-21:30 CC=2.8 | 20:30-21:00 CC=3.0</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MGC</div>
+                <div class="asset-name">Micro Gold Futures</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 20:00</td>
+                    <td class="link"><a href="archive/MGC_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades</span><span class="badge score">38/100</span><span class="badge trades">51 Trades</span><span class="badge" style="background:#10b981">62.7% WR</span><span class="badge" style="background:#10b981">+247.3 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-22 19:59</td>
+                    <td class="link"><a href="archive/MGC_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">23:00-23:30 CC=0.8 | 01:00-01:30 CC=4.7 | 02:00-02:30 CC=1.2 | 00:00-00:30 CC=2.7 | 14:00-14:30 CC=1.0</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">48 Trades</span><span class="badge" style="background:#10b981">60.4% WR</span><span class="badge" style="background:#10b981">+234.1 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-20 23:04</td>
+                    <td class="link"><a href="archive/MGC_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">23:00-23:30 CC=0.8 | 01:00-01:30 CC=3.0 | 02:00-02:30 CC=1.3 | 14:00-14:30 CC=1.0</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MHG</div>
+                <div class="asset-name">Micro Copper Futures</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 20:04</td>
+                    <td class="link"><a href="archive/MHG_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🔴 F — Wahrscheinlich overfitted oder kein Edge</span><span class="badge score">19/100</span><span class="badge trades">47 Trades</span><span class="badge" style="background:#10b981">66.0% WR</span><span class="badge" style="background:#10b981">+0.5 pts</span><span class="badge" style="background:#10b981">MC 92%</span></td>
+                    <td class="created">2026-02-22 20:03</td>
+                    <td class="link"><a href="archive/MHG_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">14:30-15:00 CC=0.0025 | 15:00-15:30 CC=0.0020 | 09:00-09:30 CC=0.0020 | 06:00-06:30 CC=0.0015 | 00:00-00:30 CC=0.0035</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">54 Trades</span><span class="badge" style="background:#f59e0b">53.7% WR</span><span class="badge" style="background:#10b981">+0.5 pts</span><span class="badge" style="background:#10b981">MC 90%</span></td>
+                    <td class="created">2026-02-20 23:27</td>
+                    <td class="link"><a href="archive/MHG_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">14:30-15:00 CC=0.0017 | 15:00-15:30 CC=0.0007 | 09:00-09:30 CC=0.0017 | 06:00-06:30 CC=0.0012</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MNG</div>
+                <div class="asset-name">Micro Henry Hub Natural Gas</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 20:16</td>
+                    <td class="link"><a href="archive/MNG_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🔴 F — Wahrscheinlich overfitted oder kein Edge</span><span class="badge score">23/100</span><span class="badge trades">32 Trades</span><span class="badge" style="background:#10b981">78.1% WR</span><span class="badge" style="background:#10b981">+0.4 pts</span></td>
+                    <td class="created">2026-02-22 20:13</td>
+                    <td class="link"><a href="archive/MNG_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">08:30-09:00 CC=0.006 | 00:00-00:30 CC=0.004 | 23:00-23:30 CC=0.004 | 21:00-21:30 CC=0.005 | 12:00-12:30 CC=0.007</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">23 Trades</span><span class="badge" style="background:#10b981">78.3% WR</span><span class="badge" style="background:#10b981">+0.4 pts</span></td>
+                    <td class="created">2026-02-20 23:38</td>
+                    <td class="link"><a href="archive/MNG_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">08:30-09:00 CC=0.007 | 00:00-00:30 CC=0.004 | 07:00-07:30 CC=0.005 | 23:00-23:30 CC=0.003</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MNQ</div>
+                <div class="asset-name">Micro E-mini Nasdaq 100</div>
+                <div class="asset-meta">6 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">3</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 20:24</td>
+                    <td class="link"><a href="archive/MNQ_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr>
+                    <td class="date-range">01.01.2025 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 12:27</td>
+                    <td class="link"><a href="archive/MNQ_equity_20250101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr>
+                    <td class="date-range">03.01.2021 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-21 13:49</td>
+                    <td class="link"><a href="archive/MNQ_equity_20210103-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">3</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades</span><span class="badge score">37/100</span><span class="badge trades">49 Trades</span><span class="badge" style="background:#10b981">65.3% WR</span><span class="badge" style="background:#10b981">+478.5 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-22 20:21</td>
+                    <td class="link"><a href="archive/MNQ_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">17:00-17:30 CC=6.6 | 21:00-21:30 CC=1.3 | 16:00-16:30 CC=4.6 | 20:30-21:00 CC=9.6 | 00:30-01:00 CC=2.3</td></tr><tr>
+                    <td class="date-range">01.01.2025 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades</span><span class="badge score">31/100</span><span class="badge trades">66 Trades</span><span class="badge" style="background:#10b981">62.1% WR</span><span class="badge" style="background:#10b981">+1516.0 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-22 12:25</td>
+                    <td class="link"><a href="archive/MNQ_heatmap_20250101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">15:00-15:30 CC=13.1 | 19:00-19:30 CC=18.3 | 01:00-01:30 CC=7.8 | 16:30-17:00 CC=22.6</td></tr><tr>
+                    <td class="date-range">01.01.2021 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">45 Trades</span><span class="badge" style="background:#10b981">68.9% WR</span><span class="badge" style="background:#10b981">+681.8 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-21 13:41</td>
+                    <td class="link"><a href="archive/MNQ_heatmap_20210101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">18:00-18:30 CC=21.7 | 23:00-23:30 CC=9.0 | 00:30-01:00 CC=11.2 | 12:30-13:00 CC=22.2</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">MYM</div>
+                <div class="asset-name">Micro Dow Jones</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 20:35</td>
+                    <td class="link"><a href="archive/MYM_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades</span><span class="badge score">43/100</span><span class="badge trades">47 Trades</span><span class="badge" style="background:#10b981">70.2% WR</span><span class="badge" style="background:#10b981">+880.0 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-22 20:31</td>
+                    <td class="link"><a href="archive/MYM_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">14:30-15:00 CC=38.0 | 16:30-17:00 CC=14.0 | 10:30-11:00 CC=1.0 | 07:00-07:30 CC=7.0 | 21:30-22:00 CC=7.0</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">52 Trades</span><span class="badge" style="background:#10b981">59.6% WR</span><span class="badge" style="background:#10b981">+720.0 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-20 23:19</td>
+                    <td class="link"><a href="archive/MYM_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">14:30-15:00 CC=38.2 | 16:30-17:00 CC=12.2 | 10:30-11:00 CC=1.0 | 21:00-21:30 CC=2.2</td></tr></tbody></table>
+            </div></div>
+        </div>
+        <div class="asset-card">
+            <div class="asset-header">
+                <div class="asset-sym">SIL</div>
+                <div class="asset-name">Micro Silver Futures</div>
+                <div class="asset-meta">3 Tests · Letzter: 2026-02-22</div>
+            </div>
+            <div class="asset-body">
+            <div class="report-type">
+                <div class="type-header" style="border-color:#10b981">
+                    <span class="type-icon">📈</span>
+                    <span class="type-label">Equity Curve</span>
+                    <span class="type-count">1</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"></td>
+                    <td class="created">2026-02-22 20:53</td>
+                    <td class="link"><a href="archive/SIL_equity_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr></tbody></table>
+            </div>
+            <div class="report-type">
+                <div class="type-header" style="border-color:#f59e0b">
+                    <span class="type-icon">🔥</span>
+                    <span class="type-label">Optimizer Heatmap</span>
+                    <span class="type-count">2</span>
+                </div>
+                <table><tbody><tr>
+                    <td class="date-range">01.01.2026 → 19.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades</span><span class="badge score">47/100</span><span class="badge trades">39 Trades</span><span class="badge" style="background:#10b981">56.4% WR</span><span class="badge" style="background:#10b981">+7.6 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-22 20:49</td>
+                    <td class="link"><a href="archive/SIL_heatmap_20260101-20260219.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">17:00-17:30 CC=0.152 | 02:30-03:00 CC=0.182 | 09:00-09:30 CC=0.062 | 16:30-17:00 CC=0.167 | 04:00-04:30 CC=0.032</td></tr><tr>
+                    <td class="date-range">01.01.2026 → 20.02.2026</td>
+                    <td class="badges"><span class="badge" style="background:#888">?</span><span class="badge trades">22 Trades</span><span class="badge" style="background:#10b981">59.1% WR</span><span class="badge" style="background:#10b981">+6.8 pts</span><span class="badge" style="background:#10b981">MC 100%</span></td>
+                    <td class="created">2026-02-20 23:22</td>
+                    <td class="link"><a href="archive/SIL_heatmap_20260101-20260220.html" target="_blank">Öffnen</a></td>
+                </tr><tr><td colspan="4" class="desc">17:00-17:30 CC=0.152 | 02:30-03:00 CC=0.187 | 09:00-09:30 CC=0.062 | 16:30-17:00 CC=0.172</td></tr></tbody></table>
+            </div></div>
+        </div>
+    <div class="footer">
+        <a href="https://github.com/TheCryptoMethod/Trading_ViewBot">Trading_ViewBot</a> · Auto-deployed
+    </div>
+</div>
+
+<script>
+const BASE = window.location.href.replace(/\/[^/]*$/, '/');
+let termOpen = false;
+let allSessions = [];
+
+function toggleTerminal() {
+    termOpen = !termOpen;
+    document.getElementById('terminal-overlay').classList.toggle('open', termOpen);
+}
+
+function openSessionsModal() {
+    document.getElementById('sessions-modal').classList.add('open');
+    renderSessionsModal();
+}
+function closeSessionsModal() {
+    document.getElementById('sessions-modal').classList.remove('open');
+}
+
+function lineClass(t) {
+    if (t.includes('TRADE SIGNAL') || t.includes('SETUP DETECTED') || t.includes('CLOUD CHANGE')) return 'signal';
+    if (t.includes('ORDER PLACED') || t.includes('FILLED') || t.includes('TP @')) return 'trade';
+    if (t.includes('❌') || t.includes('ERROR') || t.includes('SL @')) return 'error';
+    return 'info';
+}
+
+function toggleRow(el) {
+    el.classList.toggle('expanded');
+}
+
+async function fetchLive() {
+    const bar = document.getElementById('live-bar');
+    const label = document.getElementById('live-label');
+    const meta = document.getElementById('live-meta');
+    const tbody = document.getElementById('terminal-body');
+    const tstat = document.getElementById('t-status');
+    const tupd = document.getElementById('t-updated');
+
+    try {
+        const r = await fetch(BASE + 'live_status.json?t=' + Date.now());
+        if (!r.ok) throw new Error('not found');
+        const d = await r.json();
+
+        if (d.status === 'live' || d.status === 'simulation') {
+            // Staleness Check: Wenn letztes Update > 5 Min her → als offline behandeln
+            const updAt = d.updated_at ? new Date(d.updated_at) : null;
+            const staleMinutes = updAt ? (Date.now() - updAt.getTime()) / 60000 : 999;
+            if (staleMinutes > 5) {
+                bar.classList.remove('visible');
+                bar.classList.remove('sim');
+                tstat.textContent = '⚫ Offline (letztes Update vor ' + Math.round(staleMinutes) + ' Min)';
+                tupd.textContent = updAt ? updAt.toLocaleTimeString('de') : '—';
+                return;
+            }
+            
+            const isSim = d.status === 'simulation';
+            bar.classList.add('visible');
+            if (isSim) bar.classList.add('sim'); else bar.classList.remove('sim');
+            
+            // Hauptzeile: [SIM] Asset · Mode · W/L · PnL
+            let lbl = (isSim ? '🧪 ' : '') + (d.asset || '?') + ' · ' + (d.account_mode || '');
+            if (d.trades > 0) lbl += ' · W:' + d.wins + ' L:' + d.losses;
+            if (d.pnl != null) {
+                const sign = d.pnl >= 0 ? '+' : '';
+                lbl += ' · ' + sign + '$' + d.pnl.toFixed(2);
+            }
+            label.textContent = lbl;
+
+            // Meta (2. Zeile): Balance + offene Orders/Positionen
+            let m = isSim ? '🧪 SIMULATION' : '';
+            if (d.balance != null) {
+                m += (m ? ' · ' : '') + '💰 $' + d.balance.toLocaleString('en', {minimumFractionDigits:2});
+            }
+            if (d.open_orders > 0) m += ' · 📋' + d.open_orders;
+            if (d.open_positions > 0) m += ' · 📈' + d.open_positions;
+            meta.textContent = m;
+
+            if (d.terminal && d.terminal.length) {
+                tbody.innerHTML = d.terminal.map(l =>
+                    '<div class="line ' + lineClass(l) + '">' + l.replace(/</g,'&lt;') + '</div>'
+                ).join('');
+                tbody.scrollTop = tbody.scrollHeight;
+            }
+
+            // Terminal Footer: [SIM/LIVE] Asset · Mode · W/L · PnL
+            const stIcon = isSim ? '🧪' : '🟢';
+            let st = stIcon + ' ' + d.asset + ' · ' + (d.account_mode || '');
+            if (d.trades > 0) st += ' · W:' + d.wins + ' L:' + d.losses;
+            if (d.pnl != null) {
+                const pnlStr = (d.pnl >= 0 ? '+$' : '-$') + Math.abs(d.pnl).toFixed(2);
+                st += ' · ' + pnlStr;
+            }
+            tstat.textContent = st;
+            tupd.textContent = d.updated_at ? new Date(d.updated_at).toLocaleTimeString('de') : '—';
+        } else {
+            bar.classList.remove('visible');
+            tstat.textContent = '⚫ Offline';
+        }
+    } catch(e) {
+        bar.classList.remove('visible');
+    }
+}
+
+function fmtPnl(v) {
+    if (v == null) return '—';
+    return (v >= 0 ? '+' : '') + '$' + v.toFixed(2);
+}
+
+function renderCardSession(s) {
+    const cls = s.pnl >= 0 ? 'pos' : 'neg';
+    const wl = 'W:' + (s.wins||0) + ' L:' + (s.losses||0);
+    const windows = (s.windows || []).join(', ');
+    const ccs = (s.cc_values || []).map(v => typeof v === 'number' ? v.toFixed(1) : v).join('/');
+    const details = windows + (ccs ? ' · CC=' + ccs : '');
+    const dur = s.duration_min ? s.duration_min + ' min' : '';
+    const startBal = s.start_balance != null ? '$' + s.start_balance.toLocaleString('en', {maximumFractionDigits:0}) : '';
+    const endBal = s.end_balance != null ? '$' + s.end_balance.toLocaleString('en', {maximumFractionDigits:0}) : '';
+    const am = (s.account_mode || '').toLowerCase();
+    const modeCls = am === 'combine' ? 'combine' : 'practice';
+    const modeLabel = am ? am.charAt(0).toUpperCase() + am.slice(1) : '';
+    const accId = s.account_id || '';
+
+    return '<div class="s-row" onclick="toggleRow(this)">' +
+        '<div class="s-row-top"><span class="s-date">' + s.date +
+        (modeLabel ? ' <span class="sm-mode-badge ' + modeCls + '">' + modeLabel + '</span>' : '') +
+        '</span>' +
+        '<span class="s-asset">' + (s.asset||'') + '</span></div>' +
+        '<div class="s-row-mid"><span class="s-pnl ' + cls + '">' + fmtPnl(s.pnl) + '</span>' +
+        '<span class="s-wl">' + wl + '</span></div>' +
+        '<div class="s-row-bot">' + details + '</div>' +
+        '<div class="s-row-detail">' +
+            '<div class="s-detail-line"><span>Account:</span><span>' + modeLabel + (accId ? ' #' + accId : '') + '</span></div>' +
+            '<div class="s-detail-line"><span>Trades:</span><span>' + wl + '</span></div>' +
+            '<div class="s-detail-line"><span>Windows:</span><span>' + (windows || '—') + '</span></div>' +
+            '<div class="s-detail-line"><span>CC:</span><span>' + (ccs || '—') + '</span></div>' +
+            '<div class="s-detail-line"><span>Start:</span><span>' + startBal + '</span></div>' +
+            '<div class="s-detail-line"><span>End:</span><span>' + endBal + '</span></div>' +
+            '<div class="s-detail-line"><span>Dauer:</span><span>' + dur + '</span></div>' +
+            '<div class="s-detail-line"><span>Bars:</span><span>' + (s.bars_processed||0) + '</span></div>' +
+            '<div class="s-detail-line"><span>Setups:</span><span>' + (s.setups_detected||0) + '</span></div>' +
+        '</div>' +
+        '</div>';
+}
+
+function renderSessionsModal() {
+    const body = document.getElementById('sm-body');
+    const total = document.getElementById('sm-total');
+    const pnlTotal = document.getElementById('sm-pnl-total');
+
+    if (!allSessions.length) {
+        body.innerHTML = '<div class="sm-empty">Keine Sessions vorhanden</div>';
+        return;
+    }
+
+    const recent = allSessions.slice().reverse();
+    let sumPnl = 0;
+    recent.forEach(s => { sumPnl += (s.pnl || 0); });
+
+    total.textContent = recent.length;
+    const pCls = sumPnl >= 0 ? 'color:var(--green)' : 'color:var(--red)';
+    pnlTotal.innerHTML = '<span style="' + pCls + '">' + fmtPnl(sumPnl) + '</span>';
+
+    body.innerHTML = recent.map(s => {
+        const cls = s.pnl >= 0 ? 'pos' : 'neg';
+        const wl = 'W:' + (s.wins||0) + ' L:' + (s.losses||0);
+        const windows = (s.windows || []).join(', ');
+        const ccs = (s.cc_values || []).map(v => typeof v === 'number' ? v.toFixed(1) : v).join('/');
+        const winInfo = windows + (ccs ? ' · CC=' + ccs : '');
+        const am = (s.account_mode || '').toLowerCase();
+        const modeCls = am === 'combine' ? 'combine' : 'practice';
+        const modeLabel = am ? am.charAt(0).toUpperCase() + am.slice(1) : '';
+        const accId = s.account_id || '';
+        const dur = s.duration_min ? s.duration_min + ' min' : '—';
+        const startBal = s.start_balance != null ? '$' + s.start_balance.toLocaleString('en', {maximumFractionDigits:2}) : '—';
+        const endBal = s.end_balance != null ? '$' + s.end_balance.toLocaleString('en', {maximumFractionDigits:2}) : '—';
+
+        return '<div class="sm-row" onclick="toggleRow(this)">' +
+            '<div class="sm-row-top">' +
+            '<span class="sm-date">' + s.date + '</span>' +
+            '<span class="sm-asset">' + (s.asset||'') +
+            '<span class="sm-mode-badge ' + modeCls + '">' + modeLabel + '</span></span>' +
+            '<span class="sm-windows" title="' + winInfo + '">' + winInfo + '</span>' +
+            '<span class="sm-pnl ' + cls + '">' + fmtPnl(s.pnl) + '</span>' +
+            '<span class="sm-wl">' + wl + '</span>' +
+            '</div>' +
+            '<div class="sm-detail">' +
+            '<div class="sm-detail-item"><span>Account:</span><span>' + modeLabel + (accId ? ' #' + accId : '') + '</span></div>' +
+            '<div class="sm-detail-item"><span>Trades:</span><span>' + wl + '</span></div>' +
+            '<div class="sm-detail-item"><span>Windows:</span><span>' + (windows || '—') + '</span></div>' +
+            '<div class="sm-detail-item"><span>CC:</span><span>' + (ccs || '—') + '</span></div>' +
+            '<div class="sm-detail-item"><span>Start Bal:</span><span>' + startBal + '</span></div>' +
+            '<div class="sm-detail-item"><span>End Bal:</span><span>' + endBal + '</span></div>' +
+            '<div class="sm-detail-item"><span>Dauer:</span><span>' + dur + '</span></div>' +
+            '<div class="sm-detail-item"><span>Bars:</span><span>' + (s.bars_processed||0) + '</span></div>' +
+            '<div class="sm-detail-item"><span>Setups:</span><span>' + (s.setups_detected||0) + '</span></div>' +
+            '</div>' +
+            '</div>';
+    }).join('');
+}
+
+async function fetchSessions() {
+    try {
+        const r = await fetch(BASE + 'sessions.json?t=' + Date.now());
+        if (!r.ok) throw new Error('not found');
+        allSessions = await r.json();
+        const body = document.getElementById('sessions-body');
+
+        if (!allSessions.length) {
+            body.innerHTML = '<div class="sc-empty">Keine Sessions</div>';
+            return;
+        }
+
+        document.getElementById('sc-count').textContent = allSessions.length;
+
+        // Nur letzte 3 in der Card
+        const recent = allSessions.slice(-3).reverse();
+        body.innerHTML = recent.map(renderCardSession).join('');
+    } catch(e) {
+        document.getElementById('sessions-body').innerHTML =
+            '<div class="sc-empty">Keine Sessions</div>';
+    }
+}
+
+fetchLive();
+fetchSessions();
+setInterval(fetchLive, 30000);
+setInterval(fetchSessions, 60000);
+</script>
+</body>
+</html>
