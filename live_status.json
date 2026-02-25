@@ -1,31 +1,34 @@
 {
-  "status": "live",
+  "status": "offline",
   "asset": "MGC",
-  "account_mode": "combine",
-  "started_at": "2026-02-25T09:31:45.291883+00:00",
-  "updated_at": "2026-02-25T09:31:45.291883+00:00",
-  "windows": [
-    "23:00-23:30 CC=0.8",
-    "01:00-01:30 CC=4.7",
-    "02:00-02:30 CC=1.2",
-    "00:00-00:30 CC=2.7",
-    "14:00-14:30 CC=1.0"
-  ],
-  "balance": 51578.24,
-  "start_balance": 51578.24,
-  "pnl": 0.0,
-  "pnl_pct": 0.0,
-  "trades": 0,
-  "wins": 0,
-  "losses": 0,
-  "win_rate": 0,
-  "open_orders": 0,
-  "open_positions": 0,
-  "last_signal": "",
-  "cloud_color": "",
-  "ema_diff": 0.0,
-  "terminal": [
-    "[09:31:45] \ud83d\ude80 Bot gestartet: MGC (combine) \u2014 \ud83d\udd34 LIVE",
-    "[09:31:45] \ud83d\udcb0 Start-Balance: $51,578.24"
-  ]
+  "updated_at": "2026-02-25T09:32:07.168112+00:00",
+  "last_session": {
+    "account_mode": "combine",
+    "account_id": "18798798",
+    "windows": [
+      "23:00-23:30",
+      "01:00-01:30",
+      "02:00-02:30",
+      "00:00-00:30",
+      "14:00-14:30"
+    ],
+    "cc_values": [
+      0.8,
+      4.7,
+      1.2,
+      2.7,
+      1.0
+    ],
+    "start_balance": 51578.24,
+    "end_balance": 51578.24,
+    "pnl": 0.0,
+    "pnl_pct": 0.0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0,
+    "bars_processed": 0,
+    "setups_detected": 0,
+    "duration_min": 0
+  }
 }
