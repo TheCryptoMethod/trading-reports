@@ -852,5 +852,39 @@
     "bars_processed": 87,
     "setups_detected": 2,
     "duration_min": 32
+  },
+  {
+    "date": "2026-02-25",
+    "time": "15:45 UTC",
+    "asset": "MGC + MNQ + SIL",
+    "account_mode": "practice",
+    "account_id": 18682555,
+    "windows": [
+      "23:00-23:30",
+      "01:00-01:30",
+      "02:00-02:30",
+      "00:00-00:30",
+      "14:00-14:30",
+      "17:00-17:30"
+    ],
+    "cc_values": [
+      0.8,
+      4.7,
+      1.2,
+      2.7,
+      1.0,
+      6.6
+    ],
+    "start_balance": 149097.24,
+    "end_balance": 148981.04,
+    "pnl": -116.19999999998254,
+    "pnl_pct": -0.07793571497365245,
+    "trades": 6,
+    "wins": 0,
+    "losses": 6,
+    "win_rate": 0.0,
+    "bars_processed": 190,
+    "setups_detected": 6,
+    "duration_min": 70
   }
 ]
