@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T15:46:03.646326+00:00",
-  "updated_at": "2026-02-25T16:01:08.901012+00:00",
+  "updated_at": "2026-02-25T16:02:08.978187+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -21,19 +21,15 @@
   "pnl": 0.0,
   "pnl_pct": 0.0,
   "trades": 1,
-  "wins": 0,
+  "wins": 1,
   "losses": 0,
-  "win_rate": 0.0,
-  "open_orders": 1,
-  "open_positions": 1,
+  "win_rate": 100.0,
+  "open_orders": 0,
+  "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 1.205,
+  "ema_diff": 1.1764,
   "terminal": [
-    "[15:51:59] [MGC] 15:51 \ud83d\udfe2 C=5215.20 EMA=+4.3661",
-    "[15:51:59] [MNQ] 15:51 \ud83d\udd34 C=25297.50 EMA=-5.4571",
-    "[15:52:01] [SIL] 15:51 \ud83d\udfe2 C=90.26 EMA=+0.0241",
-    "[15:52:07] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+4.37 | [MNQ] \ud83d\udd34 EMA=-5.46 | [SIL] \ud83d\udfe2 EMA=+0.02",
     "[15:52:59] [MNQ] 15:52 \ud83d\udd34 C=25284.50 EMA=-9.2549",
     "[15:52:59] [MGC] 15:52 \ud83d\udfe2 C=5215.40 EMA=+4.2002",
     "[15:53:06] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+4.20 | [MNQ] \ud83d\udd34 EMA=-9.25 | [SIL] \ud83d\udfe2 EMA=+0.02",
@@ -69,6 +65,10 @@
     "[16:00:59] \ud83c\udfaf [MNQ] LONG @ $25292.75 SL=$25288.00 TP=$25302.00",
     "[16:00:59] [MGC] 16:00 \ud83d\udfe2 C=5213.00 EMA=+1.2050",
     "[16:01:01] [SIL] 16:00 \ud83d\udfe2 C=90.61 EMA=+0.1846",
-    "[16:01:08] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.21 | [MNQ] \ud83d\udfe2 EMA=+1.96 | [SIL] \ud83d\udfe2 EMA=+0.18"
+    "[16:01:08] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.21 | [MNQ] \ud83d\udfe2 EMA=+1.96 | [SIL] \ud83d\udfe2 EMA=+0.18",
+    "[16:01:11] \u2705 [MNQ] FILLED @ $25292.75",
+    "[16:01:37] \ud83c\udfaf [MNQ] \ud83c\udfaf Take Profit getroffen | P&L: +9.25 pts",
+    "[16:01:59] [MNQ] 16:01 \ud83d\udfe2 C=25298.75 EMA=+2.5971",
+    "[16:02:00] [MGC] 16:01 \ud83d\udfe2 C=5214.20 EMA=+1.1764"
   ]
 }
