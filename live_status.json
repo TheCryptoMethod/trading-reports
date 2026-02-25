@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T16:33:09.034022+00:00",
-  "updated_at": "2026-02-25T16:33:09.034022+00:00",
+  "updated_at": "2026-02-25T16:35:24.304671+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,9 +27,11 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "",
-  "ema_diff": 0.0,
+  "cloud_color": "green",
+  "ema_diff": 2.6189,
   "terminal": [
-    "[16:33:09] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (combine) \u2014 \ud83d\udd34 LIVE"
+    "[16:33:09] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (combine) \u2014 \ud83d\udd34 LIVE",
+    "[16:34:59] [MNQ] 16:34 \ud83d\udfe2 C=25299.75 EMA=+5.1443",
+    "[16:34:59] [MGC] 16:34 \ud83d\udfe2 C=5226.20 EMA=+2.6189"
   ]
 }
