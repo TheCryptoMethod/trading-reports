@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-25T23:52:31.059666+00:00",
+  "updated_at": "2026-02-25T23:53:31.292629+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -1.3762,
+  "ema_diff": -1.556,
   "terminal": [
-    "[23:46:00] [MGC] 23:45 \ud83d\udfe2 C=5192.00 EMA=+2.7244",
-    "[23:46:09] \u26a0\ufe0f [SIL] Keine Ticks seit 6369s",
-    "[23:46:29] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.72 | [MNQ] \ud83d\udd34 EMA=-26.23 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[23:46:32] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[23:46:39] \u26a0\ufe0f [SIL] Keine Ticks seit 6399s",
-    "[23:47:00] [MNQ] 23:46 \ud83d\udd34 C=25324.25 EMA=-19.0800",
     "[23:47:00] [MGC] 23:46 \ud83d\udfe2 C=5192.40 EMA=+3.3889",
     "[23:47:10] \u26a0\ufe0f [SIL] Keine Ticks seit 6429s",
     "[23:47:29] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.39 | [MNQ] \ud83d\udd34 EMA=-19.08 | [SIL] \ud83d\udd34 EMA=-0.13",
@@ -69,6 +63,12 @@
     "[23:52:00] [MNQ] 23:51 \ud83d\udd34 C=25310.50 EMA=-11.8308",
     "[23:52:00] [MGC] 23:51 \ud83d\udd34 C=5185.00 EMA=-1.3762",
     "[23:52:13] \u26a0\ufe0f [SIL] Keine Ticks seit 6732s",
-    "[23:52:31] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.38 | [MNQ] \ud83d\udd34 EMA=-11.83 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[23:52:31] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.38 | [MNQ] \ud83d\udd34 EMA=-11.83 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[23:52:36] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[23:52:44] \u26a0\ufe0f [SIL] Keine Ticks seit 6763s",
+    "[23:53:00] [MNQ] 23:52 \ud83d\udd34 C=25306.50 EMA=-13.7615",
+    "[23:53:01] [MGC] 23:52 \ud83d\udd34 C=5183.90 EMA=-1.5560",
+    "[23:53:14] \u26a0\ufe0f [SIL] Keine Ticks seit 6794s",
+    "[23:53:31] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.56 | [MNQ] \ud83d\udd34 EMA=-13.76 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
