@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T14:34:52.540019+00:00",
-  "updated_at": "2026-02-25T14:52:10.327200+00:00",
+  "updated_at": "2026-02-25T14:53:10.394500+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -24,17 +24,12 @@
   "wins": 0,
   "losses": 0,
   "win_rate": 0.0,
-  "open_orders": 1,
-  "open_positions": 1,
+  "open_orders": 0,
+  "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 5.0222,
+  "ema_diff": 6.5013,
   "terminal": [
-    "[14:44:59] [MNQ] 14:44 \ud83d\udfe2 C=25271.50 EMA=+38.2882",
-    "[14:44:59] [MGC] 14:44 \ud83d\udd34 C=5193.20 EMA=-1.3707",
-    "[14:45:01] [SIL] 14:44 \ud83d\udd34 C=90.09 EMA=-0.0932",
-    "[14:45:08] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.37 | [MNQ] \ud83d\udfe2 EMA=+38.29 | [SIL] \ud83d\udd34 EMA=-0.09",
-    "[14:45:59] [MNQ] 14:45 \ud83d\udfe2 C=25298.75 EMA=+45.3274",
     "[14:45:59] [MGC] 14:45 \ud83d\udfe2\u26a1 C=5195.80 EMA=+0.4981",
     "[14:45:59] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5192.08",
     "[14:45:59] \ud83c\udfaf [MGC] LONG @ $5192.10 SL=$5189.60 TP=$5196.20",
@@ -69,6 +64,11 @@
     "[14:52:01] [SIL] 14:51 \ud83d\udfe2\u26a1 C=90.37 EMA=+0.0642",
     "[14:52:01] [SIL] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $90.35",
     "[14:52:01] \ud83c\udfaf [SIL] LONG @ $90.36 SL=$89.84 TP=$91.39",
-    "[14:52:10] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+5.02 | [MNQ] \ud83d\udfe2 EMA=+53.54 | [SIL] \ud83d\udfe2 EMA=+0.06"
+    "[14:52:10] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+5.02 | [MNQ] \ud83d\udfe2 EMA=+53.54 | [SIL] \ud83d\udfe2 EMA=+0.06",
+    "[14:52:59] [MNQ] 14:52 \ud83d\udfe2 C=25325.50 EMA=+47.7977",
+    "[14:52:59] [MGC] 14:52 \ud83d\udfe2 C=5206.50 EMA=+6.5013",
+    "[14:52:59] [MGC] \u2192 \u274c Order cancelled (Timeout) | Timeout nach 7 Kerzen",
+    "[14:52:59] \u274c [MGC] Order cancelled",
+    "[14:53:01] [SIL] 14:52 \ud83d\udfe2 C=90.50 EMA=+0.1515"
   ]
 }
