@@ -1,6 +1,9 @@
 {
   "asset": "SIL",
   "asset_name": "Micro Silver Futures",
+  "bar_interval": 1,
+  "window_minutes": 30,
+  "max_bars_wait": 7,
   "tick_size": 0.005,
   "point_value": 1000.0,
   "usd_per_tick": 5.0,
@@ -126,7 +129,7 @@
       "plateau_score": 92.51
     }
   ],
-  "generated": "2026-02-22T20:49:18.549768",
+  "generated": "2026-02-25T10:24:03.780575",
   "data_file": "C:\\VisualStudios\\Trading_ViewBot\\data\\historical\\glbx-mdp3-20210101-20260220-SI.ohlcv-1m.csv",
   "data_start": "20260101",
   "data_end": "20260219",
