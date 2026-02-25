@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T19:50:11.530614+00:00",
-  "updated_at": "2026-02-25T20:05:29.058730+00:00",
+  "updated_at": "2026-02-25T20:05:31.231180+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -30,7 +30,6 @@
   "cloud_color": "red",
   "ema_diff": -3.5596,
   "terminal": [
-    "[19:56:01] [MGC] 19:55 \ud83d\udd34 C=5226.60 EMA=-0.1949",
     "[19:56:25] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.19 | [MNQ] \ud83d\udfe2 EMA=+1.00 | [SIL] \ud83d\udfe2 EMA=+0.08",
     "[19:57:00] [MGC] 19:56 \ud83d\udfe2\u26a1 C=5227.00 EMA=+0.1718",
     "[19:57:00] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 19:56 UTC",
@@ -69,6 +68,7 @@
     "[20:05:00] [MNQ] 20:04 \ud83d\udd34 C=25368.50 EMA=-1.4920",
     "[20:05:00] [MGC] 20:04 \ud83d\udd34 C=5220.80 EMA=-3.5596",
     "[20:05:01] [SIL] 20:04 \ud83d\udfe2\u26a1 C=91.12 EMA=+0.0060",
-    "[20:05:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 20:04 UTC"
+    "[20:05:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 20:04 UTC",
+    "[20:05:31] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.56 | [MNQ] \ud83d\udd34 EMA=-1.49 | [SIL] \ud83d\udfe2 EMA=+0.01"
   ]
 }
