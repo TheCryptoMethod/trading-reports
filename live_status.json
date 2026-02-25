@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T11:39:26.414651+00:00",
-  "updated_at": "2026-02-25T12:24:31.739041+00:00",
+  "updated_at": "2026-02-25T12:24:34.116344+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -30,7 +30,6 @@
   "cloud_color": "green",
   "ema_diff": 1.9968,
   "terminal": [
-    "[12:14:01] [MGC] 12:13 \ud83d\udfe2 C=5199.60 EMA=+1.7318",
     "[12:14:27] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.73 | [MNQ] \ud83d\udd34 EMA=-4.57 | [SIL] \ud83d\udfe2 EMA=+0.07",
     "[12:14:59] [MGC] 12:14 \ud83d\udfe2 C=5199.90 EMA=+1.6902",
     "[12:14:59] [MNQ] 12:14 \ud83d\udd34 C=25112.00 EMA=-4.1386",
@@ -69,6 +68,7 @@
     "[12:23:59] [MNQ] 12:23 \ud83d\udfe2 C=25143.25 EMA=+15.2709",
     "[12:23:59] [MGC] 12:23 \ud83d\udfe2 C=5201.70 EMA=+1.9968",
     "[12:24:01] [SIL] 12:23 \ud83d\udd34\u26a1 C=90.30 EMA=-0.0057",
-    "[12:24:01] [SIL] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.03 < 0.032"
+    "[12:24:01] [SIL] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.03 < 0.032",
+    "[12:24:34] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.00 | [MNQ] \ud83d\udfe2 EMA=+15.27 | [SIL] \ud83d\udd34 EMA=-0.01"
   ]
 }
