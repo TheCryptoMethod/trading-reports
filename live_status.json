@@ -3,7 +3,7 @@
   "asset": "MGC",
   "account_mode": "combine",
   "started_at": "2026-02-25T10:34:43.011350+00:00",
-  "updated_at": "2026-02-25T10:34:43.011350+00:00",
+  "updated_at": "2026-02-25T10:35:47.410664+00:00",
   "windows": [
     "23:00-23:30 CC=0.8",
     "01:00-01:30 CC=4.7",
@@ -22,9 +22,12 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "",
-  "ema_diff": 0.0,
+  "cloud_color": "red",
+  "ema_diff": -3.91,
   "terminal": [
-    "[10:34:43] \ud83d\ude80 Bot gestartet: MGC (combine) \u2014 \ud83e\uddea SIMULATION"
+    "[10:34:43] \ud83d\ude80 Bot gestartet: MGC (combine) \u2014 \ud83e\uddea SIMULATION",
+    "[10:35:47] \ud83d\udd34 RED | Price: 5193.35 | EMA: -3.91 | VWAP: 5196.26 \u2193",
+    "[10:35:47] \ud83d\udcca 0 Bars | 0 Setups",
+    "[10:35:47] \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500"
   ]
 }
