@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T11:02:15.156153+00:00",
-  "updated_at": "2026-02-25T11:34:23.271442+00:00",
+  "updated_at": "2026-02-25T11:35:23.748880+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -24,17 +24,12 @@
   "wins": 0,
   "losses": 0,
   "win_rate": 0.0,
-  "open_orders": 1,
-  "open_positions": 1,
+  "open_orders": 0,
+  "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 3.3395,
+  "ema_diff": 2.6817,
   "terminal": [
-    "[11:24:19] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.52 | [MNQ] \ud83d\udfe2 EMA=+2.72 | [SIL] \ud83d\udd34 EMA=-0.12",
-    "[11:24:59] [MNQ] 11:24 \ud83d\udfe2 C=25080.00 EMA=+2.5433",
-    "[11:25:00] [MGC] 11:24 \ud83d\udd34 C=5183.40 EMA=-1.4933",
-    "[11:25:00] [SIL] 11:24 \ud83d\udd34 C=89.90 EMA=-0.0864",
-    "[11:25:18] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.49 | [MNQ] \ud83d\udfe2 EMA=+2.54 | [SIL] \ud83d\udd34 EMA=-0.09",
     "[11:25:59] [MGC] 11:25 \ud83d\udd34 C=5183.90 EMA=-0.7266",
     "[11:26:01] [MNQ] 11:25 \ud83d\udfe2 C=25082.50 EMA=+3.1139",
     "[11:26:01] [SIL] 11:25 \ud83d\udd34 C=90.00 EMA=-0.0321",
@@ -69,6 +64,11 @@
     "[11:33:23] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.91 | [MNQ] \ud83d\udfe2 EMA=+6.87 | [SIL] \ud83d\udfe2 EMA=+0.06",
     "[11:33:59] [MNQ] 11:33 \ud83d\udfe2 C=25097.75 EMA=+8.9579",
     "[11:33:59] [MGC] 11:33 \ud83d\udfe2 C=5190.70 EMA=+3.3395",
-    "[11:34:23] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.34 | [MNQ] \ud83d\udfe2 EMA=+8.96 | [SIL] \ud83d\udfe2 EMA=+0.06"
+    "[11:34:23] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.34 | [MNQ] \ud83d\udfe2 EMA=+8.96 | [SIL] \ud83d\udfe2 EMA=+0.06",
+    "[11:34:59] [MNQ] 11:34 \ud83d\udfe2 C=25096.25 EMA=+9.2923",
+    "[11:34:59] [MGC] 11:34 \ud83d\udfe2 C=5188.20 EMA=+2.6817",
+    "[11:34:59] [MGC] \u2192 \u274c Order cancelled (Timeout) | Timeout nach 7 Kerzen",
+    "[11:34:59] \u274c [MGC] Order cancelled",
+    "[11:35:01] [SIL] 11:34 \ud83d\udfe2 C=90.14 EMA=+0.0891"
   ]
 }
