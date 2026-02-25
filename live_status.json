@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-25T21:47:09.023334+00:00",
+  "updated_at": "2026-02-25T21:48:07.514134+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,11 +28,14 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.2957,
+  "ema_diff": 0.3422,
   "terminal": [
     "[21:45:46] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (combine) \u2014 \ud83d\udd34 LIVE",
     "[21:47:00] [MNQ] 21:46 \ud83d\udfe2 C=25441.00 EMA=+1.8930",
     "[21:47:01] [MGC] 21:46 \ud83d\udfe2 C=5187.80 EMA=+0.2957",
-    "[21:47:09] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.30 | [MNQ] \ud83d\udfe2 EMA=+1.89 | [SIL] \ud83d\udfe2 EMA=+0.20"
+    "[21:47:09] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.30 | [MNQ] \ud83d\udfe2 EMA=+1.89 | [SIL] \ud83d\udfe2 EMA=+0.20",
+    "[21:48:00] [MNQ] 21:47 \ud83d\udfe2 C=25447.25 EMA=+1.0970",
+    "[21:48:00] [MGC] 21:47 \ud83d\udfe2 C=5187.80 EMA=+0.3422",
+    "[21:48:07] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.34 | [MNQ] \ud83d\udfe2 EMA=+1.10 | [SIL] \ud83d\udfe2 EMA=+0.20"
   ]
 }
