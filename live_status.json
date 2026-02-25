@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T12:59:23.196745+00:00",
-  "updated_at": "2026-02-25T13:01:05.852765+00:00",
+  "updated_at": "2026-02-25T13:02:04.318849+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -16,19 +16,19 @@
     "[MNQ] 20:30-21:00 CC=9.6",
     "[MNQ] 00:30-01:00 CC=2.3"
   ],
-  "balance": 148917.74,
+  "balance": 149059.64,
   "start_balance": 148920.84,
-  "pnl": -3.1000000000058208,
-  "pnl_pct": -0.0020816428379035606,
+  "pnl": 138.80000000001746,
+  "pnl_pct": 0.09320387932274453,
   "trades": 1,
-  "wins": 0,
+  "wins": 1,
   "losses": 0,
-  "win_rate": 0.0,
-  "open_orders": 1,
-  "open_positions": 1,
+  "win_rate": 100.0,
+  "open_orders": 0,
+  "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.4185,
+  "ema_diff": 0.7237,
   "terminal": [
     "[12:59:23] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (practice) \u2014 \ud83d\udd34 LIVE",
     "[13:00:59] [MGC] 13:00 \ud83d\udfe2\u26a1 C=5202.40 EMA=+0.4185",
@@ -37,6 +37,11 @@
     "[13:00:59] [MNQ] 13:00 \ud83d\udfe2 C=25137.75 EMA=+0.3111",
     "[13:00:59] \u2705 [MGC] FILLED @ $5200.30",
     "[13:01:01] [SIL] 13:00 \ud83d\udfe2 C=90.59 EMA=+0.0830",
-    "[13:01:05] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.42 | [MNQ] \ud83d\udfe2 EMA=+0.31 | [SIL] \ud83d\udfe2 EMA=+0.08"
+    "[13:01:05] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.42 | [MNQ] \ud83d\udfe2 EMA=+0.31 | [SIL] \ud83d\udfe2 EMA=+0.08",
+    "[13:01:17] \ud83c\udfaf [MGC] \ud83c\udfaf Take Profit getroffen | P&L: +2.90 pts",
+    "[13:01:59] [MNQ] 13:01 \ud83d\udfe2 C=25139.50 EMA=+0.7967",
+    "[13:01:59] [MGC] 13:01 \ud83d\udfe2 C=5201.80 EMA=+0.7237",
+    "[13:02:01] [SIL] 13:01 \ud83d\udfe2 C=90.66 EMA=+0.1179",
+    "[13:02:04] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.72 | [MNQ] \ud83d\udfe2 EMA=+0.80 | [SIL] \ud83d\udfe2 EMA=+0.12"
   ]
 }
