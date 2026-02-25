@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T15:46:03.646326+00:00",
-  "updated_at": "2026-02-25T16:13:15.392257+00:00",
+  "updated_at": "2026-02-25T16:14:13.939137+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,11 +28,8 @@
   "open_positions": 1,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.2604,
+  "ema_diff": 0.8926,
   "terminal": [
-    "[16:03:59] \ud83c\udfaf [MNQ] SHORT @ $25296.00 SL=$25306.50 TP=$25205.25",
-    "[16:04:00] [MGC] 16:03 \ud83d\udfe2 C=5214.30 EMA=+1.6251",
-    "[16:04:01] [SIL] 16:03 \ud83d\udfe2 C=90.47 EMA=+0.1406",
     "[16:04:11] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.63 | [MNQ] \ud83d\udd34 EMA=-0.49 | [SIL] \ud83d\udfe2 EMA=+0.14",
     "[16:04:59] [MNQ] 16:04 \ud83d\udd34 C=25291.50 EMA=-1.0458",
     "[16:04:59] [MGC] 16:04 \ud83d\udfe2 C=5213.70 EMA=+1.0610",
@@ -69,6 +66,9 @@
     "[16:12:59] [MNQ] \u2192 \ud83d\udd12 Bereits in Trade | Setup ignoriert - Position offen",
     "[16:13:01] [MGC] 16:12 \ud83d\udfe2\u26a1 C=5214.30 EMA=+0.2604",
     "[16:13:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 16:12 UTC",
-    "[16:13:15] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.26 | [MNQ] \ud83d\udd34 EMA=-0.47 | [SIL] \ud83d\udfe2 EMA=+0.00"
+    "[16:13:15] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.26 | [MNQ] \ud83d\udd34 EMA=-0.47 | [SIL] \ud83d\udfe2 EMA=+0.00",
+    "[16:13:59] [MNQ] 16:13 \ud83d\udd34 C=25293.00 EMA=-1.1555",
+    "[16:13:59] [MGC] 16:13 \ud83d\udfe2 C=5215.50 EMA=+0.8926",
+    "[16:14:13] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.89 | [MNQ] \ud83d\udd34 EMA=-1.16 | [SIL] \ud83d\udfe2 EMA=+0.00"
   ]
 }
