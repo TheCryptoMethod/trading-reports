@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-25T23:31:22.525691+00:00",
+  "updated_at": "2026-02-25T23:32:22.753137+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -24,20 +24,12 @@
   "wins": 1,
   "losses": 1,
   "win_rate": 33.33333333333333,
-  "open_orders": 1,
-  "open_positions": 1,
+  "open_orders": 0,
+  "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -1.8241,
+  "ema_diff": -2.8702,
   "terminal": [
-    "[23:25:00] [MGC] 23:24 \ud83d\udd34\u26a1 C=5187.40 EMA=-0.3882",
-    "[23:25:01] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5189.76",
-    "[23:25:01] \ud83c\udfaf [MGC] SHORT @ $5189.80 SL=$5192.10 TP=$5185.00",
-    "[23:25:20] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.39 | [MNQ] \ud83d\udd34 EMA=-14.91 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[23:25:25] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[23:25:27] \u26a0\ufe0f [SIL] Keine Ticks seit 5126s",
-    "[23:25:57] \u26a0\ufe0f [SIL] Keine Ticks seit 5156s",
-    "[23:26:01] [MNQ] 23:25 \ud83d\udd34 C=25369.00 EMA=-14.0277",
     "[23:26:01] [MGC] 23:25 \ud83d\udd34 C=5184.60 EMA=-1.6704",
     "[23:26:20] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.67 | [MNQ] \ud83d\udd34 EMA=-14.03 | [SIL] \ud83d\udd34 EMA=-0.13",
     "[23:26:24] \ud83d\udd04 [SIL] Re-Subscribe versucht",
@@ -69,6 +61,14 @@
     "[23:31:00] [MNQ] 23:30 \ud83d\udd34 C=25381.25 EMA=-2.4096",
     "[23:31:00] [MGC] 23:30 \ud83d\udd34 C=5185.20 EMA=-1.8241",
     "[23:31:00] \u26a0\ufe0f [SIL] Keine Ticks seit 5460s",
-    "[23:31:22] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.82 | [MNQ] \ud83d\udd34 EMA=-2.41 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[23:31:22] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.82 | [MNQ] \ud83d\udd34 EMA=-2.41 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[23:31:26] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[23:31:30] \u26a0\ufe0f [SIL] Keine Ticks seit 5490s",
+    "[23:32:00] [MNQ] 23:31 \ud83d\udd34 C=25374.00 EMA=-3.7515",
+    "[23:32:00] [MGC] 23:31 \ud83d\udd34 C=5182.00 EMA=-2.8702",
+    "[23:32:00] [MGC] \u2192 \u274c Order cancelled (Timeout) | \u23f0 Order cancelled - Zeitfenster beendet",
+    "[23:32:00] \u274c [MGC] Order cancelled",
+    "[23:32:01] \u26a0\ufe0f [SIL] Keine Ticks seit 5520s",
+    "[23:32:22] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.87 | [MNQ] \ud83d\udd34 EMA=-3.75 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
