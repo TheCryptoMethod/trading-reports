@@ -1,10 +1,30 @@
 {
-  "status": "offline",
-  "asset": "MGC + MNQ + SIL",
-  "updated_at": "2026-02-25T09:49:20.276462+00:00",
-  "last_session": {
-    "trades": 0,
-    "wins": 0,
-    "losses": 0
-  }
+  "status": "simulation",
+  "asset": "MGC",
+  "account_mode": "combine",
+  "started_at": "2026-02-25T09:53:39.690225+00:00",
+  "updated_at": "2026-02-25T09:53:39.690225+00:00",
+  "windows": [
+    "23:00-23:30 CC=0.8",
+    "01:00-01:30 CC=4.7",
+    "02:00-02:30 CC=1.2",
+    "00:00-00:30 CC=2.7",
+    "14:00-14:30 CC=1.0"
+  ],
+  "balance": null,
+  "start_balance": null,
+  "pnl": null,
+  "pnl_pct": null,
+  "trades": 0,
+  "wins": 0,
+  "losses": 0,
+  "win_rate": 0,
+  "open_orders": 0,
+  "open_positions": 0,
+  "last_signal": "",
+  "cloud_color": "",
+  "ema_diff": 0.0,
+  "terminal": [
+    "[09:53:39] \ud83d\ude80 Bot gestartet: MGC (combine) \u2014 \ud83e\uddea SIMULATION"
+  ]
 }
