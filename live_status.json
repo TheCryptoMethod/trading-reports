@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T14:01:45.465524+00:00",
-  "updated_at": "2026-02-25T14:21:14.639473+00:00",
+  "updated_at": "2026-02-25T14:22:13.228782+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -24,18 +24,12 @@
   "wins": 0,
   "losses": 0,
   "win_rate": 0.0,
-  "open_orders": 1,
-  "open_positions": 1,
+  "open_orders": 0,
+  "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -2.2436,
+  "ema_diff": -2.2581,
   "terminal": [
-    "[14:11:59] [MNQ] 14:11 \ud83d\udfe2 C=25173.00 EMA=+12.6619",
-    "[14:11:59] [MGC] 14:11 \ud83d\udfe2 C=5208.20 EMA=+1.4332",
-    "[14:12:01] [SIL] 14:11 \ud83d\udfe2 C=90.75 EMA=+0.1345",
-    "[14:12:07] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.43 | [MNQ] \ud83d\udfe2 EMA=+12.66 | [SIL] \ud83d\udfe2 EMA=+0.13",
-    "[14:12:59] [MNQ] 14:12 \ud83d\udfe2 C=25169.00 EMA=+11.5866",
-    "[14:12:59] [MGC] 14:12 \ud83d\udfe2 C=5207.10 EMA=+1.0047",
     "[14:12:59] [MGC] \u2192 \u274c Order cancelled (Timeout) | Timeout nach 7 Kerzen",
     "[14:12:59] \u274c [MGC] Order cancelled",
     "[14:13:01] [SIL] 14:12 \ud83d\udfe2 C=90.75 EMA=+0.1651",
@@ -69,6 +63,12 @@
     "[14:20:12] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.40 | [MNQ] \ud83d\udd34 EMA=-8.49 | [SIL] \ud83d\udfe2 EMA=+0.10",
     "[14:20:59] [MGC] 14:20 \ud83d\udd34 C=5202.10 EMA=-2.2436",
     "[14:20:59] [MNQ] 14:20 \ud83d\udd34 C=25146.50 EMA=-6.8153",
-    "[14:21:14] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.24 | [MNQ] \ud83d\udd34 EMA=-6.82 | [SIL] \ud83d\udfe2 EMA=+0.10"
+    "[14:21:14] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.24 | [MNQ] \ud83d\udd34 EMA=-6.82 | [SIL] \ud83d\udfe2 EMA=+0.10",
+    "[14:21:59] [MNQ] 14:21 \ud83d\udd34 C=25146.50 EMA=-5.6457",
+    "[14:21:59] [MGC] 14:21 \ud83d\udd34 C=5201.50 EMA=-2.2581",
+    "[14:21:59] [MGC] \u2192 \u274c Order cancelled (Timeout) | Timeout nach 7 Kerzen",
+    "[14:21:59] \u274c [MGC] Order cancelled",
+    "[14:22:01] [SIL] 14:21 \ud83d\udfe2 C=90.56 EMA=+0.0602",
+    "[14:22:13] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.26 | [MNQ] \ud83d\udd34 EMA=-5.65 | [SIL] \ud83d\udfe2 EMA=+0.06"
   ]
 }
