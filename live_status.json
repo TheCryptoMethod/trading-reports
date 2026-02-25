@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T11:39:26.414651+00:00",
-  "updated_at": "2026-02-25T11:49:09.773464+00:00",
+  "updated_at": "2026-02-25T11:49:12.039865+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -62,6 +62,7 @@
     "[11:48:01] [SIL] 11:47 \ud83d\udfe2 C=90.12 EMA=+0.0644",
     "[11:48:09] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.61 | [MNQ] \ud83d\udfe2 EMA=+11.74 | [SIL] \ud83d\udfe2 EMA=+0.06",
     "[11:48:59] [MNQ] 11:48 \ud83d\udfe2 C=25115.75 EMA=+11.2940",
-    "[11:49:00] [MGC] 11:48 \ud83d\udfe2 C=5191.20 EMA=+2.2222"
+    "[11:49:00] [MGC] 11:48 \ud83d\udfe2 C=5191.20 EMA=+2.2222",
+    "[11:49:12] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.22 | [MNQ] \ud83d\udfe2 EMA=+11.29 | [SIL] \ud83d\udfe2 EMA=+0.06"
   ]
 }
