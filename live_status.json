@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T11:02:15.156153+00:00",
-  "updated_at": "2026-02-25T11:36:24.838957+00:00",
+  "updated_at": "2026-02-25T11:37:25.324347+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,11 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 2.0701,
+  "ema_diff": 1.8421,
   "terminal": [
-    "[11:26:59] [MNQ] 11:26 \ud83d\udfe2 C=25081.75 EMA=+3.0764",
-    "[11:27:20] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.01 | [MNQ] \ud83d\udfe2 EMA=+3.08 | [SIL] \ud83d\udd34 EMA=-0.03",
-    "[11:27:59] [MNQ] 11:27 \ud83d\udfe2 C=25081.75 EMA=+2.9389",
     "[11:28:01] [MGC] 11:27 \ud83d\udfe2\u26a1 C=5186.90 EMA=+1.0217",
     "[11:28:01] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5184.36",
     "[11:28:01] \ud83c\udfaf [MGC] LONG @ $5184.40 SL=$5182.70 TP=$5195.60",
@@ -69,6 +66,9 @@
     "[11:35:59] [MNQ] 11:35 \ud83d\udfe2 C=25100.75 EMA=+10.4913",
     "[11:35:59] [MGC] 11:35 \ud83d\udfe2 C=5187.70 EMA=+2.0701",
     "[11:36:01] [SIL] 11:35 \ud83d\udfe2 C=90.01 EMA=+0.0593",
-    "[11:36:24] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.07 | [MNQ] \ud83d\udfe2 EMA=+10.49 | [SIL] \ud83d\udfe2 EMA=+0.06"
+    "[11:36:24] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.07 | [MNQ] \ud83d\udfe2 EMA=+10.49 | [SIL] \ud83d\udfe2 EMA=+0.06",
+    "[11:36:59] [MNQ] 11:36 \ud83d\udfe2 C=25096.75 EMA=+9.5234",
+    "[11:36:59] [MGC] 11:36 \ud83d\udfe2 C=5188.30 EMA=+1.8421",
+    "[11:37:01] [SIL] 11:36 \ud83d\udfe2 C=90.10 EMA=+0.0683"
   ]
 }
