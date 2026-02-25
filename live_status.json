@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T11:39:26.414651+00:00",
-  "updated_at": "2026-02-25T12:34:38.365799+00:00",
+  "updated_at": "2026-02-25T12:35:38.536675+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,12 +28,8 @@
   "open_positions": 1,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -1.0455,
+  "ema_diff": -1.8782,
   "terminal": [
-    "[12:25:59] [MGC] 12:25 \ud83d\udfe2 C=5203.70 EMA=+2.2792",
-    "[12:25:59] [MNQ] 12:25 \ud83d\udfe2 C=25145.50 EMA=+13.9795",
-    "[12:26:01] [SIL] 12:25 \ud83d\udd34 C=90.33 EMA=-0.0021",
-    "[12:26:33] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.28 | [MNQ] \ud83d\udfe2 EMA=+13.98 | [SIL] \ud83d\udd34 EMA=-0.00",
     "[12:26:59] [MNQ] 12:26 \ud83d\udfe2 C=25145.00 EMA=+13.1794",
     "[12:26:59] [MGC] 12:26 \ud83d\udfe2 C=5204.70 EMA=+2.4112",
     "[12:27:01] [SIL] 12:26 \ud83d\udfe2\u26a1 C=90.42 EMA=+0.0289",
@@ -69,6 +65,10 @@
     "[12:33:59] [MNQ] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $25127.70",
     "[12:33:59] \ud83c\udfaf [MNQ] LONG @ $25127.75 SL=$25125.00 TP=$25133.00",
     "[12:33:59] [MGC] 12:33 \ud83d\udd34 C=5198.90 EMA=-1.0455",
-    "[12:34:38] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.05 | [MNQ] \ud83d\udfe2 EMA=+0.93 | [SIL] \ud83d\udd34 EMA=-0.03"
+    "[12:34:38] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.05 | [MNQ] \ud83d\udfe2 EMA=+0.93 | [SIL] \ud83d\udd34 EMA=-0.03",
+    "[12:34:59] [MGC] 12:34 \ud83d\udd34 C=5197.40 EMA=-1.8782",
+    "[12:34:59] [MNQ] 12:34 \ud83d\udfe2 C=25139.00 EMA=+2.8030",
+    "[12:35:01] [SIL] 12:34 \ud83d\udd34 C=90.18 EMA=-0.0602",
+    "[12:35:38] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.88 | [MNQ] \ud83d\udfe2 EMA=+2.80 | [SIL] \ud83d\udd34 EMA=-0.06"
   ]
 }
