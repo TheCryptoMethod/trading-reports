@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T14:34:52.540019+00:00",
-  "updated_at": "2026-02-25T15:34:28.057188+00:00",
+  "updated_at": "2026-02-25T15:35:28.245199+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -20,7 +20,7 @@
   "start_balance": 149097.24,
   "pnl": -116.19999999998254,
   "pnl_pct": -0.07793571497365245,
-  "trades": 5,
+  "trades": 6,
   "wins": 0,
   "losses": 1,
   "win_rate": 0.0,
@@ -28,12 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -5.3272,
+  "ema_diff": -3.7853,
   "terminal": [
-    "[15:24:23] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.36 | [MNQ] \ud83d\udd34 EMA=-5.51 | [SIL] \ud83d\udd34 EMA=-0.01",
-    "[15:24:59] [MNQ] 15:24 \ud83d\udd34 C=25309.25 EMA=-2.8575",
-    "[15:24:59] [MGC] 15:24 \ud83d\udd34 C=5204.90 EMA=-2.9803",
-    "[15:25:01] [SIL] 15:24 \ud83d\udd34 C=90.14 EMA=-0.0825",
     "[15:25:26] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.98 | [MNQ] \ud83d\udd34 EMA=-2.86 | [SIL] \ud83d\udd34 EMA=-0.08",
     "[15:25:59] [MNQ] 15:25 \ud83d\udfe2\u26a1 C=25314.00 EMA=+0.1380",
     "[15:25:59] [MNQ] \u2192 \ud83d\udd12 Bereits in Trade | Setup ignoriert - Position offen",
@@ -69,6 +65,10 @@
     "[15:33:59] [MNQ] 15:33 \ud83d\udfe2 C=25326.75 EMA=+9.9566",
     "[15:33:59] [MGC] 15:33 \ud83d\udd34 C=5197.40 EMA=-5.3272",
     "[15:34:01] [SIL] 15:33 \ud83d\udd34 C=89.88 EMA=-0.2673",
-    "[15:34:28] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-5.33 | [MNQ] \ud83d\udfe2 EMA=+9.96 | [SIL] \ud83d\udd34 EMA=-0.27"
+    "[15:34:28] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-5.33 | [MNQ] \ud83d\udfe2 EMA=+9.96 | [SIL] \ud83d\udd34 EMA=-0.27",
+    "[15:34:59] [MNQ] 15:34 \ud83d\udd34\u26a1 C=25297.50 EMA=-0.8744",
+    "[15:34:59] [MNQ] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $25315.05",
+    "[15:34:59] \ud83c\udfaf [MNQ] SHORT @ $25315.00 SL=$25340.00 TP=$25187.50",
+    "[15:34:59] [MGC] 15:34 \ud83d\udd34 C=5200.80 EMA=-3.7853"
   ]
 }
