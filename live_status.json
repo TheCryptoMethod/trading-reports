@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T15:46:03.646326+00:00",
-  "updated_at": "2026-02-25T16:02:11.097706+00:00",
+  "updated_at": "2026-02-25T16:03:09.585663+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,11 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 1.1764,
+  "ema_diff": 2.2132,
   "terminal": [
-    "[15:52:59] [MGC] 15:52 \ud83d\udfe2 C=5215.40 EMA=+4.2002",
-    "[15:53:06] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+4.20 | [MNQ] \ud83d\udd34 EMA=-9.25 | [SIL] \ud83d\udfe2 EMA=+0.02",
-    "[15:53:59] [MNQ] 15:53 \ud83d\udd34 C=25281.75 EMA=-11.8021",
     "[15:54:01] [SIL] 15:53 \ud83d\udfe2 C=90.36 EMA=+0.0542",
     "[15:54:01] [MGC] 15:53 \ud83d\udfe2 C=5215.10 EMA=+3.8587",
     "[15:54:08] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.86 | [MNQ] \ud83d\udd34 EMA=-11.80 | [SIL] \ud83d\udfe2 EMA=+0.05",
@@ -69,6 +66,9 @@
     "[16:01:37] \ud83c\udfaf [MNQ] \ud83c\udfaf Take Profit getroffen | P&L: +9.25 pts",
     "[16:01:59] [MNQ] 16:01 \ud83d\udfe2 C=25298.75 EMA=+2.5971",
     "[16:02:00] [MGC] 16:01 \ud83d\udfe2 C=5214.20 EMA=+1.1764",
-    "[16:02:11] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.18 | [MNQ] \ud83d\udfe2 EMA=+2.60 | [SIL] \ud83d\udfe2 EMA=+0.18"
+    "[16:02:11] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.18 | [MNQ] \ud83d\udfe2 EMA=+2.60 | [SIL] \ud83d\udfe2 EMA=+0.18",
+    "[16:02:59] [MNQ] 16:02 \ud83d\udfe2 C=25291.25 EMA=+0.5583",
+    "[16:02:59] [MGC] 16:02 \ud83d\udfe2 C=5217.80 EMA=+2.2132",
+    "[16:03:09] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.21 | [MNQ] \ud83d\udfe2 EMA=+0.56 | [SIL] \ud83d\udfe2 EMA=+0.18"
   ]
 }
