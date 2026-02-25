@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-25T23:30:24.071289+00:00",
+  "updated_at": "2026-02-25T23:31:22.525691+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 1,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -1.5655,
+  "ema_diff": -1.8241,
   "terminal": [
-    "[23:24:00] [MNQ] 23:23 \ud83d\udd34 C=25371.00 EMA=-15.6353",
-    "[23:24:22] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.43 | [MNQ] \ud83d\udd34 EMA=-15.64 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[23:24:23] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[23:24:26] \u26a0\ufe0f [SIL] Keine Ticks seit 5066s",
-    "[23:24:57] \u26a0\ufe0f [SIL] Keine Ticks seit 5096s",
-    "[23:25:00] [MNQ] 23:24 \ud83d\udd34 C=25369.25 EMA=-14.9122",
     "[23:25:00] [MGC] 23:24 \ud83d\udd34\u26a1 C=5187.40 EMA=-0.3882",
     "[23:25:01] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5189.76",
     "[23:25:01] \ud83c\udfaf [MGC] SHORT @ $5189.80 SL=$5192.10 TP=$5185.00",
@@ -69,6 +63,12 @@
     "[23:29:59] \u26a0\ufe0f [SIL] Keine Ticks seit 5399s",
     "[23:30:00] [MNQ] 23:29 \ud83d\udd34 C=25383.25 EMA=-3.8389",
     "[23:30:01] [MGC] 23:29 \ud83d\udd34 C=5186.20 EMA=-1.5655",
-    "[23:30:24] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.57 | [MNQ] \ud83d\udd34 EMA=-3.84 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[23:30:24] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.57 | [MNQ] \ud83d\udd34 EMA=-3.84 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[23:30:25] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[23:30:30] \u26a0\ufe0f [SIL] Keine Ticks seit 5430s",
+    "[23:31:00] [MNQ] 23:30 \ud83d\udd34 C=25381.25 EMA=-2.4096",
+    "[23:31:00] [MGC] 23:30 \ud83d\udd34 C=5185.20 EMA=-1.8241",
+    "[23:31:00] \u26a0\ufe0f [SIL] Keine Ticks seit 5460s",
+    "[23:31:22] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.82 | [MNQ] \ud83d\udd34 EMA=-2.41 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
