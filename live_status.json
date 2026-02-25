@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T14:34:52.540019+00:00",
-  "updated_at": "2026-02-25T15:38:31.605393+00:00",
+  "updated_at": "2026-02-25T15:39:30.179195+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,13 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.6446,
+  "ema_diff": 1.8995,
   "terminal": [
-    "[15:28:25] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-6.09 | [MNQ] \ud83d\udfe2 EMA=+5.81 | [SIL] \ud83d\udd34 EMA=-0.15",
-    "[15:28:59] [MGC] 15:28 \ud83d\udd34 C=5199.20 EMA=-6.0601",
-    "[15:28:59] [MNQ] 15:28 \ud83d\udfe2 C=25334.25 EMA=+10.7400",
-    "[15:29:01] [SIL] 15:28 \ud83d\udd34 C=90.01 EMA=-0.1826",
-    "[15:29:27] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-6.06 | [MNQ] \ud83d\udfe2 EMA=+10.74 | [SIL] \ud83d\udd34 EMA=-0.18",
     "[15:29:59] [MGC] 15:29 \ud83d\udd34 C=5199.20 EMA=-5.8121",
     "[15:29:59] [MNQ] 15:29 \ud83d\udfe2 C=25334.25 EMA=+13.0086",
     "[15:30:26] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-5.81 | [MNQ] \ud83d\udfe2 EMA=+13.01 | [SIL] \ud83d\udd34 EMA=-0.18",
@@ -69,6 +64,11 @@
     "[15:37:59] [MGC] 15:37 \ud83d\udfe2\u26a1 C=5206.40 EMA=+0.6446",
     "[15:37:59] [MGC] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.20 < 0.8",
     "[15:38:01] [SIL] 15:37 \ud83d\udd34 C=90.24 EMA=-0.0767",
-    "[15:38:31] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.64 | [MNQ] \ud83d\udd34 EMA=-10.24 | [SIL] \ud83d\udd34 EMA=-0.08"
+    "[15:38:31] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.64 | [MNQ] \ud83d\udd34 EMA=-10.24 | [SIL] \ud83d\udd34 EMA=-0.08",
+    "[15:38:59] [MNQ] 15:38 \ud83d\udd34 C=25299.50 EMA=-10.1329",
+    "[15:38:59] [MGC] 15:38 \ud83d\udfe2 C=5208.10 EMA=+1.8995",
+    "[15:39:01] [SIL] 15:38 \ud83d\udfe2\u26a1 C=90.34 EMA=+0.0016",
+    "[15:39:01] [SIL] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.02 < 0.032",
+    "[15:39:30] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.90 | [MNQ] \ud83d\udd34 EMA=-10.13 | [SIL] \ud83d\udfe2 EMA=+0.00"
   ]
 }
