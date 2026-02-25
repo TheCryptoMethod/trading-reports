@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "practice",
   "started_at": "2026-02-25T12:59:23.196745+00:00",
-  "updated_at": "2026-02-25T12:59:23.196745+00:00",
+  "updated_at": "2026-02-25T13:01:03.842103+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -20,16 +20,22 @@
   "start_balance": 148920.84,
   "pnl": 0.0,
   "pnl_pct": 0.0,
-  "trades": 0,
+  "trades": 1,
   "wins": 0,
   "losses": 0,
-  "win_rate": 0,
-  "open_orders": 0,
-  "open_positions": 0,
+  "win_rate": 0.0,
+  "open_orders": 1,
+  "open_positions": 1,
   "last_signal": "",
-  "cloud_color": "",
-  "ema_diff": 0.0,
+  "cloud_color": "green",
+  "ema_diff": 0.4185,
   "terminal": [
-    "[12:59:23] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (practice) \u2014 \ud83d\udd34 LIVE"
+    "[12:59:23] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (practice) \u2014 \ud83d\udd34 LIVE",
+    "[13:00:59] [MGC] 13:00 \ud83d\udfe2\u26a1 C=5202.40 EMA=+0.4185",
+    "[13:00:59] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5200.32",
+    "[13:00:59] \ud83c\udfaf [MGC] LONG @ $5200.30 SL=$5198.90 TP=$5203.20",
+    "[13:00:59] [MNQ] 13:00 \ud83d\udfe2 C=25137.75 EMA=+0.3111",
+    "[13:00:59] \u2705 [MGC] FILLED @ $5200.30",
+    "[13:01:01] [SIL] 13:00 \ud83d\udfe2 C=90.59 EMA=+0.0830"
   ]
 }
