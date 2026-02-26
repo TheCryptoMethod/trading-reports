@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T00:48:55.166143+00:00",
+  "updated_at": "2026-02-26T00:49:53.579572+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 3.3539,
+  "ema_diff": 2.6732,
   "terminal": [
-    "[00:42:46] \u26a0\ufe0f [SIL] Keine Ticks seit 9765s",
-    "[00:42:51] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.86 | [MNQ] \ud83d\udd34 EMA=-9.45 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[00:42:54] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[00:43:00] [MNQ] 00:42 \ud83d\udd34 C=25305.00 EMA=-11.4384",
-    "[00:43:01] [MGC] 00:42 \ud83d\udfe2 C=5201.10 EMA=+3.0526",
-    "[00:43:16] \u26a0\ufe0f [SIL] Keine Ticks seit 9796s",
     "[00:43:47] \u26a0\ufe0f [SIL] Keine Ticks seit 9826s",
     "[00:43:53] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.05 | [MNQ] \ud83d\udd34 EMA=-11.44 | [SIL] \ud83d\udd34 EMA=-0.13",
     "[00:43:56] \ud83d\udd04 [SIL] Re-Subscribe versucht",
@@ -69,6 +63,12 @@
     "[00:48:00] [MNQ] 00:47 \ud83d\udd34 C=25315.00 EMA=-4.8931",
     "[00:48:19] \u26a0\ufe0f [SIL] Keine Ticks seit 10099s",
     "[00:48:50] \u26a0\ufe0f [SIL] Keine Ticks seit 10129s",
-    "[00:48:55] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.35 | [MNQ] \ud83d\udd34 EMA=-4.89 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[00:48:55] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.35 | [MNQ] \ud83d\udd34 EMA=-4.89 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[00:48:56] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[00:49:00] [MGC] 00:48 \ud83d\udfe2 C=5201.60 EMA=+2.6732",
+    "[00:49:01] [MNQ] 00:48 \ud83d\udd34 C=25318.75 EMA=-2.6756",
+    "[00:49:20] \u26a0\ufe0f [SIL] Keine Ticks seit 10160s",
+    "[00:49:51] \u26a0\ufe0f [SIL] Keine Ticks seit 10190s",
+    "[00:49:53] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.67 | [MNQ] \ud83d\udd34 EMA=-2.68 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
