@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T02:11:27.273663+00:00",
+  "updated_at": "2026-02-26T02:11:29.235445+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -30,7 +30,6 @@
   "cloud_color": "red",
   "ema_diff": -1.4198,
   "terminal": [
-    "[02:05:01] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5205.46",
     "[02:05:01] \ud83c\udfaf [MGC] SHORT @ $5205.50 SL=$5206.90 TP=$5195.10",
     "[02:05:01] \u2705 [MGC] FILLED @ $5205.50",
     "[02:05:10] \u26a0\ufe0f [SIL] Keine Ticks seit 14709s",
@@ -69,6 +68,7 @@
     "[02:10:42] \u26a0\ufe0f [SIL] Keine Ticks seit 15042s",
     "[02:11:00] [MNQ] 02:10 \ud83d\udd34 C=25302.25 EMA=-3.3532",
     "[02:11:01] [MGC] 02:10 \ud83d\udd34 C=5204.20 EMA=-1.4198",
-    "[02:11:13] \u26a0\ufe0f [SIL] Keine Ticks seit 15072s"
+    "[02:11:13] \u26a0\ufe0f [SIL] Keine Ticks seit 15072s",
+    "[02:11:29] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.42 | [MNQ] \ud83d\udd34 EMA=-3.35 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
