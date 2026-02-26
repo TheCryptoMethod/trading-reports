@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T22:54:21.351728+00:00",
-  "updated_at": "2026-02-26T23:10:26.383675+00:00",
+  "updated_at": "2026-02-26T23:11:26.840671+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -20,22 +20,16 @@
   "start_balance": 51538.72,
   "pnl": 0.0,
   "pnl_pct": 0.0,
-  "trades": 1,
+  "trades": 2,
   "wins": 0,
   "losses": 0,
   "win_rate": 0.0,
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "red",
-  "ema_diff": -1.3906,
+  "cloud_color": "green",
+  "ema_diff": 0.3388,
   "terminal": [
-    "[23:01:21] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.10 | [MNQ] \ud83d\udd34 EMA=-21.29 | [SIL] \ud83d\udd34 EMA=-0.05",
-    "[23:02:00] [MNQ] 23:01 \ud83d\udd34 C=25011.75 EMA=-20.7794",
-    "[23:02:00] [MGC] 23:01 \ud83d\udd34\u26a1 C=5197.20 EMA=-1.9536",
-    "[23:02:00] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5205.04",
-    "[23:02:00] \ud83c\udfaf [MGC] SHORT @ $5205.00 SL=$5208.60 TP=$5198.00",
-    "[23:02:01] [SIL] 23:01 \ud83d\udd34 C=88.84 EMA=-0.0556",
     "[23:02:23] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.95 | [MNQ] \ud83d\udd34 EMA=-20.78 | [SIL] \ud83d\udd34 EMA=-0.06",
     "[23:03:00] [MNQ] 23:02 \ud83d\udd34 C=25004.25 EMA=-21.9962",
     "[23:03:00] [MGC] 23:02 \ud83d\udd34 C=5195.80 EMA=-3.4215",
@@ -69,6 +63,12 @@
     "[23:09:28] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.51 | [MNQ] \ud83d\udd34 EMA=-29.18 | [SIL] \ud83d\udd34 EMA=-0.17",
     "[23:10:00] [MNQ] 23:09 \ud83d\udd34 C=24981.50 EMA=-25.1503",
     "[23:10:01] [MGC] 23:09 \ud83d\udd34 C=5201.40 EMA=-1.3906",
-    "[23:10:01] [SIL] 23:09 \ud83d\udd34 C=88.65 EMA=-0.1375"
+    "[23:10:01] [SIL] 23:09 \ud83d\udd34 C=88.65 EMA=-0.1375",
+    "[23:10:29] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.39 | [MNQ] \ud83d\udd34 EMA=-25.15 | [SIL] \ud83d\udd34 EMA=-0.14",
+    "[23:11:00] [MNQ] 23:10 \ud83d\udd34 C=24982.25 EMA=-21.7734",
+    "[23:11:01] [MGC] 23:10 \ud83d\udfe2\u26a1 C=5204.90 EMA=+0.3388",
+    "[23:11:01] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5199.12",
+    "[23:11:01] \ud83c\udfaf [MGC] LONG @ $5199.10 SL=$5194.60 TP=$5206.50",
+    "[23:11:01] [SIL] 23:10 \ud83d\udd34 C=88.67 EMA=-0.1068"
   ]
 }
