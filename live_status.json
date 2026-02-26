@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T07:52:29.280884+00:00",
-  "updated_at": "2026-02-26T09:37:31.510292+00:00",
+  "updated_at": "2026-02-26T09:38:31.948982+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.9886,
+  "ema_diff": 1.0886,
   "terminal": [
-    "[09:31:01] [MNQ] 09:30 \ud83d\udfe2 C=25378.75 EMA=+3.0352",
-    "[09:31:01] [MNQ] 09:30 \ud83d\udfe2 C=25378.75 EMA=+2.7689",
-    "[09:31:01] [MNQ] 09:30 \ud83d\udfe2 C=25378.75 EMA=+2.5189",
-    "[09:31:32] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.19 | [MNQ] \ud83d\udfe2 EMA=+2.52 | [SIL] \ud83d\udd34 EMA=-0.01",
-    "[09:32:01] [SIL] 09:31 \ud83d\udfe2\u26a1 C=88.06 EMA=+0.0224",
-    "[09:32:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 09:31 UTC",
     "[09:32:01] [MGC] 09:31 \ud83d\udfe2 C=5198.30 EMA=+1.5906",
     "[09:32:01] [MNQ] 09:31 \ud83d\udfe2 C=25384.00 EMA=+3.8872",
     "[09:32:32] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.59 | [MNQ] \ud83d\udfe2 EMA=+3.89 | [SIL] \ud83d\udfe2 EMA=+0.02",
@@ -69,6 +63,12 @@
     "[09:36:34] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.41 | [MNQ] \ud83d\udfe2 EMA=+4.85 | [SIL] \ud83d\udfe2 EMA=+0.03",
     "[09:37:01] [MGC] 09:36 \ud83d\udfe2 C=5197.80 EMA=+0.9886",
     "[09:37:01] [SIL] 09:36 \ud83d\udfe2 C=87.99 EMA=+0.0156",
-    "[09:37:01] [MNQ] 09:36 \ud83d\udfe2 C=25386.00 EMA=+3.9738"
+    "[09:37:01] [MNQ] 09:36 \ud83d\udfe2 C=25386.00 EMA=+3.9738",
+    "[09:37:34] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.99 | [MNQ] \ud83d\udfe2 EMA=+3.97 | [SIL] \ud83d\udfe2 EMA=+0.02",
+    "[09:38:01] [SIL] 09:37 \ud83d\udfe2 C=88.05 EMA=+0.0273",
+    "[09:38:01] [MNQ] 09:37 \ud83d\udfe2 C=25385.25 EMA=+3.1183",
+    "[09:38:01] [MGC] 09:37 \ud83d\udfe2 C=5199.00 EMA=+1.0886",
+    "[09:38:01] [MNQ] 09:37 \ud83d\udfe2 C=25385.75 EMA=+2.6874",
+    "[09:38:01] [MNQ] 09:37 \ud83d\udfe2 C=25385.75 EMA=+2.3512"
   ]
 }
