@@ -1126,5 +1126,40 @@
     "win_rate": 0.0,
     "bars_processed": 1020,
     "setups_detected": 4
+  },
+  {
+    "date": "2026-02-26",
+    "started_at": "19:30 UTC",
+    "ended_at": "22:23 UTC",
+    "duration_min": 173,
+    "asset": "MGC + MNQ + SIL",
+    "account_mode": "combine",
+    "account_id": 18798798,
+    "windows": [
+      "23:00-23:30",
+      "01:00-01:30",
+      "02:00-02:30",
+      "00:00-00:30",
+      "14:00-14:30",
+      "17:00-17:30"
+    ],
+    "cc_values": [
+      0.8,
+      4.7,
+      1.2,
+      2.7,
+      1.0,
+      6.6
+    ],
+    "start_balance": 51538.72,
+    "end_balance": 51538.72,
+    "pnl": 0.0,
+    "pnl_pct": 0.0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0,
+    "bars_processed": 444,
+    "setups_detected": 0
   }
 ]
