@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T04:21:22.636335+00:00",
+  "updated_at": "2026-02-26T04:22:22.934505+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,16 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "red",
-  "ema_diff": -0.0261,
+  "cloud_color": "green",
+  "ema_diff": 0.1389,
   "terminal": [
-    "[04:15:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 04:14 UTC",
-    "[04:15:05] \u26a0\ufe0f [SIL] Keine Ticks seit 22504s",
-    "[04:15:21] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.32 | [MNQ] \ud83d\udd34 EMA=-1.08 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[04:15:26] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[04:15:35] \u26a0\ufe0f [SIL] Keine Ticks seit 22534s",
-    "[04:16:00] [MNQ] 04:15 \ud83d\udd34 C=25299.75 EMA=-2.4383",
-    "[04:16:01] [MGC] 04:15 \ud83d\udfe2 C=5212.70 EMA=+2.1557",
     "[04:16:05] \u26a0\ufe0f [SIL] Keine Ticks seit 22565s",
     "[04:16:21] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.16 | [MNQ] \ud83d\udd34 EMA=-2.44 | [SIL] \ud83d\udd34 EMA=-0.13",
     "[04:16:25] \ud83d\udd04 [SIL] Re-Subscribe versucht",
@@ -69,6 +62,13 @@
     "[04:21:00] [MGC] 04:20 \ud83d\udd34 C=5210.50 EMA=-0.0261",
     "[04:21:01] [MNQ] 04:20 \ud83d\udd34 C=25301.00 EMA=-2.1702",
     "[04:21:09] \u26a0\ufe0f [SIL] Keine Ticks seit 22868s",
-    "[04:21:22] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.03 | [MNQ] \ud83d\udd34 EMA=-2.17 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[04:21:22] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.03 | [MNQ] \ud83d\udd34 EMA=-2.17 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[04:21:28] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[04:21:39] \u26a0\ufe0f [SIL] Keine Ticks seit 22898s",
+    "[04:22:00] [MGC] 04:21 \ud83d\udfe2\u26a1 C=5210.80 EMA=+0.1389",
+    "[04:22:00] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 04:21 UTC",
+    "[04:22:01] [MNQ] 04:21 \ud83d\udd34 C=25300.75 EMA=-2.0157",
+    "[04:22:09] \u26a0\ufe0f [SIL] Keine Ticks seit 22928s",
+    "[04:22:22] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.14 | [MNQ] \ud83d\udd34 EMA=-2.02 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
