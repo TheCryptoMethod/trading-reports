@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T07:52:29.280884+00:00",
-  "updated_at": "2026-02-26T08:16:10.618378+00:00",
+  "updated_at": "2026-02-26T08:17:10.971790+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,16 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 3.3915,
+  "ema_diff": 3.1786,
   "terminal": [
-    "[08:09:01] [MGC] 08:08 \ud83d\udd34 C=5199.20 EMA=-0.4380",
-    "[08:09:11] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.44 | [MNQ] \ud83d\udfe2 EMA=+0.29 | [SIL] \ud83d\udd34 EMA=-0.06",
-    "[08:10:01] [MNQ] 08:09 \ud83d\udd34\u26a1 C=25350.75 EMA=-0.1545",
-    "[08:10:01] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 08:09 UTC",
-    "[08:10:01] [MGC] 08:09 \ud83d\udd34 C=5200.00 EMA=-0.0314",
-    "[08:10:01] [SIL] 08:09 \ud83d\udd34 C=88.56 EMA=-0.0622",
-    "[08:10:11] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.03 | [MNQ] \ud83d\udd34 EMA=-0.15 | [SIL] \ud83d\udd34 EMA=-0.06",
-    "[08:11:01] [MGC] 08:10 \ud83d\udfe2\u26a1 C=5200.40 EMA=+0.3124",
     "[08:11:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 08:10 UTC",
     "[08:11:01] [MNQ] 08:10 \ud83d\udd34 C=25348.75 EMA=-1.0006",
     "[08:11:01] [SIL] 08:10 \ud83d\udd34 C=88.45 EMA=-0.0923",
@@ -69,6 +61,14 @@
     "[08:16:01] [MNQ] 08:15 \ud83d\udfe2 C=25373.75 EMA=+8.6282",
     "[08:16:01] [MGC] 08:15 \ud83d\udfe2 C=5206.10 EMA=+3.3915",
     "[08:16:01] [MNQ] 08:15 \ud83d\udfe2 C=25373.50 EMA=+9.9973",
-    "[08:16:01] [MNQ] 08:15 \ud83d\udfe2 C=25373.25 EMA=+10.2835"
+    "[08:16:01] [MNQ] 08:15 \ud83d\udfe2 C=25373.25 EMA=+10.2835",
+    "[08:16:13] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.39 | [MNQ] \ud83d\udfe2 EMA=+10.28 | [SIL] \ud83d\udd34 EMA=-0.01",
+    "[08:17:01] [MGC] 08:16 \ud83d\udfe2 C=5206.10 EMA=+3.1786",
+    "[08:17:01] [MNQ] 08:16 \ud83d\udfe2 C=25370.50 EMA=+9.2090",
+    "[08:17:01] [SIL] 08:16 \ud83d\udfe2\u26a1 C=88.67 EMA=+0.0188",
+    "[08:17:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 08:16 UTC",
+    "[08:17:01] [MNQ] 08:16 \ud83d\udfe2 C=25371.50 EMA=+8.5796",
+    "[08:17:01] [MNQ] 08:16 \ud83d\udfe2 C=25371.25 EMA=+7.8349",
+    "[08:17:01] [MNQ] 08:16 \ud83d\udfe2 C=25370.50 EMA=+6.9036"
   ]
 }
