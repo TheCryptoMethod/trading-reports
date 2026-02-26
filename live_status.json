@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T00:04:36.104918+00:00",
+  "updated_at": "2026-02-26T00:05:36.338176+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -2.3797,
+  "ema_diff": -3.2207,
   "terminal": [
-    "[23:58:01] [MGC] 23:57 \ud83d\udd34 C=5178.10 EMA=-3.2852",
-    "[23:58:17] \u26a0\ufe0f [SIL] Keine Ticks seit 7097s",
-    "[23:58:33] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.29 | [MNQ] \ud83d\udd34 EMA=-3.37 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[23:58:38] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[23:58:47] \u26a0\ufe0f [SIL] Keine Ticks seit 7127s",
-    "[23:59:00] [MGC] 23:58 \ud83d\udd34 C=5182.60 EMA=-2.5378",
     "[23:59:01] [MNQ] 23:58 \ud83d\udd34 C=25319.25 EMA=-3.0012",
     "[23:59:18] \u26a0\ufe0f [SIL] Keine Ticks seit 7157s",
     "[23:59:33] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.54 | [MNQ] \ud83d\udd34 EMA=-3.00 | [SIL] \ud83d\udd34 EMA=-0.13",
@@ -69,6 +63,12 @@
     "[00:04:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 00:03 UTC",
     "[00:04:00] [MGC] 00:03 \ud83d\udd34 C=5182.40 EMA=-2.3797",
     "[00:04:21] \u26a0\ufe0f [SIL] Keine Ticks seit 7460s",
-    "[00:04:36] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.38 | [MNQ] \ud83d\udfe2 EMA=+0.19 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[00:04:36] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.38 | [MNQ] \ud83d\udfe2 EMA=+0.19 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[00:04:41] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[00:04:51] \u26a0\ufe0f [SIL] Keine Ticks seit 7490s",
+    "[00:05:00] [MNQ] 00:04 \ud83d\udfe2 C=25320.75 EMA=+0.3229",
+    "[00:05:00] [MGC] 00:04 \ud83d\udd34 C=5176.20 EMA=-3.2207",
+    "[00:05:21] \u26a0\ufe0f [SIL] Keine Ticks seit 7521s",
+    "[00:05:36] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.22 | [MNQ] \ud83d\udfe2 EMA=+0.32 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
