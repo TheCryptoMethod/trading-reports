@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T19:30:02.703473+00:00",
-  "updated_at": "2026-02-26T20:51:38.639685+00:00",
+  "updated_at": "2026-02-26T20:52:38.882375+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,15 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "green",
-  "ema_diff": 1.0021,
+  "cloud_color": "red",
+  "ema_diff": -0.166,
   "terminal": [
-    "[20:42:00] [MNQ] 20:41 \ud83d\udfe2 C=25054.50 EMA=+6.0290",
-    "[20:42:00] [SIL] 20:41 \ud83d\udfe2 C=89.25 EMA=+0.0311",
-    "[20:42:01] [MGC] 20:41 \ud83d\udfe2 C=5214.10 EMA=+1.7389",
-    "[20:42:36] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.74 | [MNQ] \ud83d\udfe2 EMA=+6.03 | [SIL] \ud83d\udfe2 EMA=+0.03",
-    "[20:43:00] [MNQ] 20:42 \ud83d\udfe2 C=25056.75 EMA=+4.2245",
-    "[20:43:01] [SIL] 20:42 \ud83d\udfe2 C=89.31 EMA=+0.0359",
     "[20:43:01] [MGC] 20:42 \ud83d\udfe2 C=5214.60 EMA=+1.6538",
     "[20:43:37] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.65 | [MNQ] \ud83d\udfe2 EMA=+4.22 | [SIL] \ud83d\udfe2 EMA=+0.04",
     "[20:44:00] [MNQ] 20:43 \ud83d\udfe2 C=25055.75 EMA=+2.7792",
@@ -69,6 +63,12 @@
     "[20:50:41] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.30 | [MNQ] \ud83d\udd34 EMA=-0.13 | [SIL] \ud83d\udfe2 EMA=+0.06",
     "[20:51:00] [MNQ] 20:50 \ud83d\udd34 C=25050.00 EMA=-1.9043",
     "[20:51:00] [MGC] 20:50 \ud83d\udfe2 C=5213.60 EMA=+1.0021",
-    "[20:51:01] [SIL] 20:50 \ud83d\udfe2 C=89.25 EMA=+0.0107"
+    "[20:51:01] [SIL] 20:50 \ud83d\udfe2 C=89.25 EMA=+0.0107",
+    "[20:51:42] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.00 | [MNQ] \ud83d\udd34 EMA=-1.90 | [SIL] \ud83d\udfe2 EMA=+0.01",
+    "[20:52:00] [MNQ] 20:51 \ud83d\udd34 C=25054.50 EMA=-1.4245",
+    "[20:52:01] [MGC] 20:51 \ud83d\udd34\u26a1 C=5212.20 EMA=-0.1660",
+    "[20:52:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 20:51 UTC",
+    "[20:52:01] [SIL] 20:51 \ud83d\udd34\u26a1 C=89.25 EMA=-0.0158",
+    "[20:52:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 20:51 UTC"
   ]
 }
