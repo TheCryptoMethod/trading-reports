@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T22:54:21.351728+00:00",
-  "updated_at": "2026-02-26T23:17:30.768825+00:00",
+  "updated_at": "2026-02-26T23:18:31.292547+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,15 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "red",
-  "ema_diff": -0.0578,
+  "cloud_color": "green",
+  "ema_diff": 0.0389,
   "terminal": [
-    "[23:09:00] \u274c [MGC] Order cancelled",
-    "[23:09:01] [SIL] 23:08 \ud83d\udd34 C=88.45 EMA=-0.1731",
-    "[23:09:28] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.51 | [MNQ] \ud83d\udd34 EMA=-29.18 | [SIL] \ud83d\udd34 EMA=-0.17",
-    "[23:10:00] [MNQ] 23:09 \ud83d\udd34 C=24981.50 EMA=-25.1503",
-    "[23:10:01] [MGC] 23:09 \ud83d\udd34 C=5201.40 EMA=-1.3906",
-    "[23:10:01] [SIL] 23:09 \ud83d\udd34 C=88.65 EMA=-0.1375",
     "[23:10:29] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.39 | [MNQ] \ud83d\udd34 EMA=-25.15 | [SIL] \ud83d\udd34 EMA=-0.14",
     "[23:11:00] [MNQ] 23:10 \ud83d\udd34 C=24982.25 EMA=-21.7734",
     "[23:11:01] [MGC] 23:10 \ud83d\udfe2\u26a1 C=5204.90 EMA=+0.3388",
@@ -69,6 +63,12 @@
     "[23:17:00] [MNQ] 23:16 \ud83d\udfe2 C=25019.25 EMA=+7.8570",
     "[23:17:01] [SIL] 23:16 \ud83d\udd34 C=88.56 EMA=-0.0911",
     "[23:17:01] [MGC] 23:16 \ud83d\udd34\u26a1 C=5201.10 EMA=-0.0578",
-    "[23:17:01] [MGC] \u2192 \ud83d\udd12 Bereits in Trade | Setup ignoriert - Order wartet (6/7)"
+    "[23:17:01] [MGC] \u2192 \ud83d\udd12 Bereits in Trade | Setup ignoriert - Order wartet (6/7)",
+    "[23:17:33] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.06 | [MNQ] \ud83d\udfe2 EMA=+7.86 | [SIL] \ud83d\udd34 EMA=-0.09",
+    "[23:18:01] [MNQ] 23:17 \ud83d\udfe2 C=25021.00 EMA=+9.1801",
+    "[23:18:01] [SIL] 23:17 \ud83d\udd34 C=88.58 EMA=-0.0893",
+    "[23:18:01] [MGC] 23:17 \ud83d\udfe2\u26a1 C=5201.80 EMA=+0.0389",
+    "[23:18:01] [MGC] \u2192 \u274c Order cancelled (Timeout) | Timeout nach 7 Kerzen",
+    "[23:18:01] \u274c [MGC] Order cancelled"
   ]
 }
