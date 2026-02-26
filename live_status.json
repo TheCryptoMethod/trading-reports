@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T01:50:19.056960+00:00",
+  "updated_at": "2026-02-26T01:51:19.370593+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 1.3126,
+  "ema_diff": 0.8696,
   "terminal": [
-    "[01:43:56] \u26a0\ufe0f [SIL] Keine Ticks seit 13435s",
-    "[01:44:00] [MNQ] 01:43 \ud83d\udfe2 C=25311.75 EMA=+10.4353",
-    "[01:44:01] [MGC] 01:43 \ud83d\udfe2 C=5204.00 EMA=+1.4664",
-    "[01:44:17] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.47 | [MNQ] \ud83d\udfe2 EMA=+10.44 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[01:44:19] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[01:44:26] \u26a0\ufe0f [SIL] Keine Ticks seit 13466s",
     "[01:44:57] \u26a0\ufe0f [SIL] Keine Ticks seit 13496s",
     "[01:45:00] [MNQ] 01:44 \ud83d\udfe2 C=25307.50 EMA=+9.3196",
     "[01:45:01] [MGC] 01:44 \ud83d\udfe2 C=5205.20 EMA=+1.5925",
@@ -69,6 +63,12 @@
     "[01:50:00] \u26a0\ufe0f [SIL] Keine Ticks seit 13799s",
     "[01:50:01] [MGC] 01:49 \ud83d\udfe2 C=5205.50 EMA=+1.3126",
     "[01:50:01] [MNQ] 01:49 \ud83d\udfe2 C=25310.00 EMA=+7.0503",
-    "[01:50:19] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.31 | [MNQ] \ud83d\udfe2 EMA=+7.05 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[01:50:19] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.31 | [MNQ] \ud83d\udfe2 EMA=+7.05 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[01:50:23] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[01:50:30] \u26a0\ufe0f [SIL] Keine Ticks seit 13829s",
+    "[01:51:00] \u26a0\ufe0f [SIL] Keine Ticks seit 13860s",
+    "[01:51:00] [MNQ] 01:50 \ud83d\udfe2 C=25307.25 EMA=+5.5185",
+    "[01:51:01] [MGC] 01:50 \ud83d\udfe2 C=5204.20 EMA=+0.8696",
+    "[01:51:19] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.87 | [MNQ] \ud83d\udfe2 EMA=+5.52 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
