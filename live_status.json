@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T13:48:38.779030+00:00",
-  "updated_at": "2026-02-26T16:36:00.680161+00:00",
+  "updated_at": "2026-02-26T16:37:00.951436+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 1.0598,
+  "ema_diff": 1.4133,
   "terminal": [
-    "[16:28:00] [MNQ] 16:27 \ud83d\udfe2 C=25065.75 EMA=+18.1589",
-    "[16:28:00] [MGC] 16:27 \ud83d\udd34 C=5196.20 EMA=-0.8073",
-    "[16:28:00] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.21 | [MNQ] \ud83d\udfe2 EMA=+18.80 | [SIL] \ud83d\udfe2 EMA=+0.03",
-    "[16:28:00] [SIL] 16:27 \ud83d\udfe2 C=87.82 EMA=+0.0800",
-    "[16:29:00] [MNQ] 16:28 \ud83d\udfe2 C=25065.50 EMA=+17.0433",
-    "[16:29:00] [MGC] 16:28 \ud83d\udd34 C=5197.10 EMA=-0.2856",
     "[16:29:00] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.81 | [MNQ] \ud83d\udfe2 EMA=+18.16 | [SIL] \ud83d\udfe2 EMA=+0.08",
     "[16:29:00] [SIL] 16:28 \ud83d\udfe2 C=87.84 EMA=+0.1093",
     "[16:30:00] [SIL] 16:29 \ud83d\udfe2 C=87.79 EMA=+0.1057",
@@ -69,6 +63,12 @@
     "[16:35:02] [SIL] 16:34 \ud83d\udd34 C=87.67 EMA=-0.0019",
     "[16:35:03] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.14 | [MNQ] \ud83d\udfe2 EMA=+8.27 | [SIL] \ud83d\udd34 EMA=-0.00",
     "[16:36:00] [MNQ] 16:35 \ud83d\udfe2 C=25057.75 EMA=+6.7705",
-    "[16:36:00] [MGC] 16:35 \ud83d\udfe2 C=5199.10 EMA=+1.0598"
+    "[16:36:00] [MGC] 16:35 \ud83d\udfe2 C=5199.10 EMA=+1.0598",
+    "[16:36:03] [SIL] 16:35 \ud83d\udfe2\u26a1 C=87.67 EMA=+0.0002",
+    "[16:36:03] [SIL] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.04 < 0.167",
+    "[16:36:03] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.06 | [MNQ] \ud83d\udfe2 EMA=+6.77 | [SIL] \ud83d\udd34 EMA=-0.00",
+    "[16:37:00] [MNQ] 16:36 \ud83d\udd34\u26a1 C=25032.50 EMA=-2.3655",
+    "[16:37:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 16:36 UTC",
+    "[16:37:00] [MGC] 16:36 \ud83d\udfe2 C=5199.60 EMA=+1.4133"
   ]
 }
