@@ -2,8 +2,8 @@
   "status": "live",
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
-  "started_at": "2026-02-26T07:52:11.579042+00:00",
-  "updated_at": "2026-02-26T07:52:11.579042+00:00",
+  "started_at": "2026-02-26T07:52:29.280884+00:00",
+  "updated_at": "2026-02-26T07:52:29.280884+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -30,6 +30,6 @@
   "cloud_color": "",
   "ema_diff": 0.0,
   "terminal": [
-    "[07:52:11] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (combine) \u2014 \ud83d\udd34 LIVE"
+    "[07:52:29] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (combine) \u2014 \ud83d\udd34 LIVE"
   ]
 }
