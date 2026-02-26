@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T00:09:39.375232+00:00",
+  "updated_at": "2026-02-26T00:10:38.792862+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -2.2941,
+  "ema_diff": -2.1697,
   "terminal": [
-    "[00:03:20] \u26a0\ufe0f [SIL] Keine Ticks seit 7399s",
-    "[00:03:36] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-4.14 | [MNQ] \ud83d\udd34 EMA=-5.41 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[00:03:40] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[00:03:51] \u26a0\ufe0f [SIL] Keine Ticks seit 7430s",
-    "[00:04:00] [MNQ] 00:03 \ud83d\udfe2\u26a1 C=25330.25 EMA=+0.1854",
-    "[00:04:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 00:03 UTC",
     "[00:04:00] [MGC] 00:03 \ud83d\udd34 C=5182.40 EMA=-2.3797",
     "[00:04:21] \u26a0\ufe0f [SIL] Keine Ticks seit 7460s",
     "[00:04:36] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.38 | [MNQ] \ud83d\udfe2 EMA=+0.19 | [SIL] \ud83d\udd34 EMA=-0.13",
@@ -69,6 +63,12 @@
     "[00:09:00] [MGC] 00:08 \ud83d\udd34 C=5177.40 EMA=-2.2941",
     "[00:09:00] [MNQ] 00:08 \ud83d\udd34 C=25319.75 EMA=-0.7758",
     "[00:09:24] \u26a0\ufe0f [SIL] Keine Ticks seit 7763s",
-    "[00:09:39] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.29 | [MNQ] \ud83d\udd34 EMA=-0.78 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[00:09:39] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.29 | [MNQ] \ud83d\udd34 EMA=-0.78 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[00:09:42] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[00:09:55] \u26a0\ufe0f [SIL] Keine Ticks seit 7794s",
+    "[00:10:00] [MGC] 00:09 \ud83d\udd34 C=5177.50 EMA=-2.1697",
+    "[00:10:00] [MNQ] 00:09 \ud83d\udd34 C=25316.25 EMA=-1.3323",
+    "[00:10:25] \u26a0\ufe0f [SIL] Keine Ticks seit 7824s",
+    "[00:10:38] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.17 | [MNQ] \ud83d\udd34 EMA=-1.33 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
