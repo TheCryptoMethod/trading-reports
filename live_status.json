@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T01:23:07.077407+00:00",
+  "updated_at": "2026-02-26T01:24:06.352961+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,16 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "green",
-  "ema_diff": 1.3553,
+  "cloud_color": "red",
+  "ema_diff": -0.5542,
   "terminal": [
-    "[01:17:00] [MNQ] 01:16 \ud83d\udd34\u26a1 C=25305.50 EMA=-0.7487",
-    "[01:17:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 01:16 UTC",
-    "[01:17:00] [MGC] 01:16 \ud83d\udfe2 C=5206.00 EMA=+0.9707",
-    "[01:17:03] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.97 | [MNQ] \ud83d\udd34 EMA=-0.75 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[01:17:07] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[01:17:09] \u26a0\ufe0f [SIL] Keine Ticks seit 11829s",
-    "[01:17:40] \u26a0\ufe0f [SIL] Keine Ticks seit 11859s",
     "[01:18:00] [MNQ] 01:17 \ud83d\udd34 C=25304.00 EMA=-1.9657",
     "[01:18:00] [MGC] 01:17 \ud83d\udfe2 C=5204.50 EMA=+0.6619",
     "[01:18:03] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.66 | [MNQ] \ud83d\udd34 EMA=-1.97 | [SIL] \ud83d\udd34 EMA=-0.13",
@@ -69,6 +62,13 @@
     "[01:22:42] \u26a0\ufe0f [SIL] Keine Ticks seit 12162s",
     "[01:23:00] [MGC] 01:22 \ud83d\udfe2 C=5206.40 EMA=+1.3553",
     "[01:23:00] [MNQ] 01:22 \ud83d\udd34 C=25298.25 EMA=-3.4159",
-    "[01:23:07] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.36 | [MNQ] \ud83d\udd34 EMA=-3.42 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[01:23:07] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.36 | [MNQ] \ud83d\udd34 EMA=-3.42 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[01:23:09] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[01:23:13] \u26a0\ufe0f [SIL] Keine Ticks seit 12192s",
+    "[01:23:43] \u26a0\ufe0f [SIL] Keine Ticks seit 12223s",
+    "[01:24:00] [MNQ] 01:23 \ud83d\udd34 C=25292.00 EMA=-6.6976",
+    "[01:24:00] [MGC] 01:23 \ud83d\udd34\u26a1 C=5200.60 EMA=-0.5542",
+    "[01:24:00] [MGC] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.40 < 4.7",
+    "[01:24:06] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.55 | [MNQ] \ud83d\udd34 EMA=-6.70 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
