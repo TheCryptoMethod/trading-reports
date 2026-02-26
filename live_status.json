@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T01:20:04.309273+00:00",
+  "updated_at": "2026-02-26T01:21:04.589831+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.408,
+  "ema_diff": 1.6646,
   "terminal": [
-    "[01:14:02] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.34 | [MNQ] \ud83d\udd34 EMA=-3.14 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[01:14:07] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[01:14:08] \u26a0\ufe0f [SIL] Keine Ticks seit 11647s",
-    "[01:14:38] \u26a0\ufe0f [SIL] Keine Ticks seit 11677s",
-    "[01:15:00] [MGC] 01:14 \ud83d\udd34 C=5203.10 EMA=-0.9981",
-    "[01:15:00] [MNQ] 01:14 \ud83d\udd34 C=25311.50 EMA=-1.0214",
     "[01:15:02] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.00 | [MNQ] \ud83d\udd34 EMA=-1.02 | [SIL] \ud83d\udd34 EMA=-0.13",
     "[01:15:06] \ud83d\udd04 [SIL] Re-Subscribe versucht",
     "[01:15:08] \u26a0\ufe0f [SIL] Keine Ticks seit 11707s",
@@ -69,6 +63,12 @@
     "[01:19:41] \u26a0\ufe0f [SIL] Keine Ticks seit 11981s",
     "[01:20:00] [MNQ] 01:19 \ud83d\udd34 C=25310.75 EMA=-0.7536",
     "[01:20:01] [MGC] 01:19 \ud83d\udfe2 C=5204.50 EMA=+0.4080",
-    "[01:20:04] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.41 | [MNQ] \ud83d\udd34 EMA=-0.75 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[01:20:04] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.41 | [MNQ] \ud83d\udd34 EMA=-0.75 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[01:20:08] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[01:20:11] \u26a0\ufe0f [SIL] Keine Ticks seit 12011s",
+    "[01:20:42] \u26a0\ufe0f [SIL] Keine Ticks seit 12041s",
+    "[01:21:00] [MGC] 01:20 \ud83d\udfe2 C=5209.00 EMA=+1.6646",
+    "[01:21:01] [MNQ] 01:20 \ud83d\udd34 C=25308.50 EMA=-0.3932",
+    "[01:21:04] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.66 | [MNQ] \ud83d\udd34 EMA=-0.39 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
