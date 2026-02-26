@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T13:48:38.779030+00:00",
-  "updated_at": "2026-02-26T14:23:15.404741+00:00",
+  "updated_at": "2026-02-26T14:24:15.682020+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -16,10 +16,10 @@
     "[MNQ] 20:30-21:00 CC=9.6",
     "[MNQ] 00:30-01:00 CC=2.3"
   ],
-  "balance": 52072.82,
+  "balance": 52044.72,
   "start_balance": 52075.92,
-  "pnl": -3.099999999998545,
-  "pnl_pct": -0.005952847304471136,
+  "pnl": -31.19999999999709,
+  "pnl_pct": -0.05991252770953848,
   "trades": 1,
   "wins": 0,
   "losses": 1,
@@ -28,12 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.7923,
+  "ema_diff": 0.7457,
   "terminal": [
-    "[14:15:16] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.24 | [MNQ] \ud83d\udd34 EMA=-5.89 | [SIL] \ud83d\udd34 EMA=-0.05",
-    "[14:16:00] [MGC] 14:15 \ud83d\udd34 C=5181.50 EMA=-0.3034",
-    "[14:16:00] [MNQ] 14:15 \ud83d\udd34 C=25379.25 EMA=-4.6360",
-    "[14:16:01] [SIL] 14:15 \ud83d\udd34 C=87.34 EMA=-0.0511",
     "[14:16:16] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.30 | [MNQ] \ud83d\udd34 EMA=-4.64 | [SIL] \ud83d\udd34 EMA=-0.05",
     "[14:17:00] [MNQ] 14:16 \ud83d\udd34 C=25375.00 EMA=-5.0740",
     "[14:17:01] [MGC] 14:16 \ud83d\udfe2\u26a1 C=5184.20 EMA=+0.4942",
@@ -69,6 +65,10 @@
     "[14:23:00] [MNQ] 14:22 \ud83d\udd34 C=25369.00 EMA=-5.9093",
     "[14:23:00] [MGC] 14:22 \ud83d\udfe2\u26a1 C=5185.60 EMA=+0.7923",
     "[14:23:00] [MGC] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.90 < 1.0",
-    "[14:23:00] [SIL] 14:22 \ud83d\udd34 C=87.43 EMA=-0.0207"
+    "[14:23:00] [SIL] 14:22 \ud83d\udd34 C=87.43 EMA=-0.0207",
+    "[14:23:18] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.79 | [MNQ] \ud83d\udd34 EMA=-5.91 | [SIL] \ud83d\udd34 EMA=-0.02",
+    "[14:24:00] [MNQ] 14:23 \ud83d\udd34 C=25364.00 EMA=-7.8898",
+    "[14:24:00] [SIL] 14:23 \ud83d\udd34 C=87.36 EMA=-0.0263",
+    "[14:24:01] [MGC] 14:23 \ud83d\udfe2 C=5183.30 EMA=+0.7457"
   ]
 }
