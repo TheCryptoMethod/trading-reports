@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T22:54:21.351728+00:00",
-  "updated_at": "2026-02-26T23:01:12.360878+00:00",
+  "updated_at": "2026-02-26T23:02:20.682226+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -20,15 +20,15 @@
   "start_balance": 51538.72,
   "pnl": 0.0,
   "pnl_pct": 0.0,
-  "trades": 0,
+  "trades": 1,
   "wins": 0,
   "losses": 0,
-  "win_rate": 0,
-  "open_orders": 0,
-  "open_positions": 0,
+  "win_rate": 0.0,
+  "open_orders": 1,
+  "open_positions": 1,
   "last_signal": "",
-  "cloud_color": "green",
-  "ema_diff": 0.1014,
+  "cloud_color": "red",
+  "ema_diff": -1.9536,
   "terminal": [
     "[22:54:21] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (combine) \u2014 \ud83d\udd34 LIVE",
     "[22:54:39] \u23f8\ufe0f T\u00e4gliche Pause (22:00-23:00 UTC)",
@@ -37,6 +37,12 @@
     "[22:57:43] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.53 | [MNQ] \ud83d\udd34 EMA=-10.97 | [SIL] \ud83d\udd34 EMA=-0.07",
     "[22:58:44] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.53 | [MNQ] \ud83d\udd34 EMA=-10.97 | [SIL] \ud83d\udd34 EMA=-0.07",
     "[22:59:44] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.53 | [MNQ] \ud83d\udd34 EMA=-10.97 | [SIL] \ud83d\udd34 EMA=-0.07",
-    "[23:00:00] \ud83d\udd14 NEUE SESSION \u2014 Reconnect"
+    "[23:00:00] \ud83d\udd14 NEUE SESSION \u2014 Reconnect",
+    "[23:01:21] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.10 | [MNQ] \ud83d\udd34 EMA=-21.29 | [SIL] \ud83d\udd34 EMA=-0.05",
+    "[23:02:00] [MNQ] 23:01 \ud83d\udd34 C=25011.75 EMA=-20.7794",
+    "[23:02:00] [MGC] 23:01 \ud83d\udd34\u26a1 C=5197.20 EMA=-1.9536",
+    "[23:02:00] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5205.04",
+    "[23:02:00] \ud83c\udfaf [MGC] SHORT @ $5205.00 SL=$5208.60 TP=$5198.00",
+    "[23:02:01] [SIL] 23:01 \ud83d\udd34 C=88.84 EMA=-0.0556"
   ]
 }
