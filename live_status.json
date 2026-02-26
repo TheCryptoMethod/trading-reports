@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T07:52:29.280884+00:00",
-  "updated_at": "2026-02-26T10:54:54.433827+00:00",
+  "updated_at": "2026-02-26T10:55:54.668012+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,16 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -1.7097,
+  "ema_diff": -0.0104,
   "terminal": [
-    "[10:48:01] [MNQ] 10:47 \ud83d\udfe2 C=25365.75 EMA=+0.6135",
-    "[10:48:01] [SIL] 10:47 \ud83d\udd34 C=87.64 EMA=-0.0541",
-    "[10:48:01] [MNQ] 10:47 \ud83d\udfe2 C=25365.75 EMA=+0.6172",
-    "[10:48:55] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.95 | [MNQ] \ud83d\udfe2 EMA=+0.62 | [SIL] \ud83d\udd34 EMA=-0.05",
-    "[10:49:01] [SIL] 10:48 \ud83d\udd34 C=87.56 EMA=-0.0675",
-    "[10:49:01] [MNQ] 10:48 \ud83d\udd34\u26a1 C=25363.75 EMA=-0.0138",
-    "[10:49:01] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 10:48 UTC",
-    "[10:49:01] [MGC] 10:48 \ud83d\udd34 C=5187.60 EMA=-2.1124",
     "[10:49:55] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.11 | [MNQ] \ud83d\udd34 EMA=-0.01 | [SIL] \ud83d\udd34 EMA=-0.07",
     "[10:50:01] [SIL] 10:49 \ud83d\udd34 C=87.54 EMA=-0.0769",
     "[10:50:01] [MNQ] 10:49 \ud83d\udd34 C=25362.75 EMA=-0.6606",
@@ -69,6 +61,14 @@
     "[10:53:56] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.31 | [MNQ] \ud83d\udd34 EMA=-1.85 | [SIL] \ud83d\udd34 EMA=-0.05",
     "[10:54:01] [SIL] 10:53 \ud83d\udd34 C=87.58 EMA=-0.0425",
     "[10:54:01] [MGC] 10:53 \ud83d\udd34 C=5187.50 EMA=-1.7097",
-    "[10:54:01] [MNQ] 10:53 \ud83d\udd34 C=25358.75 EMA=-0.9794"
+    "[10:54:01] [MNQ] 10:53 \ud83d\udd34 C=25358.75 EMA=-0.9794",
+    "[10:54:57] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.71 | [MNQ] \ud83d\udd34 EMA=-0.98 | [SIL] \ud83d\udd34 EMA=-0.04",
+    "[10:55:01] [MNQ] 10:54 \ud83d\udd34 C=25354.50 EMA=-1.7668",
+    "[10:55:01] [SIL] 10:54 \ud83d\udd34 C=87.50 EMA=-0.0645",
+    "[10:55:01] [MGC] 10:54 \ud83d\udd34 C=5189.20 EMA=-0.7995",
+    "[10:55:01] [MGC] 10:54 \ud83d\udd34 C=5189.00 EMA=-0.3359",
+    "[10:55:01] [MNQ] 10:54 \ud83d\udd34 C=25354.50 EMA=-2.1270",
+    "[10:55:01] [MNQ] 10:54 \ud83d\udd34 C=25354.75 EMA=-2.1652",
+    "[10:55:01] [MGC] 10:54 \ud83d\udd34 C=5189.20 EMA=-0.0104"
   ]
 }
