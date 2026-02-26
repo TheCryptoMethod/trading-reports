@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T03:17:59.328810+00:00",
+  "updated_at": "2026-02-26T03:18:59.553714+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 2.3916,
+  "ema_diff": 3.0431,
   "terminal": [
-    "[03:11:19] \u26a0\ufe0f [SIL] Keine Ticks seit 18679s",
-    "[03:11:49] \u26a0\ufe0f [SIL] Keine Ticks seit 18709s",
-    "[03:11:57] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.08 | [MNQ] \ud83d\udd34 EMA=-3.80 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[03:12:00] [MNQ] 03:11 \ud83d\udd34 C=25300.00 EMA=-2.8689",
-    "[03:12:00] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[03:12:01] [MGC] 03:11 \ud83d\udfe2 C=5201.00 EMA=+0.7772",
     "[03:12:20] \u26a0\ufe0f [SIL] Keine Ticks seit 18739s",
     "[03:12:50] \u26a0\ufe0f [SIL] Keine Ticks seit 18769s",
     "[03:12:57] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.78 | [MNQ] \ud83d\udd34 EMA=-2.87 | [SIL] \ud83d\udd34 EMA=-0.13",
@@ -69,6 +63,12 @@
     "[03:17:02] [MGC] 03:16 \ud83d\udfe2 C=5206.10 EMA=+2.3916",
     "[03:17:23] \u26a0\ufe0f [SIL] Keine Ticks seit 19042s",
     "[03:17:53] \u26a0\ufe0f [SIL] Keine Ticks seit 19073s",
-    "[03:17:59] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.39 | [MNQ] \ud83d\udfe2 EMA=+1.12 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[03:17:59] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.39 | [MNQ] \ud83d\udfe2 EMA=+1.12 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[03:18:00] [MGC] 03:17 \ud83d\udfe2 C=5207.10 EMA=+3.0431",
+    "[03:18:00] [MNQ] 03:17 \ud83d\udfe2 C=25307.25 EMA=+2.2196",
+    "[03:18:03] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[03:18:24] \u26a0\ufe0f [SIL] Keine Ticks seit 19104s",
+    "[03:18:55] \u26a0\ufe0f [SIL] Keine Ticks seit 19134s",
+    "[03:18:59] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.04 | [MNQ] \ud83d\udfe2 EMA=+2.22 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
