@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T07:52:29.280884+00:00",
-  "updated_at": "2026-02-26T11:27:04.877455+00:00",
+  "updated_at": "2026-02-26T11:28:05.169249+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,15 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "green",
-  "ema_diff": 0.0036,
+  "cloud_color": "red",
+  "ema_diff": -0.6682,
   "terminal": [
-    "[11:21:01] [MNQ] 11:20 \ud83d\udd34 C=25354.25 EMA=-0.7210",
-    "[11:21:05] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.16 | [MNQ] \ud83d\udd34 EMA=-0.72 | [SIL] \ud83d\udfe2 EMA=+0.09",
-    "[11:22:01] [MGC] 11:21 \ud83d\udfe2 C=5191.20 EMA=+0.2996",
-    "[11:22:01] [SIL] 11:21 \ud83d\udfe2 C=87.95 EMA=+0.1154",
-    "[11:22:01] [MNQ] 11:21 \ud83d\udfe2\u26a1 C=25357.75 EMA=+0.8218",
-    "[11:22:01] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 11:21 UTC",
     "[11:22:01] [MNQ] 11:21 \ud83d\udfe2 C=25357.25 EMA=+1.4756",
     "[11:22:05] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.30 | [MNQ] \ud83d\udfe2 EMA=+1.48 | [SIL] \ud83d\udfe2 EMA=+0.12",
     "[11:23:01] [SIL] 11:22 \ud83d\udfe2 C=87.95 EMA=+0.1236",
@@ -69,6 +63,12 @@
     "[11:27:01] [SIL] 11:26 \ud83d\udfe2 C=88.02 EMA=+0.1298",
     "[11:27:01] [MGC] 11:26 \ud83d\udfe2 C=5190.20 EMA=+0.0036",
     "[11:27:01] [MNQ] 11:26 \ud83d\udfe2 C=25368.00 EMA=+4.5441",
-    "[11:27:01] [MNQ] 11:26 \ud83d\udfe2 C=25368.25 EMA=+4.6789"
+    "[11:27:01] [MNQ] 11:26 \ud83d\udfe2 C=25368.25 EMA=+4.6789",
+    "[11:27:07] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.00 | [MNQ] \ud83d\udfe2 EMA=+4.68 | [SIL] \ud83d\udfe2 EMA=+0.13",
+    "[11:28:01] [MNQ] 11:27 \ud83d\udfe2 C=25364.50 EMA=+3.4309",
+    "[11:28:01] [SIL] 11:27 \ud83d\udfe2 C=87.96 EMA=+0.1106",
+    "[11:28:01] [MGC] 11:27 \ud83d\udd34\u26a1 C=5188.10 EMA=-0.6682",
+    "[11:28:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 11:27 UTC",
+    "[11:28:01] [MNQ] 11:27 \ud83d\udfe2 C=25364.25 EMA=+2.5466"
   ]
 }
