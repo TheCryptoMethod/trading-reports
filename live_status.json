@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T07:52:29.280884+00:00",
-  "updated_at": "2026-02-26T10:07:40.002843+00:00",
+  "updated_at": "2026-02-26T10:08:40.252358+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,15 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 1.5603,
+  "ema_diff": 1.6459,
   "terminal": [
-    "[10:02:01] [SIL] 10:01 \ud83d\udd34 C=88.02 EMA=-0.0242",
-    "[10:02:01] [MGC] 10:01 \ud83d\udfe2 C=5202.90 EMA=+0.2148",
-    "[10:02:41] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.21 | [MNQ] \ud83d\udd34 EMA=-2.53 | [SIL] \ud83d\udd34 EMA=-0.02",
-    "[10:03:01] [MNQ] 10:02 \ud83d\udd34 C=25379.00 EMA=-2.8132",
-    "[10:03:01] [MGC] 10:02 \ud83d\udd34\u26a1 C=5202.10 EMA=-0.0588",
-    "[10:03:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 10:02 UTC",
-    "[10:03:01] [SIL] 10:02 \ud83d\udd34 C=88.04 EMA=-0.0188",
     "[10:03:01] [MGC] 10:02 \ud83d\udd34 C=5202.40 EMA=-0.1137",
     "[10:03:01] [MGC] 10:02 \ud83d\udd34 C=5202.60 EMA=-0.0782",
     "[10:03:01] [SIL] 10:02 \ud83d\udd34 C=88.06 EMA=-0.0090",
@@ -69,6 +62,13 @@
     "[10:06:42] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.63 | [MNQ] \ud83d\udd34 EMA=-4.16 | [SIL] \ud83d\udfe2 EMA=+0.03",
     "[10:07:01] [MGC] 10:06 \ud83d\udfe2 C=5205.50 EMA=+1.5603",
     "[10:07:01] [SIL] 10:06 \ud83d\udfe2 C=88.08 EMA=+0.0241",
-    "[10:07:01] [MNQ] 10:06 \ud83d\udd34 C=25379.00 EMA=-2.3861"
+    "[10:07:01] [MNQ] 10:06 \ud83d\udd34 C=25379.00 EMA=-2.3861",
+    "[10:07:42] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.56 | [MNQ] \ud83d\udd34 EMA=-2.39 | [SIL] \ud83d\udfe2 EMA=+0.02",
+    "[10:08:01] [MGC] 10:07 \ud83d\udfe2 C=5206.10 EMA=+1.6459",
+    "[10:08:01] [SIL] 10:07 \ud83d\udfe2 C=88.16 EMA=+0.0401",
+    "[10:08:01] [MNQ] 10:07 \ud83d\udd34 C=25380.75 EMA=-0.7998",
+    "[10:08:01] [MNQ] 10:07 \ud83d\udfe2\u26a1 C=25380.75 EMA=+0.0918",
+    "[10:08:01] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 10:07 UTC",
+    "[10:08:01] [MNQ] 10:07 \ud83d\udfe2 C=25381.00 EMA=+0.6485"
   ]
 }
