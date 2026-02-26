@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T00:18:42.856060+00:00",
+  "updated_at": "2026-02-26T00:19:42.280000+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 4.2318,
+  "ema_diff": 4.6012,
   "terminal": [
-    "[00:12:39] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.85 | [MNQ] \ud83d\udfe2 EMA=+2.46 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[00:12:44] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[00:12:56] \u26a0\ufe0f [SIL] Keine Ticks seit 7975s",
-    "[00:13:00] [MGC] 00:12 \ud83d\udd34 C=5181.10 EMA=-0.6047",
-    "[00:13:00] [MNQ] 00:12 \ud83d\udfe2 C=25327.25 EMA=+3.7424",
-    "[00:13:26] \u26a0\ufe0f [SIL] Keine Ticks seit 8005s",
     "[00:13:39] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.60 | [MNQ] \ud83d\udfe2 EMA=+3.74 | [SIL] \ud83d\udd34 EMA=-0.13",
     "[00:13:45] \ud83d\udd04 [SIL] Re-Subscribe versucht",
     "[00:13:57] \u26a0\ufe0f [SIL] Keine Ticks seit 8036s",
@@ -69,6 +63,12 @@
     "[00:18:01] [MNQ] 00:17 \ud83d\udfe2 C=25330.50 EMA=+5.4184",
     "[00:18:01] [MGC] 00:17 \ud83d\udfe2 C=5187.80 EMA=+4.2318",
     "[00:18:29] \u26a0\ufe0f [SIL] Keine Ticks seit 8309s",
-    "[00:18:42] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+4.23 | [MNQ] \ud83d\udfe2 EMA=+5.42 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[00:18:42] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+4.23 | [MNQ] \ud83d\udfe2 EMA=+5.42 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[00:18:47] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[00:19:00] \u26a0\ufe0f [SIL] Keine Ticks seit 8339s",
+    "[00:19:00] [MNQ] 00:18 \ud83d\udfe2 C=25329.50 EMA=+4.7977",
+    "[00:19:01] [MGC] 00:18 \ud83d\udfe2 C=5188.80 EMA=+4.6012",
+    "[00:19:30] \u26a0\ufe0f [SIL] Keine Ticks seit 8370s",
+    "[00:19:42] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+4.60 | [MNQ] \ud83d\udfe2 EMA=+4.80 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
