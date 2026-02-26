@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T00:06:36.491972+00:00",
+  "updated_at": "2026-02-26T00:06:38.549852+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -30,7 +30,6 @@
   "cloud_color": "red",
   "ema_diff": -4.0726,
   "terminal": [
-    "[00:00:00] [MGC] 23:59 \ud83d\udd34 C=5178.60 EMA=-3.2545",
     "[00:00:18] \u26a0\ufe0f [SIL] Keine Ticks seit 7217s",
     "[00:00:35] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.25 | [MNQ] \ud83d\udd34 EMA=-3.52 | [SIL] \ud83d\udd34 EMA=-0.13",
     "[00:00:38] \ud83d\udd04 [SIL] Re-Subscribe versucht",
@@ -69,6 +68,7 @@
     "[00:06:00] [MNQ] 00:05 \ud83d\udd34\u26a1 C=25314.50 EMA=-1.5195",
     "[00:06:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 00:05 UTC",
     "[00:06:00] [MGC] 00:05 \ud83d\udd34 C=5174.50 EMA=-4.0726",
-    "[00:06:22] \u26a0\ufe0f [SIL] Keine Ticks seit 7581s"
+    "[00:06:22] \u26a0\ufe0f [SIL] Keine Ticks seit 7581s",
+    "[00:06:38] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-4.07 | [MNQ] \ud83d\udd34 EMA=-1.52 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
