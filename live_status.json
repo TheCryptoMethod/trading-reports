@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T22:54:21.351728+00:00",
-  "updated_at": "2026-02-26T23:08:24.595653+00:00",
+  "updated_at": "2026-02-26T23:09:25.580376+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -24,16 +24,12 @@
   "wins": 0,
   "losses": 0,
   "win_rate": 0.0,
-  "open_orders": 1,
-  "open_positions": 1,
+  "open_orders": 0,
+  "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -1.7119,
+  "ema_diff": -2.5139,
   "terminal": [
-    "[22:54:21] \ud83d\ude80 Multi-Asset Bot: MGC + MNQ + SIL (combine) \u2014 \ud83d\udd34 LIVE",
-    "[22:54:39] \u23f8\ufe0f T\u00e4gliche Pause (22:00-23:00 UTC)",
-    "[22:55:42] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.53 | [MNQ] \ud83d\udd34 EMA=-10.97 | [SIL] \ud83d\udd34 EMA=-0.07",
-    "[22:56:42] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.53 | [MNQ] \ud83d\udd34 EMA=-10.97 | [SIL] \ud83d\udd34 EMA=-0.07",
     "[22:57:43] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.53 | [MNQ] \ud83d\udd34 EMA=-10.97 | [SIL] \ud83d\udd34 EMA=-0.07",
     "[22:58:44] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.53 | [MNQ] \ud83d\udd34 EMA=-10.97 | [SIL] \ud83d\udd34 EMA=-0.07",
     "[22:59:44] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.53 | [MNQ] \ud83d\udd34 EMA=-10.97 | [SIL] \ud83d\udd34 EMA=-0.07",
@@ -67,6 +63,12 @@
     "[23:07:27] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.13 | [MNQ] \ud83d\udd34 EMA=-36.71 | [SIL] \ud83d\udd34 EMA=-0.12",
     "[23:08:00] [MNQ] 23:07 \ud83d\udd34 C=24969.75 EMA=-35.2705",
     "[23:08:01] [MGC] 23:07 \ud83d\udd34 C=5198.40 EMA=-1.7119",
-    "[23:08:01] [SIL] 23:07 \ud83d\udd34 C=88.67 EMA=-0.1144"
+    "[23:08:01] [SIL] 23:07 \ud83d\udd34 C=88.67 EMA=-0.1144",
+    "[23:08:28] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.71 | [MNQ] \ud83d\udd34 EMA=-35.27 | [SIL] \ud83d\udd34 EMA=-0.11",
+    "[23:09:00] [MNQ] 23:08 \ud83d\udd34 C=24982.75 EMA=-29.1848",
+    "[23:09:00] [MGC] 23:08 \ud83d\udd34 C=5196.60 EMA=-2.5139",
+    "[23:09:00] [MGC] \u2192 \u274c Order cancelled (Timeout) | Timeout nach 7 Kerzen",
+    "[23:09:00] \u274c [MGC] Order cancelled",
+    "[23:09:01] [SIL] 23:08 \ud83d\udd34 C=88.45 EMA=-0.1731"
   ]
 }
