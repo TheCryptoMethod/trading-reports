@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T22:54:21.351728+00:00",
-  "updated_at": "2026-02-26T23:14:28.825798+00:00",
+  "updated_at": "2026-02-26T23:15:29.594323+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,15 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "green",
-  "ema_diff": 0.3668,
+  "cloud_color": "red",
+  "ema_diff": -0.0644,
   "terminal": [
-    "[23:05:25] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.76 | [MNQ] \ud83d\udd34 EMA=-31.05 | [SIL] \ud83d\udd34 EMA=-0.15",
-    "[23:06:00] [MNQ] 23:05 \ud83d\udd34 C=24961.25 EMA=-37.6213",
-    "[23:06:01] [MGC] 23:05 \ud83d\udd34 C=5200.10 EMA=-2.2105",
-    "[23:06:01] [SIL] 23:05 \ud83d\udd34 C=88.64 EMA=-0.1466",
-    "[23:06:26] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.21 | [MNQ] \ud83d\udd34 EMA=-37.62 | [SIL] \ud83d\udd34 EMA=-0.15",
-    "[23:07:00] [MNQ] 23:06 \ud83d\udd34 C=24971.25 EMA=-36.7077",
     "[23:07:00] [MGC] 23:06 \ud83d\udd34 C=5202.40 EMA=-1.1250",
     "[23:07:01] [SIL] 23:06 \ud83d\udd34 C=88.72 EMA=-0.1188",
     "[23:07:27] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.13 | [MNQ] \ud83d\udd34 EMA=-36.71 | [SIL] \ud83d\udd34 EMA=-0.12",
@@ -69,6 +63,12 @@
     "[23:13:31] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.57 | [MNQ] \ud83d\udd34 EMA=-7.93 | [SIL] \ud83d\udd34 EMA=-0.06",
     "[23:14:00] [MNQ] 23:13 \ud83d\udd34 C=25008.00 EMA=-2.8299",
     "[23:14:00] [MGC] 23:13 \ud83d\udfe2 C=5201.70 EMA=+0.3668",
-    "[23:14:01] [SIL] 23:13 \ud83d\udd34 C=88.63 EMA=-0.0681"
+    "[23:14:01] [SIL] 23:13 \ud83d\udd34 C=88.63 EMA=-0.0681",
+    "[23:14:32] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.37 | [MNQ] \ud83d\udd34 EMA=-2.83 | [SIL] \ud83d\udd34 EMA=-0.07",
+    "[23:15:00] [MNQ] 23:14 \ud83d\udfe2\u26a1 C=25017.25 EMA=+2.8672",
+    "[23:15:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 23:14 UTC",
+    "[23:15:00] [MGC] 23:14 \ud83d\udd34\u26a1 C=5200.70 EMA=-0.0644",
+    "[23:15:00] [MGC] \u2192 \ud83d\udd12 Bereits in Trade | Setup ignoriert - Order wartet (4/7)",
+    "[23:15:01] [SIL] 23:14 \ud83d\udd34 C=88.58 EMA=-0.0866"
   ]
 }
