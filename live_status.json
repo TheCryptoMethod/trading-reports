@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T01:21:04.589831+00:00",
+  "updated_at": "2026-02-26T01:22:05.008457+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 1.6646,
+  "ema_diff": 1.5214,
   "terminal": [
-    "[01:15:02] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.00 | [MNQ] \ud83d\udd34 EMA=-1.02 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[01:15:06] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[01:15:08] \u26a0\ufe0f [SIL] Keine Ticks seit 11707s",
-    "[01:15:38] \u26a0\ufe0f [SIL] Keine Ticks seit 11738s",
-    "[01:16:00] [MNQ] 01:15 \ud83d\udfe2\u26a1 C=25313.25 EMA=+0.7036",
-    "[01:16:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 01:15 UTC",
     "[01:16:00] [MGC] 01:15 \ud83d\udfe2\u26a1 C=5207.70 EMA=+0.6293",
     "[01:16:00] [MGC] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.80 < 4.7",
     "[01:16:05] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.63 | [MNQ] \ud83d\udfe2 EMA=+0.70 | [SIL] \ud83d\udd34 EMA=-0.13",
@@ -69,6 +63,12 @@
     "[01:20:42] \u26a0\ufe0f [SIL] Keine Ticks seit 12041s",
     "[01:21:00] [MGC] 01:20 \ud83d\udfe2 C=5209.00 EMA=+1.6646",
     "[01:21:01] [MNQ] 01:20 \ud83d\udd34 C=25308.50 EMA=-0.3932",
-    "[01:21:04] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.66 | [MNQ] \ud83d\udd34 EMA=-0.39 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[01:21:04] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.66 | [MNQ] \ud83d\udd34 EMA=-0.39 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[01:21:08] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[01:21:12] \u26a0\ufe0f [SIL] Keine Ticks seit 12071s",
+    "[01:21:42] \u26a0\ufe0f [SIL] Keine Ticks seit 12101s",
+    "[01:22:00] [MGC] 01:21 \ud83d\udfe2 C=5206.50 EMA=+1.5214",
+    "[01:22:01] [MNQ] 01:21 \ud83d\udd34 C=25307.00 EMA=-0.6398",
+    "[01:22:05] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.52 | [MNQ] \ud83d\udd34 EMA=-0.64 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
