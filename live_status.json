@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T01:15:02.890418+00:00",
+  "updated_at": "2026-02-26T01:16:02.935060+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,16 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "red",
-  "ema_diff": -0.9981,
+  "cloud_color": "green",
+  "ema_diff": 0.6293,
   "terminal": [
-    "[01:09:00] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.31 | [MNQ] \ud83d\udd34 EMA=-4.52 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[01:09:02] [MNQ] 01:08 \ud83d\udd34 C=25309.75 EMA=-4.0012",
-    "[01:09:02] [MGC] 01:08 \ud83d\udfe2 C=5203.00 EMA=+0.0762",
-    "[01:09:04] \u26a0\ufe0f [SIL] Keine Ticks seit 11343s",
-    "[01:09:04] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[01:09:34] \u26a0\ufe0f [SIL] Keine Ticks seit 11373s",
-    "[01:10:02] [MNQ] 01:09 \ud83d\udd34 C=25289.50 EMA=-9.7368",
     "[01:10:02] [MGC] 01:09 \ud83d\udd34\u26a1 C=5199.40 EMA=-1.6924",
     "[01:10:02] [MGC] \u2192 \ud83d\udccf CC zu klein | CC Size: 3.50 < 4.7",
     "[01:10:02] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.08 | [MNQ] \ud83d\udd34 EMA=-4.00 | [SIL] \ud83d\udd34 EMA=-0.13",
@@ -69,6 +62,13 @@
     "[01:14:38] \u26a0\ufe0f [SIL] Keine Ticks seit 11677s",
     "[01:15:00] [MGC] 01:14 \ud83d\udd34 C=5203.10 EMA=-0.9981",
     "[01:15:00] [MNQ] 01:14 \ud83d\udd34 C=25311.50 EMA=-1.0214",
-    "[01:15:02] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.00 | [MNQ] \ud83d\udd34 EMA=-1.02 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[01:15:02] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.00 | [MNQ] \ud83d\udd34 EMA=-1.02 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[01:15:06] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[01:15:08] \u26a0\ufe0f [SIL] Keine Ticks seit 11707s",
+    "[01:15:38] \u26a0\ufe0f [SIL] Keine Ticks seit 11738s",
+    "[01:16:00] [MNQ] 01:15 \ud83d\udfe2\u26a1 C=25313.25 EMA=+0.7036",
+    "[01:16:00] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 01:15 UTC",
+    "[01:16:00] [MGC] 01:15 \ud83d\udfe2\u26a1 C=5207.70 EMA=+0.6293",
+    "[01:16:00] [MGC] \u2192 \ud83d\udccf CC zu klein | CC Size: 0.80 < 4.7"
   ]
 }
