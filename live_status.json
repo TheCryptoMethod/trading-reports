@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T07:52:29.280884+00:00",
-  "updated_at": "2026-02-26T10:43:50.966480+00:00",
+  "updated_at": "2026-02-26T10:44:51.246010+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,16 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "green",
-  "ema_diff": 0.381,
+  "cloud_color": "red",
+  "ema_diff": -0.3189,
   "terminal": [
-    "[10:38:01] [MNQ] 10:37 \ud83d\udd34 C=25357.25 EMA=-5.2629",
-    "[10:38:01] [MNQ] 10:37 \ud83d\udd34 C=25356.75 EMA=-5.0643",
-    "[10:38:51] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.58 | [MNQ] \ud83d\udd34 EMA=-5.06 | [SIL] \ud83d\udd34 EMA=-0.00",
-    "[10:39:01] [MNQ] 10:38 \ud83d\udd34 C=25360.00 EMA=-3.7731",
-    "[10:39:01] [MGC] 10:38 \ud83d\udd34 C=5190.40 EMA=-2.3196",
-    "[10:39:01] [SIL] 10:38 \ud83d\udfe2\u26a1 C=87.69 EMA=+0.0035",
-    "[10:39:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 10:38 UTC",
     "[10:39:01] [MNQ] 10:38 \ud83d\udd34 C=25360.50 EMA=-2.7761",
     "[10:39:01] [MNQ] 10:38 \ud83d\udd34 C=25360.75 EMA=-2.0528",
     "[10:39:01] [SIL] 10:38 \ud83d\udfe2 C=87.72 EMA=+0.0197",
@@ -69,6 +62,13 @@
     "[10:42:53] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.52 | [MNQ] \ud83d\udfe2 EMA=+1.25 | [SIL] \ud83d\udfe2 EMA=+0.07",
     "[10:43:01] [MNQ] 10:42 \ud83d\udfe2 C=25366.25 EMA=+1.8044",
     "[10:43:01] [SIL] 10:42 \ud83d\udfe2 C=87.75 EMA=+0.0550",
-    "[10:43:01] [MGC] 10:42 \ud83d\udfe2 C=5192.70 EMA=+0.3810"
+    "[10:43:01] [MGC] 10:42 \ud83d\udfe2 C=5192.70 EMA=+0.3810",
+    "[10:43:53] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.38 | [MNQ] \ud83d\udfe2 EMA=+1.80 | [SIL] \ud83d\udfe2 EMA=+0.05",
+    "[10:44:01] [MGC] 10:43 \ud83d\udd34\u26a1 C=5190.70 EMA=-0.3189",
+    "[10:44:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 10:43 UTC",
+    "[10:44:01] [SIL] 10:43 \ud83d\udfe2 C=87.65 EMA=+0.0109",
+    "[10:44:01] [MNQ] 10:43 \ud83d\udfe2 C=25367.75 EMA=+2.4925",
+    "[10:44:01] [SIL] 10:43 \ud83d\udd34\u26a1 C=87.67 EMA=-0.0088",
+    "[10:44:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 10:43 UTC"
   ]
 }
