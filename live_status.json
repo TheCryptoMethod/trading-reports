@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-25T21:45:46.216927+00:00",
-  "updated_at": "2026-02-26T02:48:44.521817+00:00",
+  "updated_at": "2026-02-26T02:49:44.928892+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.343,
+  "ema_diff": 0.4713,
   "terminal": [
-    "[02:42:32] \u26a0\ufe0f [SIL] Keine Ticks seit 16951s",
-    "[02:42:42] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.25 | [MNQ] \ud83d\udd34 EMA=-4.79 | [SIL] \ud83d\udd34 EMA=-0.13",
-    "[02:42:46] \ud83d\udd04 [SIL] Re-Subscribe versucht",
-    "[02:43:01] [MNQ] 02:42 \ud83d\udd34 C=25291.00 EMA=-5.2011",
-    "[02:43:01] [MGC] 02:42 \ud83d\udd34 C=5192.00 EMA=-3.2659",
-    "[02:43:02] \u26a0\ufe0f [SIL] Keine Ticks seit 16981s",
     "[02:43:32] \u26a0\ufe0f [SIL] Keine Ticks seit 17011s",
     "[02:43:43] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.27 | [MNQ] \ud83d\udd34 EMA=-5.20 | [SIL] \ud83d\udd34 EMA=-0.13",
     "[02:43:46] \ud83d\udd04 [SIL] Re-Subscribe versucht",
@@ -69,6 +63,12 @@
     "[02:48:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 02:47 UTC",
     "[02:48:05] \u26a0\ufe0f [SIL] Keine Ticks seit 17285s",
     "[02:48:36] \u26a0\ufe0f [SIL] Keine Ticks seit 17315s",
-    "[02:48:44] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.34 | [MNQ] \ud83d\udfe2 EMA=+0.68 | [SIL] \ud83d\udd34 EMA=-0.13"
+    "[02:48:44] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.34 | [MNQ] \ud83d\udfe2 EMA=+0.68 | [SIL] \ud83d\udd34 EMA=-0.13",
+    "[02:48:48] \ud83d\udd04 [SIL] Re-Subscribe versucht",
+    "[02:49:00] [MNQ] 02:48 \ud83d\udfe2 C=25302.75 EMA=+1.8864",
+    "[02:49:00] [MGC] 02:48 \ud83d\udfe2 C=5196.40 EMA=+0.4713",
+    "[02:49:06] \u26a0\ufe0f [SIL] Keine Ticks seit 17345s",
+    "[02:49:36] \u26a0\ufe0f [SIL] Keine Ticks seit 17375s",
+    "[02:49:44] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.47 | [MNQ] \ud83d\udfe2 EMA=+1.89 | [SIL] \ud83d\udd34 EMA=-0.13"
   ]
 }
