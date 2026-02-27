@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-27T11:53:43.746226+00:00",
-  "updated_at": "2026-02-27T13:23:35.090143+00:00",
+  "updated_at": "2026-02-27T13:24:35.482874+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,15 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 6.6242,
+  "ema_diff": 7.9779,
   "terminal": [
-    "[13:18:01] [MNQ] 13:17 \ud83d\udd34 C=24909.50 EMA=-6.3207",
-    "[13:18:01] [MGC] 13:17 \ud83d\udfe2 C=5234.90 EMA=+3.6931",
-    "[13:18:01] [MNQ] 13:17 \ud83d\udd34 C=24909.00 EMA=-6.1356",
-    "[13:18:01] [MNQ] 13:17 \ud83d\udd34 C=24909.50 EMA=-5.6490",
-    "[13:18:36] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.69 | [MNQ] \ud83d\udd34 EMA=-5.65 | [SIL] \ud83d\udfe2 EMA=+0.26",
-    "[13:19:01] [MGC] 13:18 \ud83d\udfe2 C=5237.60 EMA=+4.1375",
-    "[13:19:01] [MNQ] 13:18 \ud83d\udd34 C=24893.50 EMA=-10.0459",
     "[13:19:01] [SIL] 13:18 \ud83d\udfe2 C=91.68 EMA=+0.3696",
     "[13:19:01] [MNQ] 13:18 \ud83d\udd34 C=24893.75 EMA=-11.9738",
     "[13:19:01] [MNQ] 13:18 \ud83d\udd34 C=24893.75 EMA=-12.5643",
@@ -69,6 +62,13 @@
     "[13:23:01] [MNQ] 13:22 \ud83d\udfe2 C=24906.75 EMA=+2.6256",
     "[13:23:01] [SIL] 13:22 \ud83d\udfe2 C=92.36 EMA=+0.6397",
     "[13:23:01] [SIL] 13:22 \ud83d\udfe2 C=92.36 EMA=+0.6395",
-    "[13:23:01] [MGC] 13:22 \ud83d\udfe2 C=5247.90 EMA=+6.6242"
+    "[13:23:01] [MGC] 13:22 \ud83d\udfe2 C=5247.90 EMA=+6.6242",
+    "[13:23:37] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+6.62 | [MNQ] \ud83d\udfe2 EMA=+2.63 | [SIL] \ud83d\udfe2 EMA=+0.64",
+    "[13:24:01] [MNQ] 13:23 \ud83d\udfe2 C=24904.75 EMA=+0.5648",
+    "[13:24:01] [MGC] 13:23 \ud83d\udfe2 C=5252.50 EMA=+7.9779",
+    "[13:24:01] [SIL] 13:23 \ud83d\udfe2 C=92.62 EMA=+0.6958",
+    "[13:24:01] [MNQ] 13:23 \ud83d\udd34\u26a1 C=24904.00 EMA=-0.8040",
+    "[13:24:01] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 13:23 UTC",
+    "[13:24:01] [MNQ] 13:23 \ud83d\udd34 C=24904.50 EMA=-1.3640"
   ]
 }
