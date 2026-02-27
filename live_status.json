@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-27T13:54:56.381612+00:00",
-  "updated_at": "2026-02-27T14:17:20.650895+00:00",
+  "updated_at": "2026-02-27T14:18:21.201458+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,15 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 0.7884,
+  "ema_diff": 1.2509,
   "terminal": [
-    "[14:12:01] [MGC] 14:11 \ud83d\udfe2 C=5243.40 EMA=+0.9142",
-    "[14:12:01] [SIL] 14:11 \ud83d\udfe2\u26a1 C=92.64 EMA=+0.0015",
-    "[14:12:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 14:11 UTC",
-    "[14:12:20] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.91 | [MNQ] \ud83d\udfe2 EMA=+2.92 | [SIL] \ud83d\udfe2 EMA=+0.00",
-    "[14:13:01] [SIL] 14:12 \ud83d\udfe2 C=92.66 EMA=+0.0133",
-    "[14:13:01] [MGC] 14:12 \ud83d\udfe2 C=5242.50 EMA=+0.8960",
-    "[14:13:01] [MNQ] 14:12 \ud83d\udd34\u26a1 C=24839.50 EMA=-1.3526",
     "[14:13:01] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 14:12 UTC",
     "[14:13:01] [MNQ] 14:12 \ud83d\udd34 C=24839.00 EMA=-3.7752",
     "[14:13:01] [MGC] 14:12 \ud83d\udfe2 C=5242.70 EMA=+0.9129",
@@ -69,6 +62,13 @@
     "[14:17:01] [MNQ] 14:16 \ud83d\udd34 C=24829.25 EMA=-7.6109",
     "[14:17:01] [MNQ] 14:16 \ud83d\udd34 C=24829.25 EMA=-7.5840",
     "[14:17:01] [MNQ] 14:16 \ud83d\udd34 C=24829.00 EMA=-7.3566",
-    "[14:17:01] [MNQ] 14:16 \ud83d\udd34 C=24828.25 EMA=-7.1815"
+    "[14:17:01] [MNQ] 14:16 \ud83d\udd34 C=24828.25 EMA=-7.1815",
+    "[14:17:23] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.79 | [MNQ] \ud83d\udd34 EMA=-7.18 | [SIL] \ud83d\udd34 EMA=-0.02",
+    "[14:18:01] [MNQ] 14:17 \ud83d\udd34 C=24826.25 EMA=-7.4224",
+    "[14:18:01] [SIL] 14:17 \ud83d\udd34 C=92.60 EMA=-0.0219",
+    "[14:18:01] [MGC] 14:17 \ud83d\udfe2 C=5244.90 EMA=+1.2509",
+    "[14:18:01] [MNQ] 14:17 \ud83d\udd34 C=24826.25 EMA=-7.2704",
+    "[14:18:01] [MNQ] 14:17 \ud83d\udd34 C=24825.75 EMA=-7.0633",
+    "[14:18:01] [MNQ] 14:17 \ud83d\udd34 C=24825.75 EMA=-6.6818"
   ]
 }
