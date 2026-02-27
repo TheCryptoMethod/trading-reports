@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-26T22:54:21.351728+00:00",
-  "updated_at": "2026-02-27T00:56:15.593757+00:00",
+  "updated_at": "2026-02-27T00:57:15.845527+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -16,10 +16,10 @@
     "[MNQ] 20:30-21:00 CC=9.6",
     "[MNQ] 00:30-01:00 CC=2.3"
   ],
-  "balance": 51439.02,
+  "balance": 51070.52,
   "start_balance": 51538.72,
-  "pnl": -99.70000000000437,
-  "pnl_pct": -0.19344679107281743,
+  "pnl": -468.20000000000437,
+  "pnl_pct": -0.9084432054191575,
   "trades": 4,
   "wins": 0,
   "losses": 2,
@@ -28,12 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -0.9344,
+  "ema_diff": -0.7146,
   "terminal": [
-    "[00:48:00] [MNQ] 00:47 \ud83d\udd34 C=24973.00 EMA=-11.6745",
-    "[00:48:00] [MGC] 00:47 \ud83d\udd34 C=5192.50 EMA=-3.4898",
-    "[00:48:01] [SIL] 00:47 \ud83d\udd34 C=88.91 EMA=-0.1223",
-    "[00:48:15] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.49 | [MNQ] \ud83d\udd34 EMA=-11.67 | [SIL] \ud83d\udd34 EMA=-0.12",
     "[00:49:00] [MNQ] 00:48 \ud83d\udd34 C=24976.75 EMA=-7.9228",
     "[00:49:00] [MGC] 00:48 \ud83d\udd34 C=5190.70 EMA=-3.3641",
     "[00:49:00] [SIL] 00:48 \ud83d\udd34 C=88.91 EMA=-0.0878",
@@ -69,6 +65,10 @@
     "[00:56:00] [MNQ] 00:55 \ud83d\udfe2 C=24986.75 EMA=+3.4616",
     "[00:56:01] [MGC] 00:55 \ud83d\udd34 C=5192.60 EMA=-0.9344",
     "[00:56:01] [SIL] 00:55 \ud83d\udfe2 C=89.06 EMA=+0.0595",
-    "[00:56:08] \ud83d\uded1 [MNQ] \ud83d\uded1 Stop Loss getroffen | P&L: -3.50 pts"
+    "[00:56:08] \ud83d\uded1 [MNQ] \ud83d\uded1 Stop Loss getroffen | P&L: -3.50 pts",
+    "[00:56:18] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.93 | [MNQ] \ud83d\udfe2 EMA=+3.46 | [SIL] \ud83d\udfe2 EMA=+0.06",
+    "[00:57:00] [MNQ] 00:56 \ud83d\udfe2 C=24985.00 EMA=+2.4129",
+    "[00:57:00] [MGC] 00:56 \ud83d\udd34 C=5192.50 EMA=-0.7146",
+    "[00:57:00] [SIL] 00:56 \ud83d\udfe2 C=89.12 EMA=+0.0777"
   ]
 }
