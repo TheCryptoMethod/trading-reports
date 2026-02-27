@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-27T13:54:56.381612+00:00",
-  "updated_at": "2026-02-27T14:25:25.809537+00:00",
+  "updated_at": "2026-02-27T14:26:26.637807+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,15 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 2.7246,
+  "ema_diff": 1.7725,
   "terminal": [
-    "[14:21:01] [SIL] 14:20 \ud83d\udd34 C=92.55 EMA=-0.0433",
-    "[14:21:26] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.72 | [MNQ] \ud83d\udd34 EMA=-4.22 | [SIL] \ud83d\udd34 EMA=-0.04",
-    "[14:22:01] [SIL] 14:21 \ud83d\udfe2\u26a1 C=92.83 EMA=+0.0482",
-    "[14:22:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 14:21 UTC",
-    "[14:22:01] [MGC] 14:21 \ud83d\udfe2 C=5251.00 EMA=+2.9955",
-    "[14:22:01] [MNQ] 14:21 \ud83d\udd34 C=24826.00 EMA=-3.5532",
-    "[14:22:01] [MNQ] 14:21 \ud83d\udd34 C=24826.50 EMA=-2.9046",
     "[14:22:01] [MGC] 14:21 \ud83d\udfe2 C=5250.90 EMA=+3.5459",
     "[14:22:01] [MNQ] 14:21 \ud83d\udd34 C=24827.25 EMA=-2.2133",
     "[14:22:01] [MNQ] 14:21 \ud83d\udd34 C=24827.25 EMA=-1.7537",
@@ -69,6 +62,13 @@
     "[14:25:01] [MNQ] 14:24 \ud83d\udd34 C=24824.00 EMA=-2.9614",
     "[14:25:01] [MGC] 14:24 \ud83d\udfe2 C=5250.80 EMA=+2.7246",
     "[14:25:01] [SIL] 14:24 \ud83d\udfe2 C=92.69 EMA=+0.0271",
-    "[14:25:01] [MNQ] 14:24 \ud83d\udd34 C=24823.75 EMA=-3.5013"
+    "[14:25:01] [MNQ] 14:24 \ud83d\udd34 C=24823.75 EMA=-3.5013",
+    "[14:25:29] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.72 | [MNQ] \ud83d\udd34 EMA=-3.50 | [SIL] \ud83d\udfe2 EMA=+0.03",
+    "[14:26:01] [SIL] 14:25 \ud83d\udfe2 C=92.61 EMA=+0.0005",
+    "[14:26:01] [MGC] 14:25 \ud83d\udfe2 C=5248.60 EMA=+1.7725",
+    "[14:26:01] [MNQ] 14:25 \ud83d\udd34 C=24830.50 EMA=-1.6039",
+    "[14:26:01] [MNQ] 14:25 \ud83d\udd34 C=24830.25 EMA=-0.5889",
+    "[14:26:01] [MNQ] 14:25 \ud83d\udfe2\u26a1 C=24830.75 EMA=+0.1369",
+    "[14:26:01] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 14:25 UTC"
   ]
 }
