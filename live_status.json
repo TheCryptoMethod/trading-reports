@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-27T11:53:43.746226+00:00",
-  "updated_at": "2026-02-27T12:26:15.630851+00:00",
+  "updated_at": "2026-02-27T12:27:15.656977+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -28,15 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -0.525,
+  "ema_diff": -0.5389,
   "terminal": [
-    "[12:19:01] [MNQ] 12:18 \ud83d\udfe2 C=24973.00 EMA=+9.2217",
-    "[12:19:01] [SIL] 12:18 \ud83d\udd34 C=90.39 EMA=-0.0132",
-    "[12:19:17] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.48 | [MNQ] \ud83d\udfe2 EMA=+9.22 | [SIL] \ud83d\udd34 EMA=-0.01",
-    "[12:20:01] [MNQ] 12:19 \ud83d\udfe2 C=24978.25 EMA=+9.0210",
-    "[12:20:01] [SIL] 12:19 \ud83d\udfe2\u26a1 C=90.40 EMA=+0.0156",
-    "[12:20:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 12:19 UTC",
-    "[12:20:01] [MGC] 12:19 \ud83d\udfe2 C=5204.20 EMA=+0.6028",
     "[12:20:17] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.60 | [MNQ] \ud83d\udfe2 EMA=+9.02 | [SIL] \ud83d\udfe2 EMA=+0.02",
     "[12:21:01] [SIL] 12:20 \ud83d\udfe2 C=90.45 EMA=+0.0459",
     "[12:21:01] [MNQ] 12:20 \ud83d\udfe2 C=24988.25 EMA=+11.6160",
@@ -69,6 +62,13 @@
     "[12:26:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 12:25 UTC",
     "[12:26:01] [MNQ] 12:25 \ud83d\udfe2 C=24984.00 EMA=+5.9479",
     "[12:26:01] [SIL] 12:25 \ud83d\udd34\u26a1 C=90.31 EMA=-0.0053",
-    "[12:26:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 12:25 UTC"
+    "[12:26:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 12:25 UTC",
+    "[12:26:18] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.52 | [MNQ] \ud83d\udfe2 EMA=+5.95 | [SIL] \ud83d\udd34 EMA=-0.01",
+    "[12:27:01] [MNQ] 12:26 \ud83d\udfe2 C=24976.50 EMA=+2.3875",
+    "[12:27:01] [MGC] 12:26 \ud83d\udd34 C=5203.00 EMA=-0.5389",
+    "[12:27:01] [SIL] 12:26 \ud83d\udd34 C=90.33 EMA=-0.0114",
+    "[12:27:01] [MNQ] 12:26 \ud83d\udfe2 C=24976.00 EMA=+0.2114",
+    "[12:27:01] [MNQ] 12:26 \ud83d\udd34\u26a1 C=24976.00 EMA=-0.9780",
+    "[12:27:01] [MNQ] \u26a1 Cloud Change ignoriert: Zeit: 12:26 UTC"
   ]
 }
