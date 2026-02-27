@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ + SIL",
   "account_mode": "combine",
   "started_at": "2026-02-27T11:53:43.746226+00:00",
-  "updated_at": "2026-02-27T12:25:15.307297+00:00",
+  "updated_at": "2026-02-27T12:26:15.630851+00:00",
   "windows": [
     "[MGC] 23:00-23:30 CC=0.8",
     "[MGC] 01:00-01:30 CC=4.7",
@@ -27,15 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "green",
-  "ema_diff": 0.0427,
+  "cloud_color": "red",
+  "ema_diff": -0.525,
   "terminal": [
-    "[12:18:01] [SIL] 12:17 \ud83d\udd34 C=90.27 EMA=-0.0597",
-    "[12:18:01] [MNQ] 12:17 \ud83d\udfe2 C=24976.75 EMA=+13.3524",
-    "[12:18:01] [MNQ] 12:17 \ud83d\udfe2 C=24978.00 EMA=+12.4664",
-    "[12:18:01] [MNQ] 12:17 \ud83d\udfe2 C=24979.25 EMA=+11.8915",
-    "[12:18:17] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.18 | [MNQ] \ud83d\udfe2 EMA=+11.89 | [SIL] \ud83d\udd34 EMA=-0.06",
-    "[12:19:01] [MGC] 12:18 \ud83d\udfe2 C=5204.30 EMA=+0.4841",
     "[12:19:01] [MNQ] 12:18 \ud83d\udfe2 C=24973.00 EMA=+9.2217",
     "[12:19:01] [SIL] 12:18 \ud83d\udd34 C=90.39 EMA=-0.0132",
     "[12:19:17] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.48 | [MNQ] \ud83d\udfe2 EMA=+9.22 | [SIL] \ud83d\udd34 EMA=-0.01",
@@ -69,6 +63,12 @@
     "[12:25:01] [MGC] 12:24 \ud83d\udfe2 C=5203.60 EMA=+0.0427",
     "[12:25:01] [MNQ] 12:24 \ud83d\udfe2 C=24990.75 EMA=+7.8786",
     "[12:25:01] [SIL] 12:24 \ud83d\udfe2 C=90.36 EMA=+0.0204",
-    "[12:25:01] [SIL] 12:24 \ud83d\udfe2 C=90.36 EMA=+0.0119"
+    "[12:25:01] [SIL] 12:24 \ud83d\udfe2 C=90.36 EMA=+0.0119",
+    "[12:25:18] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.04 | [MNQ] \ud83d\udfe2 EMA=+7.88 | [SIL] \ud83d\udfe2 EMA=+0.01",
+    "[12:26:01] [MGC] 12:25 \ud83d\udd34\u26a1 C=5202.10 EMA=-0.5250",
+    "[12:26:01] [MGC] \u26a1 Cloud Change ignoriert: Zeit: 12:25 UTC",
+    "[12:26:01] [MNQ] 12:25 \ud83d\udfe2 C=24984.00 EMA=+5.9479",
+    "[12:26:01] [SIL] 12:25 \ud83d\udd34\u26a1 C=90.31 EMA=-0.0053",
+    "[12:26:01] [SIL] \u26a1 Cloud Change ignoriert: Zeit: 12:25 UTC"
   ]
 }
