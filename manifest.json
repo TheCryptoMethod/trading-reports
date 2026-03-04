@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-02-25T10:24:10.965602",
+  "last_updated": "2026-03-04T17:12:55.521589",
   "reports": [
     {
       "asset": "MGC",
@@ -984,6 +984,32 @@
       "mc_profitable_pct": null,
       "wf_profitable": null,
       "wf_total": null
+    },
+    {
+      "asset": "MGC",
+      "asset_name": "Micro Gold Futures",
+      "type": "heatmap",
+      "date_start": "2026-01-01",
+      "date_end": "2026-03-03",
+      "bar_interval": 1,
+      "created": "2026-03-04T17:12:55.521535",
+      "filename": "archive/MGC_heatmap_20260101-20260303.html",
+      "latest_filename": "MGC_heatmap_latest.html",
+      "description": "01:00-01:30 CC=3.0 | 23:00-23:30 CC=0.8 | 02:00-02:30 CC=1.2 | 10:30-11:00 CC=2.9 | 12:00-12:30 CC=3.4",
+      "trades": 48,
+      "win_rate": 64.58333333333334,
+      "profit_factor": 5.02,
+      "pnl_pts": 274.3,
+      "pnl_usd": 8537.24,
+      "score": 93.91,
+      "plateau_score": 103.89,
+      "total_runs": 285788,
+      "val_score": 44,
+      "val_max": 100,
+      "val_grade": "🟡 D — Schwach, wahrscheinlich Zufall oder wenig Trades",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
     }
   ]
 }
