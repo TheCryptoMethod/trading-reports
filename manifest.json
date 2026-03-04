@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-03-04T17:18:20.856379",
+  "last_updated": "2026-03-04T17:23:10.528905",
   "reports": [
     {
       "asset": "MGC",
@@ -1059,6 +1059,32 @@
       "val_score": 52,
       "val_max": 100,
       "val_grade": "🟠 C — Fragil, mehr Daten oder Tuning nötig",
+      "mc_profitable_pct": 100.0,
+      "wf_profitable": 0,
+      "wf_total": 0
+    },
+    {
+      "asset": "SIL",
+      "asset_name": "Micro Silver Futures",
+      "type": "heatmap",
+      "date_start": "2026-01-01",
+      "date_end": "2026-03-03",
+      "bar_interval": 1,
+      "created": "2026-03-04T17:23:10.528807",
+      "filename": "archive/SIL_heatmap_20260101-20260303.html",
+      "latest_filename": "SIL_heatmap_latest.html",
+      "description": "02:30-03:00 CC=0.207 | 21:00-21:30 CC=0.077",
+      "trades": 12,
+      "win_rate": 75.0,
+      "profit_factor": 5.01,
+      "pnl_pts": 2.43,
+      "pnl_usd": 3106.44,
+      "score": 85.86,
+      "plateau_score": 95.86,
+      "total_runs": 269656,
+      "val_score": 29,
+      "val_max": 100,
+      "val_grade": "🔴 F — Wahrscheinlich overfitted oder kein Edge",
       "mc_profitable_pct": 100.0,
       "wf_profitable": 0,
       "wf_total": 0
