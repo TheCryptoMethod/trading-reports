@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-05T12:31:22.386658+00:00",
-  "updated_at": "2026-03-05T16:11:03.572736+00:00",
+  "updated_at": "2026-03-05T16:12:03.851115+00:00",
   "windows": [
     "[MGC] 01:00-01:30 CC=3.0",
     "[MGC] 23:00-23:30 CC=0.8",
@@ -28,11 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -8.2307,
+  "ema_diff": -8.3845,
   "terminal": [
-    "[16:00:03] [MNQ] 15:59 \ud83d\udfe2 C=25081.50 EMA=+11.6687",
-    "[16:00:03] [MGC] 15:59 \ud83d\udfe2 C=5111.50 EMA=+6.5498",
-    "[16:00:03] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+5.09 | [MNQ] \ud83d\udfe2 EMA=+7.74",
     "[16:01:00] [MNQ] 16:00 \ud83d\udfe2 C=25076.75 EMA=+11.9066",
     "[16:01:02] [MGC] 16:00 \ud83d\udfe2 C=5111.60 EMA=+7.1255",
     "[16:01:03] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+6.55 | [MNQ] \ud83d\udfe2 EMA=+11.91",
@@ -69,6 +66,9 @@
     "[16:11:00] [MGC] 16:10 \ud83d\udd34 C=5088.70 EMA=-8.2307",
     "[16:11:00] [MNQ] 16:10 \ud83d\udd34 C=24980.75 EMA=-36.0717",
     "[16:11:00] [MNQ] \u2192 \u274c Order cancelled (Timeout) | Timeout nach 7 Kerzen",
-    "[16:11:00] \u274c [MNQ] Order cancelled"
+    "[16:11:00] \u274c [MNQ] Order cancelled",
+    "[16:11:06] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-8.23 | [MNQ] \ud83d\udd34 EMA=-36.07",
+    "[16:12:00] [MNQ] 16:11 \ud83d\udd34 C=24973.00 EMA=-41.0775",
+    "[16:12:00] [MGC] 16:11 \ud83d\udd34 C=5086.60 EMA=-8.3845"
   ]
 }
