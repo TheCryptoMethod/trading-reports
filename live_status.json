@@ -3,7 +3,7 @@
   "asset": "MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-05T19:23:21.814806+00:00",
-  "updated_at": "2026-03-05T19:32:04.441795+00:00",
+  "updated_at": "2026-03-05T19:33:04.522443+00:00",
   "windows": [
     "[MNQ] 17:00-17:30 CC=6.7",
     "[MNQ] 20:30-21:00 CC=9.7",
@@ -25,7 +25,7 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -14.0231,
+  "ema_diff": -18.0136,
   "terminal": [
     "[19:23:21] \ud83d\ude80 Multi-Asset Bot: MNQ (combine) \u2014 \ud83d\udd34 LIVE",
     "[19:25:00] [MNQ] 19:24 \ud83d\udfe2 C=24855.75 EMA=+9.4679",
@@ -43,6 +43,8 @@
     "[19:30:06] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-5.64",
     "[19:31:00] [MNQ] 19:30 \ud83d\udd34 C=24806.25 EMA=-13.1265",
     "[19:31:07] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-13.13",
-    "[19:32:00] [MNQ] 19:31 \ud83d\udd34 C=24815.00 EMA=-14.0231"
+    "[19:32:00] [MNQ] 19:31 \ud83d\udd34 C=24815.00 EMA=-14.0231",
+    "[19:32:07] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-14.02",
+    "[19:33:00] [MNQ] 19:32 \ud83d\udd34 C=24801.75 EMA=-18.0136"
   ]
 }
