@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-04T17:05:00.010618+00:00",
-  "updated_at": "2026-03-05T01:00:50.216217+00:00",
+  "updated_at": "2026-03-05T01:01:50.498248+00:00",
   "windows": [
     "[MGC] 01:00-01:30 CC=3.0",
     "[MGC] 23:00-23:30 CC=0.8",
@@ -20,21 +20,16 @@
   "start_balance": 50385.82,
   "pnl": -224.44000000000233,
   "pnl_pct": -0.4454427852915807,
-  "trades": 1,
+  "trades": 2,
   "wins": 0,
   "losses": 1,
   "win_rate": 0.0,
-  "open_orders": 0,
-  "open_positions": 0,
+  "open_orders": 1,
+  "open_positions": 1,
   "last_signal": "",
-  "cloud_color": "red",
-  "ema_diff": -1.1706,
+  "cloud_color": "green",
+  "ema_diff": 0.4156,
   "terminal": [
-    "[00:48:49] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.63 | [MNQ] \ud83d\udd34 EMA=-1.27",
-    "[00:49:00] [MNQ] 00:48 \ud83d\udd34 C=25212.25 EMA=-1.1475",
-    "[00:49:01] [MGC] 00:48 \ud83d\udd34 C=5184.40 EMA=-0.7163",
-    "[00:49:49] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.72 | [MNQ] \ud83d\udd34 EMA=-1.15",
-    "[00:50:00] [MNQ] 00:49 \ud83d\udd34 C=25214.75 EMA=-0.2772",
     "[00:50:00] [MGC] 00:49 \ud83d\udfe2\u26a1 C=5188.10 EMA=+0.9340",
     "[00:50:00] [MGC] \u26a1 Cloud Change ignoriert: Outside | Zeit: 00:49 UTC",
     "[00:50:49] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+0.93 | [MNQ] \ud83d\udd34 EMA=-0.28",
@@ -69,6 +64,11 @@
     "[00:59:00] [MNQ] 00:58 \ud83d\udd34 C=25208.00 EMA=-3.0124",
     "[00:59:52] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.33 | [MNQ] \ud83d\udd34 EMA=-3.01",
     "[01:00:00] [MGC] 00:59 \ud83d\udd34 C=5183.60 EMA=-1.1706",
-    "[01:00:00] [MNQ] 00:59 \ud83d\udd34 C=25209.00 EMA=-2.1922"
+    "[01:00:00] [MNQ] 00:59 \ud83d\udd34 C=25209.00 EMA=-2.1922",
+    "[01:00:53] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.17 | [MNQ] \ud83d\udd34 EMA=-2.19",
+    "[01:01:00] [MGC] 01:00 \ud83d\udfe2\u26a1 C=5186.60 EMA=+0.4156",
+    "[01:01:00] [MGC] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $5181.68",
+    "[01:01:00] \ud83c\udfaf [MGC] LONG @ $5181.70 SL=$5177.80 TP=$5189.40",
+    "[01:01:00] [MNQ] 01:00 \ud83d\udd34 C=25209.50 EMA=-1.5110"
   ]
 }
