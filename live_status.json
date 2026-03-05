@@ -3,7 +3,7 @@
   "asset": "MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-05T19:23:21.814806+00:00",
-  "updated_at": "2026-03-05T22:35:02.062328+00:00",
+  "updated_at": "2026-03-05T22:36:02.374599+00:00",
   "windows": [
     "[MNQ] 17:00-17:30 CC=6.7",
     "[MNQ] 20:30-21:00 CC=9.7",
@@ -27,7 +27,6 @@
   "cloud_color": "red",
   "ema_diff": -1.1517,
   "terminal": [
-    "[21:58:50] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-1.24",
     "[21:59:00] [MNQ] 21:58 \ud83d\udd34 C=25005.75 EMA=-2.5247",
     "[21:59:50] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-2.52",
     "[22:00:00] \u23f8\ufe0f T\u00e4gliche Pause (22:00-23:00 UTC)",
@@ -66,6 +65,7 @@
     "[22:31:03] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-1.15",
     "[22:32:03] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-1.15",
     "[22:33:04] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-1.15",
-    "[22:34:04] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-1.15"
+    "[22:34:04] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-1.15",
+    "[22:35:04] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-1.15"
   ]
 }
