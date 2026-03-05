@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-05T12:31:22.386658+00:00",
-  "updated_at": "2026-03-05T17:10:16.342222+00:00",
+  "updated_at": "2026-03-05T17:11:16.652426+00:00",
   "windows": [
     "[MGC] 01:00-01:30 CC=3.0",
     "[MGC] 23:00-23:30 CC=0.8",
@@ -20,7 +20,7 @@
   "start_balance": 49724.38,
   "pnl": 0.0,
   "pnl_pct": 0.0,
-  "trades": 1,
+  "trades": 2,
   "wins": 0,
   "losses": 0,
   "win_rate": 0.0,
@@ -28,14 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 5.0287,
+  "ema_diff": 4.4092,
   "terminal": [
-    "[16:57:00] [MGC] 16:56 \ud83d\udfe2 C=5084.90 EMA=+3.2871",
-    "[16:57:17] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.29 | [MNQ] \ud83d\udfe2 EMA=+7.95",
-    "[16:58:00] [MNQ] 16:57 \ud83d\udfe2 C=25037.00 EMA=+9.5052",
-    "[16:58:01] [MGC] 16:57 \ud83d\udfe2 C=5086.10 EMA=+3.2445",
-    "[16:58:17] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+3.24 | [MNQ] \ud83d\udfe2 EMA=+9.51",
-    "[16:59:00] [MGC] 16:58 \ud83d\udfe2 C=5083.90 EMA=+2.4273",
     "[16:59:00] [MNQ] 16:58 \ud83d\udfe2 C=25035.75 EMA=+9.6068",
     "[16:59:17] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+2.43 | [MNQ] \ud83d\udfe2 EMA=+9.61",
     "[17:00:00] [MNQ] 16:59 \ud83d\udfe2 C=25042.75 EMA=+11.4293",
@@ -69,6 +63,12 @@
     "[17:09:00] [MNQ] 17:08 \ud83d\udfe2 C=25072.00 EMA=+20.6587",
     "[17:09:19] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+4.81 | [MNQ] \ud83d\udfe2 EMA=+20.66",
     "[17:10:00] [MNQ] 17:09 \ud83d\udfe2 C=25045.00 EMA=+8.9919",
-    "[17:10:00] [MGC] 17:09 \ud83d\udfe2 C=5095.50 EMA=+5.0287"
+    "[17:10:00] [MGC] 17:09 \ud83d\udfe2 C=5095.50 EMA=+5.0287",
+    "[17:10:19] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+5.03 | [MNQ] \ud83d\udfe2 EMA=+8.99",
+    "[17:11:00] [MNQ] 17:10 \ud83d\udd34\u26a1 C=25007.00 EMA=-9.2649",
+    "[17:11:00] [MNQ] \u2192 \u2705 TRADE SIGNAL | \u2705 Setup g\u00fcltig! Limit @ $25029.65",
+    "[17:11:00] \ud83c\udfaf [MNQ] SHORT @ $25029.75 SL=$25079.50 TP=$24930.00",
+    "[17:11:00] [MGC] 17:10 \ud83d\udfe2 C=5093.70 EMA=+4.4092",
+    "[17:11:14] \u2705 [MNQ] FILLED @ $25029.75"
   ]
 }
