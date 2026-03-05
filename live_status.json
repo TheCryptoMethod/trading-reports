@@ -3,7 +3,7 @@
   "asset": "MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-05T19:23:21.814806+00:00",
-  "updated_at": "2026-03-05T20:46:23.940584+00:00",
+  "updated_at": "2026-03-05T20:47:24.215442+00:00",
   "windows": [
     "[MNQ] 17:00-17:30 CC=6.7",
     "[MNQ] 20:30-21:00 CC=9.7",
@@ -25,10 +25,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -2.581,
+  "ema_diff": -5.0553,
   "terminal": [
-    "[20:27:00] [MNQ] 20:26 \ud83d\udfe2 C=24988.50 EMA=+42.9275",
-    "[20:27:23] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+42.93",
     "[20:28:00] [MNQ] 20:27 \ud83d\udfe2 C=24974.50 EMA=+38.4615",
     "[20:28:23] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+38.46",
     "[20:29:00] [MNQ] 20:28 \ud83d\udfe2 C=24968.25 EMA=+32.6671",
@@ -66,6 +64,8 @@
     "[20:45:00] [MNQ] 20:44 \ud83d\udfe2 C=24967.75 EMA=+1.0353",
     "[20:45:26] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+1.04",
     "[20:46:00] [MNQ] 20:45 \ud83d\udd34\u26a1 C=24958.50 EMA=-2.5810",
-    "[20:46:00] [MNQ] \u2192 \ud83d\udccf CC zu klein | CC Size: 5.50 < 9.7"
+    "[20:46:00] [MNQ] \u2192 \ud83d\udccf CC zu klein | CC Size: 5.50 < 9.7",
+    "[20:46:26] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-2.58",
+    "[20:47:00] [MNQ] 20:46 \ud83d\udd34 C=24956.50 EMA=-5.0553"
   ]
 }
