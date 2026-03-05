@@ -3,7 +3,7 @@
   "asset": "MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-05T19:23:21.814806+00:00",
-  "updated_at": "2026-03-05T20:29:20.701465+00:00",
+  "updated_at": "2026-03-05T20:30:21.047532+00:00",
   "windows": [
     "[MNQ] 17:00-17:30 CC=6.7",
     "[MNQ] 20:30-21:00 CC=9.7",
@@ -25,10 +25,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 32.6671,
+  "ema_diff": 24.0867,
   "terminal": [
-    "[20:09:18] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+20.78",
-    "[20:10:00] [MNQ] 20:09 \ud83d\udfe2 C=24901.25 EMA=+24.3958",
     "[20:10:18] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+24.40",
     "[20:11:00] [MNQ] 20:10 \ud83d\udfe2 C=24924.75 EMA=+32.5917",
     "[20:11:18] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+32.59",
@@ -66,6 +64,8 @@
     "[20:27:23] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+42.93",
     "[20:28:00] [MNQ] 20:27 \ud83d\udfe2 C=24974.50 EMA=+38.4615",
     "[20:28:23] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+38.46",
-    "[20:29:00] [MNQ] 20:28 \ud83d\udfe2 C=24968.25 EMA=+32.6671"
+    "[20:29:00] [MNQ] 20:28 \ud83d\udfe2 C=24968.25 EMA=+32.6671",
+    "[20:29:23] \ud83d\udcca [MNQ] \ud83d\udfe2 EMA=+32.67",
+    "[20:30:00] [MNQ] 20:29 \ud83d\udfe2 C=24954.50 EMA=+24.0867"
   ]
 }
