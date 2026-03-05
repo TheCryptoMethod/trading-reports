@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-04T17:05:00.010618+00:00",
-  "updated_at": "2026-03-05T05:08:03.033164+00:00",
+  "updated_at": "2026-03-05T05:09:03.408453+00:00",
   "windows": [
     "[MGC] 01:00-01:30 CC=3.0",
     "[MGC] 23:00-23:30 CC=0.8",
@@ -22,19 +22,14 @@
   "pnl_pct": -0.4821594647065431,
   "trades": 3,
   "wins": 0,
-  "losses": 1,
+  "losses": 2,
   "win_rate": 0.0,
-  "open_orders": 1,
-  "open_positions": 1,
+  "open_orders": 0,
+  "open_positions": 0,
   "last_signal": "",
   "cloud_color": "green",
-  "ema_diff": 1.5163,
+  "ema_diff": 1.5404,
   "terminal": [
-    "[04:56:00] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-4.19 | [MNQ] \ud83d\udfe2 EMA=+3.31",
-    "[04:57:00] [MNQ] 04:56 \ud83d\udfe2 C=25096.00 EMA=+3.6719",
-    "[04:57:00] [MGC] 04:56 \ud83d\udd34 C=5181.00 EMA=-1.8227",
-    "[04:57:01] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.72 | [MNQ] \ud83d\udfe2 EMA=+3.18",
-    "[04:58:01] [MNQ] 04:57 \ud83d\udfe2 C=25095.50 EMA=+3.6483",
     "[04:58:01] [MGC] 04:57 \ud83d\udd34 C=5179.50 EMA=-1.7211",
     "[04:58:01] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.82 | [MNQ] \ud83d\udfe2 EMA=+3.67",
     "[04:59:01] [MNQ] 04:58 \ud83d\udfe2 C=25098.00 EMA=+4.2584",
@@ -69,6 +64,11 @@
     "[05:07:01] [MGC] 05:06 \ud83d\udfe2 C=5183.20 EMA=+1.1408",
     "[05:07:05] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.14 | [MNQ] \ud83d\udd34 EMA=-1.75",
     "[05:08:00] [MNQ] 05:07 \ud83d\udd34 C=25092.00 EMA=-1.0457",
-    "[05:08:00] [MGC] 05:07 \ud83d\udfe2 C=5184.70 EMA=+1.5163"
+    "[05:08:00] [MGC] 05:07 \ud83d\udfe2 C=5184.70 EMA=+1.5163",
+    "[05:08:05] \ud83d\udcca [MGC] \ud83d\udfe2 EMA=+1.52 | [MNQ] \ud83d\udd34 EMA=-1.05",
+    "[05:08:06] \ud83d\uded1 [MNQ] \ud83d\uded1 Stop Loss getroffen | P&L: -4.50 pts",
+    "[05:09:00] [MNQ] 05:08 \ud83d\udfe2\u26a1 C=25099.00 EMA=+1.5115",
+    "[05:09:00] [MNQ] \u2192 \ud83d\udccf CC zu klein | CC Size: 1.25 < 4.2",
+    "[05:09:00] [MGC] 05:08 \ud83d\udfe2 C=5184.30 EMA=+1.5404"
   ]
 }
