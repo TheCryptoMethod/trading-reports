@@ -3,7 +3,7 @@
   "asset": "MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-05T19:23:21.814806+00:00",
-  "updated_at": "2026-03-05T21:51:45.250138+00:00",
+  "updated_at": "2026-03-05T21:52:45.521968+00:00",
   "windows": [
     "[MNQ] 17:00-17:30 CC=6.7",
     "[MNQ] 20:30-21:00 CC=9.7",
@@ -24,12 +24,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "red",
-  "ema_diff": -1.471,
+  "cloud_color": "green",
+  "ema_diff": 1.3586,
   "terminal": [
-    "[21:31:39] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-2.65",
-    "[21:32:00] [MNQ] 21:31 \ud83d\udd34 C=25015.25 EMA=-4.2325",
-    "[21:32:39] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-4.23",
     "[21:33:00] [MNQ] 21:32 \ud83d\udd34 C=25014.00 EMA=-5.3135",
     "[21:33:39] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-5.31",
     "[21:34:00] [MNQ] 21:33 \ud83d\udd34 C=25009.75 EMA=-6.9932",
@@ -66,6 +63,9 @@
     "[21:49:47] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-4.73",
     "[21:50:00] [MNQ] 21:49 \ud83d\udd34 C=25008.75 EMA=-3.4926",
     "[21:50:47] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-3.49",
-    "[21:51:00] [MNQ] 21:50 \ud83d\udd34 C=25012.75 EMA=-1.4710"
+    "[21:51:00] [MNQ] 21:50 \ud83d\udd34 C=25012.75 EMA=-1.4710",
+    "[21:51:48] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-1.47",
+    "[21:52:00] [MNQ] 21:51 \ud83d\udfe2\u26a1 C=25018.25 EMA=+1.3586",
+    "[21:52:00] [MNQ] \u26a1 Cloud Change ignoriert: TopstepX Flat-Deadline | Zeit: 21:51 UTC"
   ]
 }
