@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-04T17:05:00.010618+00:00",
-  "updated_at": "2026-03-05T05:02:00.329535+00:00",
+  "updated_at": "2026-03-05T05:03:00.700325+00:00",
   "windows": [
     "[MGC] 01:00-01:30 CC=3.0",
     "[MGC] 23:00-23:30 CC=0.8",
@@ -27,15 +27,9 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "red",
-  "ema_diff": -0.9728,
+  "cloud_color": "green",
+  "ema_diff": 0.2739,
   "terminal": [
-    "[04:48:00] [MGC] 04:47 \ud83d\udd34 C=5181.20 EMA=-2.9878",
-    "[04:48:58] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.99 | [MNQ] \ud83d\udfe2 EMA=+2.77",
-    "[04:49:00] [MGC] 04:48 \ud83d\udd34 C=5180.10 EMA=-3.4689",
-    "[04:49:00] [MNQ] 04:48 \ud83d\udfe2 C=25093.75 EMA=+4.3805",
-    "[04:49:58] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.47 | [MNQ] \ud83d\udfe2 EMA=+4.38",
-    "[04:50:00] [MNQ] 04:49 \ud83d\udfe2 C=25099.00 EMA=+6.6866",
     "[04:50:00] [MGC] 04:49 \ud83d\udd34 C=5178.90 EMA=-3.9636",
     "[04:50:58] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.96 | [MNQ] \ud83d\udfe2 EMA=+6.69",
     "[04:51:00] [MNQ] 04:50 \ud83d\udfe2 C=25096.75 EMA=+6.9980",
@@ -69,6 +63,12 @@
     "[05:00:02] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.63 | [MNQ] \ud83d\udfe2 EMA=+4.26",
     "[05:01:02] [MNQ] 05:00 \ud83d\udfe2 C=25099.50 EMA=+5.5767",
     "[05:01:02] [MGC] 05:00 \ud83d\udd34 C=5180.10 EMA=-0.9728",
-    "[05:01:02] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.09 | [MNQ] \ud83d\udfe2 EMA=+5.95"
+    "[05:01:02] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-1.09 | [MNQ] \ud83d\udfe2 EMA=+5.95",
+    "[05:02:02] [MGC] 05:01 \ud83d\udfe2\u26a1 C=5183.00 EMA=+0.0134",
+    "[05:02:02] [MGC] \u26a1 Cloud Change ignoriert: Outside | Zeit: 05:01 UTC",
+    "[05:02:02] [MNQ] 05:01 \ud83d\udfe2 C=25096.50 EMA=+4.2467",
+    "[05:02:03] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-0.97 | [MNQ] \ud83d\udfe2 EMA=+5.58",
+    "[05:03:00] [MNQ] 05:02 \ud83d\udfe2 C=25088.00 EMA=+0.7724",
+    "[05:03:00] [MGC] 05:02 \ud83d\udfe2 C=5182.10 EMA=+0.2739"
   ]
 }
