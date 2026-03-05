@@ -3,7 +3,7 @@
   "asset": "MGC + MNQ",
   "account_mode": "combine",
   "started_at": "2026-03-05T12:31:22.386658+00:00",
-  "updated_at": "2026-03-05T17:42:24.535494+00:00",
+  "updated_at": "2026-03-05T17:43:24.730775+00:00",
   "windows": [
     "[MGC] 01:00-01:30 CC=3.0",
     "[MGC] 23:00-23:30 CC=0.8",
@@ -28,11 +28,8 @@
   "open_positions": 0,
   "last_signal": "",
   "cloud_color": "red",
-  "ema_diff": -6.2114,
+  "ema_diff": -6.7933,
   "terminal": [
-    "[17:29:23] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-2.88 | [MNQ] \ud83d\udd34 EMA=-19.10",
-    "[17:29:59] \ud83c\udfaf [MNQ] \ud83c\udfaf Take Profit getroffen | P&L: +99.75 pts",
-    "[17:30:00] [MNQ] 17:29 \ud83d\udd34 C=24927.75 EMA=-29.9102",
     "[17:30:00] [MGC] 17:29 \ud83d\udd34 C=5084.20 EMA=-3.7609",
     "[17:30:23] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-3.76 | [MNQ] \ud83d\udd34 EMA=-29.91",
     "[17:31:00] [MNQ] 17:30 \ud83d\udd34 C=24926.50 EMA=-35.0186",
@@ -69,6 +66,9 @@
     "[17:41:00] [MGC] 17:40 \ud83d\udd34 C=5077.20 EMA=-4.9841",
     "[17:41:27] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-4.98 | [MNQ] \ud83d\udd34 EMA=-26.71",
     "[17:42:00] [MGC] 17:41 \ud83d\udd34 C=5069.60 EMA=-6.2114",
-    "[17:42:00] [MNQ] 17:41 \ud83d\udd34 C=24853.75 EMA=-35.8360"
+    "[17:42:00] [MNQ] 17:41 \ud83d\udd34 C=24853.75 EMA=-35.8360",
+    "[17:42:27] \ud83d\udcca [MGC] \ud83d\udd34 EMA=-6.21 | [MNQ] \ud83d\udd34 EMA=-35.84",
+    "[17:43:00] [MNQ] 17:42 \ud83d\udd34 C=24850.00 EMA=-40.5696",
+    "[17:43:00] [MGC] 17:42 \ud83d\udd34 C=5069.10 EMA=-6.7933"
   ]
 }
