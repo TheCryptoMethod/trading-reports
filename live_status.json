@@ -3,7 +3,7 @@
   "asset": "MNQ + MES + MYM + MGC",
   "account_mode": "practice",
   "started_at": "2026-03-13T21:04:40.721861+00:00",
-  "updated_at": "2026-03-13T21:04:40.721861+00:00",
+  "updated_at": "2026-03-13T21:06:08.704923+00:00",
   "windows": [
     "[MNQ] 17:00-17:30 CC=6.7",
     "[MNQ] 20:30-21:00 CC=9.7",
@@ -27,8 +27,8 @@
   "open_orders": 0,
   "open_positions": 0,
   "last_signal": "",
-  "cloud_color": "",
-  "ema_diff": 0.0,
+  "cloud_color": "red",
+  "ema_diff": -13.1893,
   "terminal": [
     "[21:04:40] \ud83d\ude80 Multi-Asset Bot: MNQ + MES + MYM + MGC (practice) \u2014 \ud83e\uddea SIM"
   ]
