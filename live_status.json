@@ -1,44 +1,36 @@
 {
-  "status": "simulation",
+  "status": "offline",
   "asset": "MNQ + MES + MYM + MGC",
-  "account_mode": "practice",
-  "started_at": "2026-03-13T21:04:40.721861+00:00",
-  "updated_at": "2026-03-13T21:07:08.756056+00:00",
-  "windows": [
-    "[MNQ] 17:00-17:30 CC=6.7",
-    "[MNQ] 20:30-21:00 CC=9.7",
-    "[MNQ] 16:00-16:30 CC=4.9",
-    "[MNQ] 23:00-23:30 CC=6.2",
-    "[MNQ] 05:00-05:30 CC=4.2",
-    "[MNQ] 00:00-00:30 CC=6.0",
-    "[MNQ] 11:30-12:00 CC=7.7",
-    "[MES] 19:00-19:30 CC=3.0",
-    "[MES] 02:00-02:30 CC=0.5",
-    "[MES] 07:30-08:00 CC=1.0"
-  ],
-  "balance": null,
-  "start_balance": null,
-  "pnl": null,
-  "pnl_pct": null,
-  "trades": 0,
-  "wins": 0,
-  "losses": 0,
-  "win_rate": 0,
-  "open_orders": 0,
-  "open_positions": 0,
-  "last_signal": "",
-  "cloud_color": "red",
-  "ema_diff": -13.1893,
-  "terminal": [
-    "[21:04:40] \ud83d\ude80 Multi-Asset Bot: MNQ + MES + MYM + MGC (practice) \u2014 \ud83e\uddea SIM",
-    "[21:06:11] \ud83d\udcca [MNQ] \ud83d\udd34 EMA=-13.19 | [MES] \ud83d\udd34 EMA=-3.32 | [MYM] \ud83d\udd34 EMA=-27.64 | [MGC] \ud83d\udd34 EMA=-0.29",
-    "[21:06:34] \u26a0\ufe0f [MNQ] Keine Ticks seit 90s",
-    "[21:06:34] \ud83d\udd04 [MNQ] Re-Subscribe versucht",
-    "[21:06:35] \u26a0\ufe0f [MES] Keine Ticks seit 90s",
-    "[21:06:35] \ud83d\udd04 [MES] Re-Subscribe versucht",
-    "[21:06:36] \u26a0\ufe0f [MYM] Keine Ticks seit 90s",
-    "[21:06:36] \ud83d\udd04 [MYM] Re-Subscribe versucht",
-    "[21:06:37] \u26a0\ufe0f [MGC] Keine Ticks seit 90s",
-    "[21:06:37] \ud83d\udd04 [MGC] Re-Subscribe versucht"
-  ]
+  "updated_at": "2026-03-13T21:07:23.611491+00:00",
+  "last_session": {
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "win_rate": 0,
+    "account_mode": "practice",
+    "account_id": 0,
+    "windows": [
+      "17:00-17:30",
+      "20:30-21:00",
+      "16:00-16:30",
+      "23:00-23:30",
+      "05:00-05:30",
+      "00:00-00:30"
+    ],
+    "cc_values": [
+      6.7,
+      9.7,
+      4.9,
+      6.2,
+      4.2,
+      6.0
+    ],
+    "start_balance": null,
+    "end_balance": null,
+    "pnl": null,
+    "pnl_pct": null,
+    "bars_processed": 0,
+    "setups_detected": 0,
+    "duration_min": 2
+  }
 }
